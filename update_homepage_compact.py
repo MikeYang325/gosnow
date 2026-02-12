@@ -99,6 +99,14 @@ def generate_card(resort):
         html += f'''            <div class="xiaohongshu-review">💬 {review}</div>
 '''
 
+    # 操作按钮
+    html += f'''            <div class="resort-actions">
+                <a href="{detail_url}" class="action-btn" onclick="event.stopPropagation()">📋 详情</a>
+                <a href="{website}" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="{windy_url}" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+'''
+
     html += '''        </div>
 
 '''
