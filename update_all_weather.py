@@ -143,6 +143,19 @@ for resort_key, data in weather_data.items():
     replacement = rf'\g<1>🔮 7天{data["total_7day_snow"]}cm\g<2>'
     index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
 
+    # 添加或更新积雪深度标签
+    # 先检查是否已存在积雪深度标签
+    depth_pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag forecast-tag">🔮 7天[^<]+</span>)(\s*<span class="info-tag depth-tag">📏 积雪[^<]+</span>)?'
+    if re.search(depth_pattern, index_content, flags=re.DOTALL):
+        # 如果存在，更新它
+        depth_replacement = rf'\g<1> <span class="info-tag depth-tag">📏 积雪{data["snow_depth"]}cm</span>'
+        index_content = re.sub(depth_pattern, depth_replacement, index_content, flags=re.DOTALL)
+    else:
+        # 如果不存在，在7天预报后添加
+        add_pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag forecast-tag">🔮 7天[^<]+</span>)'
+        add_replacement = rf'\g<1> <span class="info-tag depth-tag">📏 积雪{data["snow_depth"]}cm</span>'
+        index_content = re.sub(add_pattern, add_replacement, index_content, flags=re.DOTALL)
+
     # 更新data-snow、data-forecast和data-depth属性
     pattern = rf'(<div class="resort-card" data-region="[^"]*" data-snow=")[^"]*(" data-forecast=")[^"]*"( onclick="window\.location\.href=\'resorts/{re.escape(resort_key)}-new\.html\'">)'
     replacement = rf'\g<1>{data["current_snow"]}\g<2>{data["total_7day_snow"]}" data-depth="{data["snow_depth"]}"\g<3>'
