@@ -143,9 +143,9 @@ for resort_key, data in weather_data.items():
     replacement = rf'\g<1>🔮 7天{data["total_7day_snow"]}cm\g<2>'
     index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
 
-    # 更新data-snow和data-forecast属性
-    pattern = rf'(<div class="resort-card"[^>]*onclick="[^"]*{re.escape(resort_key)}-new\.html"[^>]*data-snow=")[^"]*(" data-forecast=")[^"]*(")'
-    replacement = rf'\g<1>{data["current_snow"]}\g<2>{data["total_7day_snow"]}\g<3>'
+    # 更新data-snow、data-forecast和data-depth属性
+    pattern = rf'(<div class="resort-card" data-region="[^"]*" data-snow=")[^"]*(" data-forecast=")[^"]*"( onclick="window\.location\.href=\'resorts/{re.escape(resort_key)}-new\.html\'">)'
+    replacement = rf'\g<1>{data["current_snow"]}\g<2>{data["total_7day_snow"]}" data-depth="{data["snow_depth"]}"\g<3>'
     index_content = re.sub(pattern, replacement, index_content)
 
 with open('index.html', 'w', encoding='utf-8') as f:
