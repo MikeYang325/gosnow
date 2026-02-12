@@ -1592,6 +1592,7 @@
     <script>
         let currentRegion = '全部';
         let currentSort = 'default';
+        let sortOrder = {}; // 记录每个排序类型的当前顺序（true=降序，false=升序）
 
         function copyWechat() {
             navigator.clipboard.writeText('13520109325').then(() => {
@@ -1631,13 +1632,27 @@
         }
 
         function sortBy(type) {
-            currentSort = type;
+            // 如果点击的是当前已激活的排序，则切换顺序
+            if (currentSort === type) {
+                sortOrder[type] = !sortOrder[type];
+            } else {
+                // 切换到新的排序类型，使用默认顺序
+                currentSort = type;
+                if (!(type in sortOrder)) {
+                    // 设置默认顺序：价格从低到高，其他从高到低
+                    sortOrder[type] = (type === 'price') ? false : true;
+                }
+            }
 
-            // 更新按钮状态
+            // 更新按钮状态和显示排序方向
             document.querySelectorAll('.sort-tab').forEach(tab => {
                 tab.classList.remove('active');
             });
             event.target.classList.add('active');
+
+            // 在按钮文本中显示排序方向
+            const buttonText = event.target.textContent.replace(/[↑↓]/g, '').trim();
+            event.target.textContent = buttonText + (sortOrder[type] ? ' ↓' : ' ↑');
 
             const container = document.getElementById('content');
             const cards = Array.from(container.querySelectorAll('.resort-card:not(.hidden)'));
@@ -1653,34 +1668,37 @@
             } else {
                 // 按数值排序
                 cards.sort((a, b) => {
-                    let valA, valB;
+                    let valA, valB, result;
                     if (type === 'snow') {
                         valA = parseFloat(a.dataset.snow);
                         valB = parseFloat(b.dataset.snow);
-                        return valB - valA; // 降序
+                        result = valB - valA;
                     } else if (type === 'depth') {
                         valA = parseFloat(a.dataset.depth);
                         valB = parseFloat(b.dataset.depth);
-                        return valB - valA; // 降序
+                        result = valB - valA;
                     } else if (type === 'trails') {
                         // 从雪道数量标签中提取数字
                         const trailsA = parseInt(a.querySelector('.resort-info').textContent.match(/(\d+)条雪道/)[1]);
                         const trailsB = parseInt(b.querySelector('.resort-info').textContent.match(/(\d+)条雪道/)[1]);
-                        return trailsB - trailsA; // 从多到少
+                        result = trailsB - trailsA;
                     } else if (type === 'price') {
                         // 从价格标签中提取数字
                         const priceA = parseInt(a.querySelector('.resort-info').textContent.match(/[¥￥]([0-9,]+)/)[1].replace(',', ''));
                         const priceB = parseInt(b.querySelector('.resort-info').textContent.match(/[¥￥]([0-9,]+)/)[1].replace(',', ''));
-                        return priceA - priceB; // 从低到高
+                        result = priceA - priceB;
                     } else if (type === 'forecast') {
                         valA = parseFloat(a.dataset.forecast);
                         valB = parseFloat(b.dataset.forecast);
-                        return valB - valA; // 降序
+                        result = valB - valA;
                     } else if (type === 'score') {
                         valA = parseFloat(a.dataset.score);
                         valB = parseFloat(b.dataset.score);
-                        return valB - valA; // 降序
+                        result = valB - valA;
                     }
+
+                    // 根据sortOrder决定是否反转结果
+                    return sortOrder[type] ? result : -result;
                 });
             }
 
