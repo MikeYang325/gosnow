@@ -29,20 +29,40 @@ for resort_key, resort_info in resorts_map.items():
         continue
 
     try:
-        # 获取积雪数据
-        result = subprocess.run(
-            ['curl', '-s', f'https://site.weathernews.jp/site/ski/json/spotobs/{spot_id}.json'],
-            capture_output=True, text=True, timeout=10
-        )
-        obs_data = json.loads(result.stdout)
+        # 获取积雪数据（增加重试机制）
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                result = subprocess.run(
+                    ['curl', '-s', f'https://site.weathernews.jp/site/ski/json/spotobs/{spot_id}.json'],
+                    capture_output=True, text=True, timeout=20
+                )
+                if result.stdout.strip():
+                    obs_data = json.loads(result.stdout)
+                    break
+            except (json.JSONDecodeError, subprocess.TimeoutExpired):
+                if attempt == max_retries - 1:
+                    raise
+                import time
+                time.sleep(2)
+
         snow_depth = obs_data.get('snow_depth', '0')
 
-        # 获取天气预报数据
-        result = subprocess.run(
-            ['curl', '-s', f'https://site.weathernews.jp/site/ski/json/fcst_v1/fcst{spot_id}.json'],
-            capture_output=True, text=True, timeout=10
-        )
-        fcst_data = json.loads(result.stdout)
+        # 获取天气预报数据（增加重试机制）
+        for attempt in range(max_retries):
+            try:
+                result = subprocess.run(
+                    ['curl', '-s', f'https://site.weathernews.jp/site/ski/json/fcst_v1/fcst{spot_id}.json'],
+                    capture_output=True, text=True, timeout=20
+                )
+                if result.stdout.strip():
+                    fcst_data = json.loads(result.stdout)
+                    break
+            except (json.JSONDecodeError, subprocess.TimeoutExpired):
+                if attempt == max_retries - 1:
+                    raise
+                import time
+                time.sleep(2)
 
         if 'srf' in fcst_data and len(fcst_data['srf']) >= 7:
             # 提取7天预报
