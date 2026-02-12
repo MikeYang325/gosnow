@@ -21,11 +21,11 @@ jobs:
 
     - name: Fetch weather data from weathernews.jp
       run: |
-        python3 update_real_weather.py
+        python3 update_all_weather.py
 
     - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add resorts/*-new.html
+        git add index.html resorts/*-new.html
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update weather data from weathernews.jp [$(date +'%Y-%m-%d %H:%M UTC')]" && git push)
