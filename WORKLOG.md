@@ -42,6 +42,65 @@ generate_detail_pages.py      # 详情页生成
 
 ---
 
+## 详情页优化进度 (resorts/*-new.html)
+
+### 排名规则
+- 优先按雪道数量排名，取前30个
+- 手动补充4个特色雪场：八海山、神居、旭岳、八甲田
+- 共34个雪场
+
+### 优化流程
+1. Claude 验证官网4个链接可访问（官网、购票、摄像头、缆车运行）
+2. Claude 发送验证后的链接给用户确认
+3. 用户提供 hero 图和雪道图
+4. Claude 按统一模板生成新版详情页（避免乱码）
+5. Claude 发送页面链接给用户审核
+6. 审核通过后更新工作记录
+
+### 已完成 (20个)
+| 排名 | 雪场 | 雪道数 | 文件 |
+|-----|------|-------|------|
+| 1 | 志贺高原 | 84 | shiga-kogen-ski-resort-new.html |
+| 2 | 二世谷联合 | 76 | niseko-united-new.html |
+| 3 | 妙高高原 | 48 | myoko-kogen-ski-resort-new.html |
+| 4 | 野泽温泉 | 44 | nozawa-onsen-ski-resort-new.html |
+| 5 | 留寿都 | 37 | rusutsu-resort-new.html |
+| 6 | 白马八方尾根 | 37 | hakuba-happo-one-ski-resort-new.html |
+| 7 | 神乐 | 31 | kagura-ski-resort-new.html |
+| 8 | 星野Tomamu | 29 | hoshino-resorts-tomamu-new.html |
+| 9 | 苗场 | 28 | naeba-ski-resort-new.html |
+| 10 | 藏王温泉 | 28 | zao-onsen-ski-resort-new.html |
+| 11 | 石打丸山 | 25 | ishiuchi-maruyama-ski-resort-new.html |
+| 12 | 白马栂池 | 24 | hakuba-tsugaike-ski-resort-new.html |
+| 13 | 喜乐乐 | 23 | kiroro-ski-resort-new.html |
+| 14 | 斑尾高原 | 22 | madarao-kogen-ski-resort-new.html |
+| 15 | 岩原 | 22 | iwappara-ski-resort-new.html |
+| 16 | GALA汤泽 | 21 | gala-yuzawa-ski-resort-new.html |
+| 18 | 轻井泽王子 | 21 | karuizawa-prince-ski-resort-new.html |
+| 19 | 安比高原 | 21 | appi-kogen-ski-resort-new.html |
+| 20 | 白马五竜 | 21 | hakuba-goryu-ski-resort-new.html |
+| 24 | 富良野 | 18 | furano-ski-resort-new.html |
+
+### 待优化 (14个)
+| 排名 | 雪场 | 雪道数 |
+|-----|------|-------|
+| 17 | 札幌手稀 | 21 |
+| 21 | 白马47 | 20 |
+| 22 | 二世谷比罗夫 | 20 |
+| 23 | 佐幌 | 20 |
+| 25 | 草津温泉 | 18 |
+| 26 | 札幌国际 | 18 |
+| 27 | 二世谷村 | 18 |
+| 28 | 汤泽高原 | 18 |
+| 29 | 猪苗代 | 18 |
+| 30 | 乐天新井 | 18 |
+| 31 | 八海山 | 16 |
+| 32 | 神居 | 15 |
+| 33 | 旭岳 | 12 |
+| 34 | 八甲田 | 野雪 |
+
+---
+
 ## 维护命令速查
 
 ```bash

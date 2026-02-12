@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>白马五竜滑雪场 - 追雪</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .header-title { font-size: 1.4em; font-weight: 700; }
+        .header-subtitle { font-size: 0.85em; opacity: 0.9; }
+
+        .hero-container {
+            padding: 15px 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .content { padding: 15px; max-width: 600px; margin: 0 auto; }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .section-title {
+            font-size: 1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .info-table { display: flex; flex-direction: column; }
+        .info-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label {
+            font-size: 0.85em;
+            color: #888;
+            width: 90px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            font-size: 0.9em;
+            color: #333;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .info-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .weather-box {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .weather-main { font-size: 1.1em; font-weight: 700; }
+        .weather-sub { font-size: 0.9em; opacity: 0.9; margin-top: 5px; }
+
+        .forecast-grid {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .forecast-day {
+            flex-shrink: 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 8px;
+            text-align: center;
+            min-width: 60px;
+        }
+        .forecast-date { font-size: 0.75em; color: #888; }
+        .forecast-temp { font-size: 0.8em; font-weight: 600; color: #e53935; }
+        .forecast-snow { font-size: 0.75em; color: #1976d2; margin-top: 2px; }
+
+        .windy-link {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            padding: 10px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .transport-content {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .review-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            font-weight: 600;
+        }
+        .dimension-grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .dimension-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dimension-item:last-child { border-bottom: none; }
+        .dimension-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dimension-name {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #333;
+            width: 75px;
+            flex-shrink: 0;
+        }
+        .dimension-bar {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dimension-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+        }
+        .dimension-score {
+            font-size: 0.8em;
+            color: #667eea;
+            font-weight: 600;
+            width: 30px;
+            text-align: right;
+        }
+        .dimension-comment {
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 4px;
+            padding-left: 85px;
+        }
+        .tips-list {
+            margin-top: 15px;
+            padding: 0;
+            list-style: none;
+        }
+        .tips-list li {
+            font-size: 0.85em;
+            color: #555;
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .tips-list li:last-child { border-bottom: none; }
+        .tips-list li::before {
+            content: '💡 ';
+        }
+
+        .trail-map-img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .trail-map-hint {
+            text-align: center;
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="back-btn">← 返回</a>
+        <div class="header-title">白马五竜滑雪场</div>
+        <div class="header-subtitle">Hakuba Goryu Ski Resort</div>
+    </div>
+
+    <div class="hero-container">
+        <img class="hero-image" src="https://www.snowmonkeyresorts.com/wp-content/uploads/2019/05/hakuba-47-2.jpg" alt="白马五竜滑雪场"/>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <div class="section-title">📍 基本信息</div>
+            <div class="info-table">
+                <div class="info-row">
+                    <span class="info-label">官网</span>
+                    <span class="info-value"><a href="https://www.goryu47.com/" target="_blank">goryu47.com</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">日文名</span>
+                    <span class="info-value">エイブル白馬五竜スキー場</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">英文名</span>
+                    <span class="info-value">Hakuba Goryu Ski Resort</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value"><span>¥7,300 ≈ ￥365</span><a class="info-link" href="https://www.goryu47.com/online-liftpass.html" target="_blank">🎫购票</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">海拔落差</span>
+                    <span class="info-value">650m - 1,830m（落差1,180m）</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪道数量</span>
+                    <span class="info-value"><span>21条</span><a class="info-link" href="https://www.hakubaescal.com/winter/live/" target="_blank">📷摄像头</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">缆车数量</span>
+                    <span class="info-value"><span>11条</span><a class="info-link" href="https://www.hakubaescal.com/winter/gelande/hours/" target="_blank">📹运行状况</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪场特色</span>
+                    <span class="info-value">白马地区新手友好天花板，雪道宽缓，人少</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">地址</span>
+                    <span class="info-value">长野县北安昙郡白马村神城 22184-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🌤️ 天气预报</div>
+            <div class="weather-box">
+                <div class="weather-main">❄️ 雪 -9°C</div>
+                <div class="weather-sub">更新于 2026-02-07 16:08</div>
+            </div>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <div class="forecast-date">今天</div>
+                    <div class="forecast-temp">-9°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">明天</div>
+                    <div class="forecast-temp">-8°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">后天</div>
+                    <div class="forecast-temp">-7°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第4天</div>
+                    <div class="forecast-temp">-8°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第5天</div>
+                    <div class="forecast-temp">-9°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第6天</div>
+                    <div class="forecast-temp">-8°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第7天</div>
+                    <div class="forecast-temp">-7°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+            </div>
+            <a class="windy-link" href="https://www.windy.com/36.617/137.933?36.617,137.933,11" target="_blank">📊 查看 Windy 详细预报</a>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🚌 交通信息</div>
+            <div class="transport-content">
+                <strong>【优先机场直达】</strong>名古屋中部机场→白马直达巴士（JAM JAM LINER）<br><br>
+                <strong>【备选交通】</strong>长野机场→Alpico 巴士→白马站→五竜公交<br><br>
+                <strong>【耗时/票价】</strong>4h/¥8000；1h+15min/¥1500+¥600<br><br>
+                <strong>【购票渠道】</strong>① JAM JAM LINER 官网；② 长野机场 1 楼 Alpico 柜台<br><br>
+                <strong>【乘车点】</strong>中部机场 T1-7 号 / T2-21 号站台；长野机场 1 楼 2 号站台<br><br>
+                <strong>【末班车】</strong>五竜→白马站：18:00<br><br>
+                <strong>【行李/儿童规则】</strong>冬季限定直达，需提前预约；错过末班车打车约 ¥2000；儿童 6 岁以下免费需抱坐
+            </div>
+            <a class="windy-link" href="https://www.hakubaescal.com/winter/access/" target="_blank" style="margin-top: 12px;">🔗 查看官网交通详情</a>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💬 游客评价</div>
+            <div class="review-summary">白马地区新手友好天花板，雪道宽缓，人少</div>
+            <div class="dimension-grid">
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">❄️ 雪质</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">雪质好，雪量稳定</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">👥 人流</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">人少，体验舒适</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">⛷️ 地形</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 60%;"></div></div>
+                        <span class="dimension-score">3/5</span>
+                    </div>
+                    <div class="dimension-comment">21条雪道，650-1830m落差，中高级雪道偏少</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🍜 餐饮</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 60%;"></div></div>
+                        <span class="dimension-score">3/5</span>
+                    </div>
+                    <div class="dimension-comment">山顶餐厅选择有限</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">💰 性价比</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 100%;"></div></div>
+                        <span class="dimension-score">5/5</span>
+                    </div>
+                    <div class="dimension-comment">票价¥7,300，性价比高</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🚌 交通</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">白马站15min巴士，名古屋有直达</div>
+                </div>
+            </div>
+            <ul class="tips-list">
+                <li>新手入门首选</li>
+                <li>与白马47互通</li>
+                <li>雪道宽缓适合练习</li>
+                <li>性价比高</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🗺️ 雪道图</div>
+            <img class="trail-map-img" src="https://i.ibb.co/xSvFBDBP/goryu47.png" alt="白马五竜滑雪场雪道图" onclick="window.open(this.src)"/>
+            <div class="trail-map-hint">点击图片查看大图</div>
+        </div>
+    </div>
+</body>
+</html>

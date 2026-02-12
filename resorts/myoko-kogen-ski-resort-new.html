@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>妙高高原 - 追雪</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .header-title { font-size: 1.4em; font-weight: 700; }
+        .header-subtitle { font-size: 0.85em; opacity: 0.9; }
+
+        .hero-container {
+            padding: 15px 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .content { padding: 15px; max-width: 600px; margin: 0 auto; }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .section-title {
+            font-size: 1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .info-table { display: flex; flex-direction: column; }
+        .info-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label {
+            font-size: 0.85em;
+            color: #888;
+            width: 90px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            font-size: 0.9em;
+            color: #333;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .info-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .weather-box {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .weather-main { font-size: 1.1em; font-weight: 700; }
+        .weather-sub { font-size: 0.9em; opacity: 0.9; margin-top: 5px; }
+
+        .forecast-grid {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .forecast-day {
+            flex-shrink: 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 8px;
+            text-align: center;
+            min-width: 60px;
+        }
+        .forecast-date { font-size: 0.75em; color: #888; }
+        .forecast-temp { font-size: 0.8em; font-weight: 600; color: #e53935; }
+        .forecast-snow { font-size: 0.75em; color: #1976d2; margin-top: 2px; }
+
+        .windy-link {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            padding: 10px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .transport-content {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .review-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            font-weight: 600;
+        }
+        .dimension-grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .dimension-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dimension-item:last-child { border-bottom: none; }
+        .dimension-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dimension-name {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #333;
+            width: 75px;
+            flex-shrink: 0;
+        }
+        .dimension-bar {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dimension-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+        }
+        .dimension-score {
+            font-size: 0.8em;
+            color: #667eea;
+            font-weight: 600;
+            width: 30px;
+            text-align: right;
+        }
+        .dimension-comment {
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 4px;
+            padding-left: 85px;
+        }
+        .tips-list {
+            margin-top: 15px;
+            padding: 0;
+            list-style: none;
+        }
+        .tips-list li {
+            font-size: 0.85em;
+            color: #555;
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .tips-list li:last-child { border-bottom: none; }
+        .tips-list li::before {
+            content: '💡 ';
+        }
+
+        .trail-map-img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .trail-map-hint {
+            text-align: center;
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="back-btn">← 返回</a>
+        <div class="header-title">妙高高原</div>
+        <div class="header-subtitle">Myoko Kogen Ski Resort</div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-container">
+        <img class="hero-image" src="https://myokoskiresort.com/wp-content/uploads/2021/02/mewe-img-1610286256528.jpg" alt="妙高高原"/>
+    </div>
+
+    <div class="content">
+        <!-- 基本信息 -->
+        <div class="section">
+            <div class="section-title">📍 基本信息</div>
+            <div class="info-table">
+                <div class="info-row">
+                    <span class="info-label">官网</span>
+                    <span class="info-value"><a href="https://myokoskiresort.com/" target="_blank">myokoskiresort.com</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">日文名</span>
+                    <span class="info-value">妙高高原スキー場</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">英文名</span>
+                    <span class="info-value">Myoko Kogen Ski Resort</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,200 ≈ ￥360（有夜场）</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">海拔落差</span>
+                    <span class="info-value">350m - 1,645m（落差1,295m）</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪道数量</span>
+                    <span class="info-value"><span>48条（5区域互通）</span><a class="info-link" href="https://myoko.webcam/" target="_blank">📷摄像头</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">缆车数量</span>
+                    <span class="info-value"><span>24条</span><a class="info-link" href="https://myokosnowreport.com/" target="_blank">📹运行状况</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">年均降雪</span>
+                    <span class="info-value">13m</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪场特色</span>
+                    <span class="info-value">5大区域互通，新潟性价比之王</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">地址</span>
+                    <span class="info-value">新潟县妙高市</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 天气与降雪 -->
+        <div class="section">
+            <div class="section-title">🌤️ 天气与降雪</div>
+            <div class="weather-box">
+                <div class="weather-main">❄️ 当前: 6.0cm · -7°C · 小雪</div>
+                <div class="weather-sub">🔮 未来7天预计: 32.0cm</div>
+            </div>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <div class="forecast-date">02-12</div>
+                    <div class="forecast-temp">-10°~-4°</div>
+                    <div class="forecast-snow">❄️ 6cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-13</div>
+                    <div class="forecast-temp">-8°~-3°</div>
+                    <div class="forecast-snow">❄️ 10cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-14</div>
+                    <div class="forecast-temp">-6°~-1°</div>
+                    <div class="forecast-snow">❄️ 5cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-15</div>
+                    <div class="forecast-temp">-9°~-3°</div>
+                    <div class="forecast-snow">❄️ 7cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-16</div>
+                    <div class="forecast-temp">-7°~-2°</div>
+                    <div class="forecast-snow">❄️ 4cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-17</div>
+                    <div class="forecast-temp">-5°~0°</div>
+                    <div class="forecast-snow">🌤️ -</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-18</div>
+                    <div class="forecast-temp">-8°~-2°</div>
+                    <div class="forecast-snow">🌤️ -</div>
+                </div>
+            </div>
+            <a class="windy-link" href="https://www.windy.com/36.8500/138.4833?36.8500,138.4833,10,snow" target="_blank">🌬️ Windy 详细预报</a>
+        </div>
+
+        <!-- 交通信息 -->
+        <div class="section">
+            <div class="section-title">🚌 交通信息</div>
+            <div class="transport-content">
+                <p><strong>妙高高原站</strong> → 雪场巴士 20min / ¥800</p>
+                <p><strong>东京站</strong> → 长野新干线1.5h + 换乘至妙高高原站</p>
+                <p style="margin-top:10px;"><a href="https://myoko.jp/tokyo-to-myoko-kogen/" target="_blank" style="color:#667eea;">🔗 查看官网交通详情</a></p>
+            </div>
+        </div>
+
+        <!-- 评价 -->
+        <div class="section">
+            <div class="section-title">💬 游客评价</div>
+            <div class="review-summary">新潟性价比之王，5大区域互通，人少雪好</div>
+            <div class="dimension-grid">
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">❄️ 雪质</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 100%;"></div></div>
+                        <span class="dimension-score">5/5</span>
+                    </div>
+                    <div class="dimension-comment">年降雪13m，粉雪优质</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">👥 人流</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">人少雪好，体验舒适</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">⛷️ 地形</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">48条雪道，350-1645m落差1295m，5区互通</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🍜 餐饮</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 80%;"></div></div>
+                        <span class="dimension-score">4/5</span>
+                    </div>
+                    <div class="dimension-comment">温泉配套全，餐饮选择多</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">💰 性价比</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 100%;"></div></div>
+                        <span class="dimension-score">5/5</span>
+                    </div>
+                    <div class="dimension-comment">票价¥7,200，性价比高</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🚌 交通</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 60%;"></div></div>
+                        <span class="dimension-score">3/5</span>
+                    </div>
+                    <div class="dimension-comment">妙高高原站20min巴士，区域间需接驳</div>
+                </div>
+            </div>
+            <ul class="tips-list">
+                <li>新手/进阶都适配</li>
+                <li>可买妙高全域交通卡</li>
+                <li>5区域建议多日探索</li>
+                <li>温泉配套全</li>
+            </ul>
+        </div>
+
+        <!-- 雪道图 -->
+        <div class="section">
+            <div class="section-title">🗺️ 雪道图</div>
+            <img class="trail-map-img" src="https://myokoskiresort.com/wp-content/uploads/2025/05/myoko-ski-resorts-map.jpg" alt="妙高高原雪道图" onclick="window.open(this.src)"/>
+            <div class="trail-map-hint">点击图片查看大图</div>
+        </div>
+    </div>
+</body>
+</html>

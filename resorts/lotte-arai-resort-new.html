@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>LOTTE乐天新井度假村 - 追雪</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .header-title { font-size: 1.4em; font-weight: 700; }
+        .header-subtitle { font-size: 0.85em; opacity: 0.9; }
+
+        .hero-container {
+            padding: 15px 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image {
+            max-width: 100%;
+            max-height: 400px;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .content { padding: 15px; max-width: 600px; margin: 0 auto; }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .section-title {
+            font-size: 1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .info-table { display: flex; flex-direction: column; }
+        .info-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label {
+            font-size: 0.85em;
+            color: #888;
+            width: 90px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            font-size: 0.9em;
+            color: #333;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .info-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .weather-box {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .weather-main { font-size: 1.1em; font-weight: 700; }
+        .weather-sub { font-size: 0.9em; opacity: 0.9; margin-top: 5px; }
+
+        .forecast-grid {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .forecast-day {
+            flex-shrink: 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 8px;
+            text-align: center;
+            min-width: 60px;
+        }
+        .forecast-date { font-size: 0.75em; color: #888; }
+        .forecast-temp { font-size: 0.8em; font-weight: 600; color: #e53935; }
+        .forecast-snow { font-size: 0.75em; color: #1976d2; margin-top: 2px; }
+
+        .windy-link {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            padding: 10px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .transport-content {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .review-box {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .trail-map-img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .trail-map-hint {
+            text-align: center;
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="back-btn">← 返回</a>
+        <div class="header-title">LOTTE乐天新井度假村</div>
+        <div class="header-subtitle">Lotte Arai Resort</div>
+    </div>
+
+    <div class="hero-container">
+        <img class="hero-image" src="https://i.ibb.co/vxPfV0zr/lotte.png" alt="LOTTE乐天新井度假村"/>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <div class="section-title">📍 基本信息</div>
+            <div class="info-table">
+                <div class="info-row">
+                    <span class="info-label">官网</span>
+                    <span class="info-value"><a href="https://www.lottehotel.com/arai-resort/" target="_blank">lottehotel.com/arai-resort</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">日文名</span>
+                    <span class="info-value">ロッテアライリゾート</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">英文名</span>
+                    <span class="info-value">Lotte Arai Resort</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value"><span>¥7,000 ≈ ￥350（有夜场）</span><a class="info-link" href="https://www.lottehotel.com/arai-resort/zh/ski/lift-ticket.html" target="_blank">🎫购票</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">海拔落差</span>
+                    <span class="info-value">落差930m</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪道数量</span>
+                    <span class="info-value"><span>18条</span><a class="info-link" href="https://www.lottehotel.com/arai-resort/zh/ski/live-camera.html" target="_blank">📷摄像头</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">缆车数量</span>
+                    <span class="info-value"><span>5条</span><a class="info-link" href="https://www.lottehotel.com/arai-resort/zh/ski/slope-info.html" target="_blank">📹运行状况</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">夜场</span>
+                    <span class="info-value">有</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪场特色</span>
+                    <span class="info-value">日本最大级降雪量，豪华度假村，野雪天堂</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">地址</span>
+                    <span class="info-value">新潟县妙高市両善寺1966</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🌤️ 天气预报</div>
+            <div class="weather-box">
+                <div class="weather-main">❄️ 当前天气</div>
+                <div class="weather-sub">数据更新中</div>
+            </div>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <div class="forecast-date">今天</div>
+                    <div class="forecast-temp">-6°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">明天</div>
+                    <div class="forecast-temp">-5°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">后天</div>
+                    <div class="forecast-temp">-4°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第4天</div>
+                    <div class="forecast-temp">-5°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第5天</div>
+                    <div class="forecast-temp">-6°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第6天</div>
+                    <div class="forecast-temp">-5°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第7天</div>
+                    <div class="forecast-temp">-4°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+            </div>
+            <a class="windy-link" href="https://www.windy.com/36.933/138.150?36.933,138.150,11" target="_blank">📊 查看 Windy 详细预报</a>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🚌 交通信息</div>
+            <div class="transport-content">
+                <strong>【最近机场】</strong>新潟机场/富山机场<br><br>
+                <strong>【机场直达】</strong>无直达巴士<br><br>
+                <strong>【备选交通】</strong>东京站→北陆新干线→上越妙高站→免费接驳巴士约30分钟<br><br>
+                <strong>【耗时/票价】</strong>东京→上越妙高约2小时¥8,000；接驳巴士免费（住客）/¥1,000（非住客）<br><br>
+                <strong>【自驾】</strong>东京出发约3小时（上信越自动车道→新井PA直结）
+            </div>
+            <a class="windy-link" href="https://www.lottehotel.com/arai-resort/zh/about/access.html" target="_blank" style="margin-top: 12px;">🔗 查看官网交通详情</a>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💬 用户评价</div>
+            <div class="review-box">
+                日本最大降雪量，豪华度假村，野雪天堂
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🗺️ 雪道图</div>
+            <img class="trail-map-img" src="https://img.lottehotel.com/cms/asset/2026/01/29/36540/%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%9E%E3%83%83%E3%83%972%20(1).jpg" alt="LOTTE乐天新井度假村雪道图" onclick="window.open(this.src)"/>
+            <div class="trail-map-hint">点击图片查看大图</div>
+        </div>
+    </div>
+</body>
+</html>

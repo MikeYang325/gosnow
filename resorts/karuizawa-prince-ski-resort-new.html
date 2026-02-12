@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>轻井泽王子滑雪场 - 追雪</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .header-title { font-size: 1.4em; font-weight: 700; }
+        .header-subtitle { font-size: 0.85em; opacity: 0.9; }
+
+        /* Hero 与内容区同宽，圆角，高度协调 */
+        .hero-container {
+            padding: 15px 15px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .content { padding: 15px; max-width: 600px; margin: 0 auto; }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .section-title {
+            font-size: 1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        /* 基本信息表格 */
+        .info-table { display: flex; flex-direction: column; }
+        .info-row {
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-row:last-child { border-bottom: none; }
+        .info-label {
+            font-size: 0.85em;
+            color: #888;
+            width: 90px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            font-size: 0.9em;
+            color: #333;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .info-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        /* 链接按钮组 */
+        .link-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .link-btn {
+            padding: 6px 12px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        /* 天气 */
+        .weather-box {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .weather-main { font-size: 1.1em; font-weight: 700; }
+        .weather-sub { font-size: 0.9em; opacity: 0.9; margin-top: 5px; }
+
+        .forecast-grid {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .forecast-day {
+            flex-shrink: 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 8px;
+            text-align: center;
+            min-width: 60px;
+        }
+        .forecast-date { font-size: 0.75em; color: #888; }
+        .forecast-temp { font-size: 0.8em; font-weight: 600; color: #e53935; }
+        .forecast-snow { font-size: 0.75em; color: #1976d2; margin-top: 2px; }
+
+        .windy-link {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            padding: 10px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        /* 交通 */
+        .transport-content {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* 评价 */
+        .review-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            font-weight: 600;
+        }
+        .dimension-grid {
+            display: flex;
+            flex-direction: column;
+        }
+        .dimension-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dimension-item:last-child { border-bottom: none; }
+        .dimension-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .dimension-name {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #333;
+            width: 75px;
+            flex-shrink: 0;
+        }
+        .dimension-bar {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dimension-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+        }
+        .dimension-score {
+            font-size: 0.8em;
+            color: #667eea;
+            font-weight: 600;
+            width: 30px;
+            text-align: right;
+        }
+        .dimension-comment {
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 4px;
+            padding-left: 85px;
+        }
+        .tips-list {
+            margin-top: 15px;
+            padding: 0;
+            list-style: none;
+        }
+        .tips-list li {
+            font-size: 0.85em;
+            color: #555;
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .tips-list li:last-child { border-bottom: none; }
+        .tips-list li::before {
+            content: '💡 ';
+        }
+
+        /* 雪道图 */
+        .trail-map-img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .trail-map-hint {
+            text-align: center;
+            font-size: 0.75em;
+            color: #888;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="back-btn">← 返回</a>
+        <div class="header-title">轻井泽王子滑雪场</div>
+        <div class="header-subtitle">Karuizawa Prince Ski Resort</div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-container">
+        <img class="hero-image" src="https://www.princehotels.com/en/ski/karuizawa/img/gl04_l.jpg" alt="轻井泽王子滑雪场"/>
+    </div>
+
+    <div class="content">
+        <!-- 基本信息 -->
+        <div class="section">
+            <div class="section-title">📍 基本信息</div>
+            <div class="info-table">
+                <div class="info-row">
+                    <span class="info-label">官网</span>
+                    <span class="info-value"><a href="https://www.princehotels.com/ski/karuizawa/" target="_blank">princehotels.com/ski/karuizawa</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">日文名</span>
+                    <span class="info-value">軽井沢プリンススキー場</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">英文名</span>
+                    <span class="info-value">Karuizawa Prince Ski Resort</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value"><span>¥6,800 ≈ ￥340（有夜场）</span><a class="info-link" href="https://www.princehotels.co.jp/ski/karuizawa/winter/lift/" target="_blank">🎫购票</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">海拔落差</span>
+                    <span class="info-value">600m - 1,000m（落差400m）</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪道数量</span>
+                    <span class="info-value"><span>21条</span><a class="info-link" href="https://youtu.be/fqgXBt2ZzpE" target="_blank">📷摄像头</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">缆车数量</span>
+                    <span class="info-value"><span>8条</span><a class="info-link" href="https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap?tab=lift#menu03" target="_blank">📹运行状况</a></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪场特色</span>
+                    <span class="info-value">东京周边亲子天花板，配套全，有游乐园，夜场至20:30</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">地址</span>
+                    <span class="info-value">长野县北佐久郡轻井泽町</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 天气预报 -->
+        <div class="section">
+            <div class="section-title">🌤️ 天气预报</div>
+            <div class="weather-box">
+                <div class="weather-main">🌤️ 多云 -4°C</div>
+                <div class="weather-sub">当前无降雪 · 更新于 2026-02-07 16:09</div>
+            </div>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <div class="forecast-date">今天</div>
+                    <div class="forecast-temp">-4°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">明天</div>
+                    <div class="forecast-temp">-3°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">后天</div>
+                    <div class="forecast-temp">-2°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第4天</div>
+                    <div class="forecast-temp">-3°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第5天</div>
+                    <div class="forecast-temp">-4°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第6天</div>
+                    <div class="forecast-temp">-3°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">第7天</div>
+                    <div class="forecast-temp">-2°C</div>
+                    <div class="forecast-snow">0cm</div>
+                </div>
+            </div>
+            <a class="windy-link" href="https://www.windy.com/36.333/138.567?36.333,138.567,11" target="_blank">📊 查看 Windy 详细预报</a>
+        </div>
+
+        <!-- 交通信息 -->
+        <div class="section">
+            <div class="section-title">🚌 交通信息</div>
+            <div class="transport-content">
+                <strong>【优先机场直达】</strong>无直达<br><br>
+                <strong>【备选交通】</strong>东京→JR 轻井泽站新干线→王子接驳车<br><br>
+                <strong>【耗时/票价】</strong>1h+10min/¥4000 + 免费<br><br>
+                <strong>【购票渠道】</strong>① JR 东日本官网；② 轻井泽站东出口接驳车点<br><br>
+                <strong>【乘车点】</strong>东京站新干线 11 号站台；轻井泽站东出口（白色 "王子接驳车" 标识）<br><br>
+                <strong>【末班车】</strong>轻井泽→东京：20:00<br><br>
+                <strong>【行李/儿童规则】</strong>接驳车每 15 分钟一班；联票含雪场 + 游乐园门票，适合带娃
+            </div>
+            <a class="windy-link" href="https://www.princehotels.co.jp/ski/karuizawa/winter/access/" target="_blank" style="margin-top: 12px;">🔗 查看官网交通详情</a>
+        </div>
+
+        <!-- 用户评价 -->
+        <div class="section">
+            <div class="section-title">💬 游客评价</div>
+            <div class="review-summary">东京周边亲子天花板，配套全，有游乐园</div>
+            <div class="dimension-grid">
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">❄️ 雪质</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 40%;"></div></div>
+                        <span class="dimension-score">2/5</span>
+                    </div>
+                    <div class="dimension-comment">人工造雪为主，雪质一般</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">👥 人流</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 40%;"></div></div>
+                        <span class="dimension-score">2/5</span>
+                    </div>
+                    <div class="dimension-comment">周末人多，缆车排队</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">⛷️ 地形</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 60%;"></div></div>
+                        <span class="dimension-score">3/5</span>
+                    </div>
+                    <div class="dimension-comment">21条雪道，600-1000m落差，雪道缓</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🍜 餐饮</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 100%;"></div></div>
+                        <span class="dimension-score">5/5</span>
+                    </div>
+                    <div class="dimension-comment">王子酒店配套全，有游乐园/奥特莱斯</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">💰 性价比</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 60%;"></div></div>
+                        <span class="dimension-score">3/5</span>
+                    </div>
+                    <div class="dimension-comment">票价¥6,800，住宿偏贵</div>
+                </div>
+                <div class="dimension-item">
+                    <div class="dimension-row">
+                        <span class="dimension-name">🚌 交通</span>
+                        <div class="dimension-bar"><div class="dimension-fill" style="width: 100%;"></div></div>
+                        <span class="dimension-score">5/5</span>
+                    </div>
+                    <div class="dimension-comment">东京1h新干线直达，站内接驳</div>
+                </div>
+            </div>
+            <ul class="tips-list">
+                <li>亲子友好，有游乐园</li>
+                <li>可顺便逛奥特莱斯</li>
+                <li>人工雪为主，雪质一般</li>
+                <li>夜场17:00-20:30</li>
+            </ul>
+        </div>
+
+        <!-- 雪道图 -->
+        <div class="section">
+            <div class="section-title">🗺️ 雪道图</div>
+            <img class="trail-map-img" src="https://www.princehotels.com/en/ski/karuizawa/img/mountain_map.jpg" alt="轻井泽王子滑雪场雪道图" onclick="window.open(this.src)"/>
+            <div class="trail-map-hint">点击图片查看大图</div>
+        </div>
+    </div>
+</body>
+</html>
