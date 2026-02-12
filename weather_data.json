@@ -1,0 +1,4147 @@
+{
+  "updated_at": "2026-02-11 22:56:09",
+  "forecast_days": 7,
+  "source": "Open-Meteo (ECMWF)",
+  "resorts": {
+    "富良野滑雪场": {
+      "current": {
+        "temperature": -1.9,
+        "snow_24h": 3.6,
+        "snow_depth": 77.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 8.8,
+        "daily_snowfall": [
+          3.6,
+          0,
+          2.2,
+          1.6,
+          1.1,
+          0.4,
+          0
+        ],
+        "daily_temp_min": [
+          -7.0,
+          -9.0,
+          -10.0,
+          -7.0,
+          -5.0,
+          -10.0,
+          -13.0
+        ],
+        "daily_temp_max": [
+          -1.0,
+          -6.0,
+          -4.0,
+          -3.0,
+          4.0,
+          -2.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          86,
+          85,
+          85,
+          85,
+          85,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 3.6
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "留寿都度假村": {
+      "current": {
+        "temperature": -4.1,
+        "snow_24h": 8.3,
+        "snow_depth": 97.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 16.7,
+        "daily_snowfall": [
+          8.3,
+          2.2,
+          2.0,
+          0.2,
+          3.6,
+          0.4,
+          0
+        ],
+        "daily_temp_min": [
+          -12.0,
+          -15.0,
+          -15.0,
+          -10.0,
+          -6.0,
+          -14.0,
+          -15.0
+        ],
+        "daily_temp_max": [
+          -4.0,
+          -12.0,
+          -8.0,
+          -7.0,
+          -2.0,
+          -6.0,
+          -8.0
+        ],
+        "daily_weather_code": [
+          73,
+          85,
+          71,
+          71,
+          85,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 8.3
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "二世谷联合雪场": {
+      "current": {
+        "temperature": -5.4,
+        "snow_24h": 6.1,
+        "snow_depth": 57.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.3,
+        "daily_snowfall": [
+          6.1,
+          1.1,
+          0.6,
+          0,
+          3.6,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -12.0,
+          -15.0,
+          -15.0,
+          -10.0,
+          -8.0,
+          -14.0,
+          -14.0
+        ],
+        "daily_temp_max": [
+          -4.0,
+          -12.0,
+          -8.0,
+          -6.0,
+          -0.0,
+          -6.0,
+          -8.0
+        ],
+        "daily_weather_code": [
+          71,
+          71,
+          71,
+          3,
+          73,
+          2,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.1
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "志贺高原": {
+      "current": {
+        "temperature": -0.4,
+        "snow_24h": 6.1,
+        "snow_depth": 4.0,
+        "weather_code": 0,
+        "weather_text": "晴天",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 6.3,
+        "daily_snowfall": [
+          6.1,
+          0,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -7.0,
+          -9.0,
+          -7.0,
+          -2.0,
+          -2.0,
+          -8.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -4.0,
+          0.0,
+          5.0,
+          4.0,
+          -2.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          75,
+          3,
+          0,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.1
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "喜乐乐雪世界": {
+      "current": {
+        "temperature": 3.3,
+        "snow_24h": 0.0,
+        "snow_depth": 47.0,
+        "weather_code": 61,
+        "weather_text": "小雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.3,
+        "daily_snowfall": [
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -0.0,
+          -2.0,
+          -1.0,
+          1.0,
+          3.0,
+          -1.0,
+          -0.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          -0.0,
+          2.0,
+          4.0,
+          8.0,
+          3.0,
+          3.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          85,
+          85,
+          61,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.3
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "野泽温泉": {
+      "current": {
+        "temperature": -0.2,
+        "snow_24h": 10.0,
+        "snow_depth": 2.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.3,
+        "daily_snowfall": [
+          10.0,
+          0.1,
+          0,
+          0,
+          0,
+          1.3,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -9.0,
+          -8.0,
+          -7.0,
+          -1.0,
+          -2.0,
+          -3.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -4.0,
+          null,
+          8.0,
+          12.0,
+          3.0,
+          7.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          1,
+          3,
+          2,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 10.0
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "GALA 汤泽": {
+      "current": {
+        "temperature": -0.9,
+        "snow_24h": 10.0,
+        "snow_depth": 20.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 18.4,
+        "daily_snowfall": [
+          10.0,
+          2.9,
+          0.2,
+          0,
+          0,
+          5.2,
+          0
+        ],
+        "daily_temp_min": [
+          -4.0,
+          -7.0,
+          -4.0,
+          -2.0,
+          -1.0,
+          -6.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -3.0,
+          0.0,
+          7.0,
+          9.0,
+          3.0,
+          4.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          71,
+          3,
+          3,
+          80,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 10.0
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "苗场": {
+      "current": {
+        "temperature": 0.3,
+        "snow_24h": 13.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 23.9,
+        "daily_snowfall": [
+          13.0,
+          5.0,
+          3.4,
+          0,
+          0,
+          2.4,
+          0
+        ],
+        "daily_temp_min": [
+          -4.0,
+          -7.0,
+          -4.0,
+          -2.0,
+          0.0,
+          -5.0,
+          -6.0
+        ],
+        "daily_temp_max": [
+          1.0,
+          -2.0,
+          1.0,
+          6.0,
+          9.0,
+          3.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          73,
+          3,
+          3,
+          85,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 13.0
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "妙高高原": {
+      "current": {
+        "temperature": 2.2,
+        "snow_24h": 10.2,
+        "snow_depth": 2.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.6,
+        "daily_snowfall": [
+          10.2,
+          0.1,
+          0,
+          0,
+          0,
+          1.3,
+          0
+        ],
+        "daily_temp_min": [
+          -4.0,
+          -8.0,
+          -7.0,
+          -6.0,
+          -1.0,
+          -3.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -2.0,
+          1.0,
+          8.0,
+          11.0,
+          2.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          3,
+          3,
+          2,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 10.2
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "草津温泉滑雪场": {
+      "current": {
+        "temperature": -2.9,
+        "snow_24h": 5.5,
+        "snow_depth": 3.0,
+        "weather_code": 0,
+        "weather_text": "晴天",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 5.6,
+        "daily_snowfall": [
+          5.5,
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -9.0,
+          -7.0,
+          -4.0,
+          -1.0,
+          -7.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -4.0,
+          1.0,
+          5.0,
+          6.0,
+          -0.0,
+          -3.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          1,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.5
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "白马五竜": {
+      "current": {
+        "temperature": 1.5,
+        "snow_24h": 0.8,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.8,
+        "daily_snowfall": [
+          0.8,
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -6.0,
+          -5.0,
+          -3.0,
+          -1.0,
+          -4.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          5.0,
+          4.0,
+          8.0,
+          10.0,
+          9.0,
+          3.0,
+          1.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          0,
+          1,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.8
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "藏王温泉": {
+      "current": {
+        "temperature": 2.5,
+        "snow_24h": 0.0,
+        "snow_depth": 12.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.3,
+        "daily_snowfall": [
+          0,
+          1.3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -5.0,
+          -5.0,
+          1.0,
+          0.0,
+          -2.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          -0.0,
+          3.0,
+          7.0,
+          10.0,
+          5.0,
+          4.0
+        ],
+        "daily_weather_code": [
+          53,
+          73,
+          3,
+          2,
+          2,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.3
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "白马栂池高原": {
+      "current": {
+        "temperature": 1.4,
+        "snow_24h": 1.1,
+        "snow_depth": 87.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.5,
+        "daily_snowfall": [
+          1.1,
+          0.1,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -6.0,
+          -4.0,
+          -0.0,
+          -8.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          2.0,
+          6.0,
+          9.0,
+          7.0,
+          0.0,
+          -0.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          0,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.1
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "佐幌度假村": {
+      "current": {
+        "temperature": -4.1,
+        "snow_24h": 12.5,
+        "snow_depth": 221.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 28.8,
+        "daily_snowfall": [
+          12.5,
+          2.7,
+          3.0,
+          2.5,
+          5.5,
+          2.6,
+          0
+        ],
+        "daily_temp_min": [
+          -12.0,
+          -15.0,
+          -15.0,
+          -11.0,
+          -7.0,
+          -15.0,
+          -16.0
+        ],
+        "daily_temp_max": [
+          -4.0,
+          -13.0,
+          -10.0,
+          -8.0,
+          -2.0,
+          -7.0,
+          -10.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          71,
+          71,
+          85,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 12.5
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "神居滑雪场": {
+      "current": {
+        "temperature": -2.5,
+        "snow_24h": 5.2,
+        "snow_depth": 61.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 13.0,
+        "daily_snowfall": [
+          5.2,
+          0.3,
+          2.6,
+          2.7,
+          1.3,
+          0.8,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -8.0,
+          -10.0,
+          -6.0,
+          -4.0,
+          -10.0,
+          -12.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -5.0,
+          -4.0,
+          -1.0,
+          4.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          85,
+          71,
+          85,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.2
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "旭岳滑雪场": {
+      "current": {
+        "temperature": -1.9,
+        "snow_24h": 2.6,
+        "snow_depth": 78.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.9,
+        "daily_snowfall": [
+          2.6,
+          0.1,
+          3.6,
+          1.8,
+          1.8,
+          1.9,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -8.0,
+          -9.0,
+          -6.0,
+          -4.0,
+          -10.0,
+          -14.0
+        ],
+        "daily_temp_max": [
+          null,
+          -5.0,
+          -4.0,
+          -2.0,
+          3.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          85,
+          85,
+          85,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 3.6
+      },
+      "updated_at": "2026-02-11 22:54"
+    },
+    "盘溪滑雪场": {
+      "current": {
+        "temperature": null,
+        "snow_24h": 2.7,
+        "snow_depth": 45.0,
+        "weather_code": 3,
+        "weather_text": "阴天",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 6.4,
+        "daily_snowfall": [
+          2.7,
+          0,
+          2.2,
+          0.1,
+          0,
+          1.1,
+          0.3
+        ],
+        "daily_temp_min": [
+          -7.0,
+          -9.0,
+          -11.0,
+          -8.0,
+          -3.0,
+          -7.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -5.0,
+          -2.0,
+          1.0,
+          6.0,
+          -3.0,
+          -1.0
+        ],
+        "daily_weather_code": [
+          71,
+          2,
+          71,
+          71,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.7
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "札幌国际滑雪场": {
+      "current": {
+        "temperature": 1.1,
+        "snow_24h": 1.9,
+        "snow_depth": 40.0,
+        "weather_code": 3,
+        "weather_text": "阴天",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 5.1,
+        "daily_snowfall": [
+          1.9,
+          0,
+          1.8,
+          0,
+          0,
+          0.1,
+          1.3
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -8.0,
+          -10.0,
+          -8.0,
+          -4.0,
+          -5.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -3.0,
+          -1.0,
+          1.0,
+          7.0,
+          -1.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          85,
+          2,
+          71,
+          45,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.9
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "二世谷安努普利": {
+      "current": {
+        "temperature": -2.1,
+        "snow_24h": 8.3,
+        "snow_depth": 97.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 16.5,
+        "daily_snowfall": [
+          8.3,
+          2.2,
+          2.0,
+          0.2,
+          3.4,
+          0.4,
+          0
+        ],
+        "daily_temp_min": [
+          -10.0,
+          -13.0,
+          -13.0,
+          -8.0,
+          -4.0,
+          -12.0,
+          -13.0
+        ],
+        "daily_temp_max": [
+          -2.0,
+          -10.0,
+          -6.0,
+          -5.0,
+          0.0,
+          -4.0,
+          -6.0
+        ],
+        "daily_weather_code": [
+          73,
+          85,
+          71,
+          71,
+          85,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 8.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "札幌手稻滑雪场": {
+      "current": {
+        "temperature": 0.5,
+        "snow_24h": 5.3,
+        "snow_depth": 58.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 10.1,
+        "daily_snowfall": [
+          5.3,
+          0,
+          2.7,
+          0,
+          0,
+          1.4,
+          0.7
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -7.0,
+          -7.0,
+          -4.0,
+          -1.0,
+          -5.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          1.0,
+          -5.0,
+          -3.0,
+          1.0,
+          6.0,
+          -2.0,
+          -0.0
+        ],
+        "daily_weather_code": [
+          85,
+          3,
+          71,
+          85,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "二世谷花园度假村": {
+      "current": {
+        "temperature": -4.9,
+        "snow_24h": 6.1,
+        "snow_depth": 57.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.3,
+        "daily_snowfall": [
+          6.1,
+          1.1,
+          0.6,
+          0,
+          3.6,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -12.0,
+          -14.0,
+          -14.0,
+          -10.0,
+          -7.0,
+          -13.0,
+          -14.0
+        ],
+        "daily_temp_max": [
+          -4.0,
+          -12.0,
+          -8.0,
+          -6.0,
+          0.0,
+          -5.0,
+          -7.0
+        ],
+        "daily_weather_code": [
+          71,
+          71,
+          71,
+          3,
+          73,
+          2,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "二世谷比罗夫": {
+      "current": {
+        "temperature": -4.0,
+        "snow_24h": 6.1,
+        "snow_depth": 57.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.3,
+        "daily_snowfall": [
+          6.1,
+          1.1,
+          0.6,
+          0,
+          3.6,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -11.0,
+          -13.0,
+          -13.0,
+          -9.0,
+          -6.0,
+          -12.0,
+          -13.0
+        ],
+        "daily_temp_max": [
+          -3.0,
+          -11.0,
+          -7.0,
+          -5.0,
+          1.0,
+          -4.0,
+          -6.0
+        ],
+        "daily_weather_code": [
+          71,
+          71,
+          71,
+          3,
+          73,
+          2,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "二世谷村滑雪场": {
+      "current": {
+        "temperature": -4.6,
+        "snow_24h": 6.1,
+        "snow_depth": 57.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.3,
+        "daily_snowfall": [
+          6.1,
+          1.1,
+          0.6,
+          0,
+          3.6,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -11.0,
+          -14.0,
+          -14.0,
+          -10.0,
+          -7.0,
+          -13.0,
+          -14.0
+        ],
+        "daily_temp_max": [
+          -4.0,
+          -12.0,
+          -7.0,
+          -5.0,
+          1.0,
+          -5.0,
+          -7.0
+        ],
+        "daily_weather_code": [
+          71,
+          71,
+          71,
+          3,
+          73,
+          2,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "朝里川温泉滑雪场": {
+      "current": {
+        "temperature": 3.3,
+        "snow_24h": 0.0,
+        "snow_depth": 47.0,
+        "weather_code": 61,
+        "weather_text": "小雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.3,
+        "daily_snowfall": [
+          0,
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -0.0,
+          -2.0,
+          -1.0,
+          1.0,
+          3.0,
+          -1.0,
+          -0.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          -0.0,
+          2.0,
+          4.0,
+          8.0,
+          3.0,
+          3.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          85,
+          85,
+          61,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "札幌藻岩山滑雪场": {
+      "current": {
+        "temperature": -0.8,
+        "snow_24h": 2.7,
+        "snow_depth": 45.0,
+        "weather_code": 3,
+        "weather_text": "阴天",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 6.4,
+        "daily_snowfall": [
+          2.7,
+          0,
+          2.2,
+          0.1,
+          0,
+          1.1,
+          0.3
+        ],
+        "daily_temp_min": [
+          -8.0,
+          -10.0,
+          -12.0,
+          -9.0,
+          -4.0,
+          -8.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          -1.0,
+          -6.0,
+          -3.0,
+          0.0,
+          5.0,
+          -4.0,
+          -1.0
+        ],
+        "daily_weather_code": [
+          71,
+          2,
+          71,
+          71,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.7
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "小樽天狗山滑雪场": {
+      "current": {
+        "temperature": 2.1,
+        "snow_24h": 0.1,
+        "snow_depth": 57.0,
+        "weather_code": 61,
+        "weather_text": "小雨",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 6.7,
+        "daily_snowfall": [
+          0.1,
+          0,
+          4.3,
+          0,
+          0,
+          2.0,
+          0.3
+        ],
+        "daily_temp_min": [
+          -4.0,
+          -7.0,
+          -7.0,
+          -5.0,
+          -2.0,
+          -4.0,
+          -6.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -4.0,
+          -2.0,
+          3.0,
+          6.0,
+          -1.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          86,
+          3,
+          85,
+          45,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 4.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马八方尾根": {
+      "current": {
+        "temperature": 0.9,
+        "snow_24h": 1.6,
+        "snow_depth": 87.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 2.0,
+        "daily_snowfall": [
+          1.6,
+          0.2,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -5.0,
+          -5.0,
+          -3.0,
+          -1.0,
+          -8.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          3.0,
+          7.0,
+          9.0,
+          6.0,
+          null,
+          -1.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          1,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.6
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马 47 滑雪场": {
+      "current": {
+        "temperature": 1.5,
+        "snow_24h": 0.8,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.8,
+        "daily_snowfall": [
+          0.8,
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -6.0,
+          -5.0,
+          -3.0,
+          -0.0,
+          -4.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          5.0,
+          4.0,
+          8.0,
+          10.0,
+          9.0,
+          3.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          0,
+          1,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.8
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "函馆七饭滑雪场": {
+      "current": {
+        "temperature": 2.6,
+        "snow_24h": 0.0,
+        "snow_depth": 23.0,
+        "weather_code": 55,
+        "weather_text": "大毛毛雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 5.7,
+        "daily_snowfall": [
+          0,
+          5.2,
+          0.3,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -7.0,
+          -6.0,
+          -1.0,
+          -0.0,
+          -3.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          -4.0,
+          2.0,
+          4.0,
+          7.0,
+          0.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          63,
+          75,
+          73,
+          3,
+          66,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.2
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马岩岳滑雪场": {
+      "current": {
+        "temperature": 1.4,
+        "snow_24h": 1.1,
+        "snow_depth": 87.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.5,
+        "daily_snowfall": [
+          1.1,
+          0.1,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -6.0,
+          -4.0,
+          -2.0,
+          -9.0,
+          -10.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          2.0,
+          6.0,
+          9.0,
+          5.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          0,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马鹿岛槍滑雪场": {
+      "current": {
+        "temperature": 0.3,
+        "snow_24h": 24.6,
+        "snow_depth": 2.0,
+        "weather_code": 51,
+        "weather_text": "小毛毛雨",
+        "snow_emoji": "❄️❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 25.8,
+        "daily_snowfall": [
+          24.6,
+          1.2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -9.0,
+          -7.0,
+          -5.0,
+          6.0,
+          -0.0,
+          -1.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -4.0,
+          -0.0,
+          9.0,
+          11.0,
+          6.0,
+          4.0
+        ],
+        "daily_weather_code": [
+          75,
+          73,
+          3,
+          3,
+          2,
+          61,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 24.6
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马 Sanosaka 滑雪场": {
+      "current": {
+        "temperature": -0.5,
+        "snow_24h": 9.3,
+        "snow_depth": 164.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 9.6,
+        "daily_snowfall": [
+          9.3,
+          0.1,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -8.0,
+          -6.0,
+          -3.0,
+          -2.0,
+          -9.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -2.0,
+          2.0,
+          6.0,
+          4.0,
+          -2.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          1,
+          1,
+          0,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 9.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马 Cortina 滑雪场": {
+      "current": {
+        "temperature": 1.4,
+        "snow_24h": 1.1,
+        "snow_depth": 87.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.5,
+        "daily_snowfall": [
+          1.1,
+          0.1,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -6.0,
+          -4.0,
+          -1.0,
+          -8.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          2.0,
+          6.0,
+          9.0,
+          6.0,
+          -0.0,
+          -1.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          0,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "斑尾高原滑雪场": {
+      "current": {
+        "temperature": 2.5,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 2.9,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.9,
+          0.1
+        ],
+        "daily_temp_min": [
+          1.0,
+          -3.0,
+          -3.0,
+          -2.0,
+          1.0,
+          -4.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          5.0,
+          6.0,
+          8.0,
+          10.0,
+          10.0,
+          3.0,
+          3.0
+        ],
+        "daily_weather_code": [
+          55,
+          51,
+          1,
+          3,
+          45,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.9
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "轻井泽王子滑雪场": {
+      "current": {
+        "temperature": 2.5,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          -1.0,
+          -3.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          2.0,
+          6.0,
+          10.0,
+          12.0,
+          6.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          61,
+          0,
+          0,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "车山高原滑雪场": {
+      "current": {
+        "temperature": -0.4,
+        "snow_24h": 7.9,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 8.3,
+        "daily_snowfall": [
+          7.9,
+          0,
+          0,
+          0,
+          0,
+          0.4,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -9.0,
+          -7.0,
+          -3.0,
+          -3.0,
+          -8.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -3.0,
+          1.0,
+          6.0,
+          6.0,
+          -2.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          75,
+          2,
+          1,
+          3,
+          1,
+          45,
+          48
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 7.9
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "白马乘鞍温泉滑雪场": {
+      "current": {
+        "temperature": -0.5,
+        "snow_24h": 9.3,
+        "snow_depth": 87.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 9.6,
+        "daily_snowfall": [
+          9.3,
+          0.1,
+          0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -8.0,
+          -6.0,
+          -3.0,
+          -0.0,
+          -8.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -2.0,
+          2.0,
+          7.0,
+          7.0,
+          0.0,
+          -0.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          1,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 9.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "竜王滑雪公园": {
+      "current": {
+        "temperature": 0.1,
+        "snow_24h": 10.2,
+        "snow_depth": 3.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 10.2,
+        "daily_snowfall": [
+          10.2,
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -10.0,
+          -8.0,
+          -7.0,
+          null,
+          -6.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -4.0,
+          -0.0,
+          5.0,
+          7.0,
+          1.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          2,
+          3,
+          0,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 10.2
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "黑姬高原滑雪场": {
+      "current": {
+        "temperature": -0.1,
+        "snow_24h": 15.1,
+        "snow_depth": 2.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 16.5,
+        "daily_snowfall": [
+          15.1,
+          0.6,
+          0,
+          0,
+          0,
+          0.8,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -8.0,
+          -5.0,
+          -6.0,
+          0.0,
+          -5.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          -0.0,
+          -2.0,
+          1.0,
+          6.0,
+          9.0,
+          2.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          75,
+          73,
+          2,
+          3,
+          1,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 15.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "菅平高原滑雪场": {
+      "current": {
+        "temperature": 4.0,
+        "snow_24h": 0.1,
+        "snow_depth": 2.0,
+        "weather_code": 2,
+        "weather_text": "多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.1,
+        "daily_snowfall": [
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -4.0,
+          -2.0,
+          -2.0,
+          -3.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          2.0,
+          6.0,
+          9.0,
+          11.0,
+          3.0,
+          5.0
+        ],
+        "daily_weather_code": [
+          71,
+          1,
+          0,
+          2,
+          45,
+          45,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "长野清里滑雪场": {
+      "current": {
+        "temperature": 3.4,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          2.0,
+          -2.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          4.0,
+          8.0,
+          11.0,
+          13.0,
+          5.0,
+          5.0
+        ],
+        "daily_weather_code": [
+          53,
+          0,
+          0,
+          3,
+          0,
+          45,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "汤泽高原滑雪场": {
+      "current": {
+        "temperature": -1.1,
+        "snow_24h": 13.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 22.4,
+        "daily_snowfall": [
+          12.9,
+          4.2,
+          0.8,
+          0,
+          0,
+          4.4,
+          0
+        ],
+        "daily_temp_min": [
+          -4.0,
+          -7.0,
+          -5.0,
+          -3.0,
+          -3.0,
+          -8.0,
+          -9.0
+        ],
+        "daily_temp_max": [
+          -1.0,
+          -3.0,
+          0.0,
+          4.0,
+          6.0,
+          0.0,
+          -1.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          73,
+          3,
+          3,
+          85,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 12.9
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "石打丸山滑雪场": {
+      "current": {
+        "temperature": 2.7,
+        "snow_24h": 11.8,
+        "snow_depth": 20.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 23.0,
+        "daily_snowfall": [
+          11.8,
+          4.6,
+          1.3,
+          0,
+          0,
+          5.2,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -4.0,
+          -2.0,
+          -4.0,
+          -7.0,
+          -12.0,
+          -14.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          0.0,
+          3.0,
+          6.0,
+          3.0,
+          -3.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          73,
+          3,
+          3,
+          80,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 11.8
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "舞子滑雪场": {
+      "current": {
+        "temperature": 2.0,
+        "snow_24h": 14.1,
+        "snow_depth": 3.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 24.4,
+        "daily_snowfall": [
+          14.1,
+          5.1,
+          2.2,
+          0,
+          0,
+          2.9,
+          0.1
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -6.0,
+          -4.0,
+          -2.0,
+          1.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -1.0,
+          2.0,
+          9.0,
+          12.0,
+          6.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          73,
+          3,
+          3,
+          80,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 14.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "上越国际滑雪场": {
+      "current": {
+        "temperature": 0.9,
+        "snow_24h": 0.0,
+        "snow_depth": 4.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          0.0,
+          -2.0,
+          -1.0,
+          -1.0,
+          4.0,
+          -0.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          5.0,
+          7.0,
+          10.0,
+          12.0,
+          6.0,
+          7.0
+        ],
+        "daily_weather_code": [
+          61,
+          53,
+          51,
+          3,
+          3,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "长野户隐滑雪场": {
+      "current": {
+        "temperature": 2.0,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 4.9,
+        "daily_snowfall": [
+          0,
+          0.3,
+          0,
+          0,
+          0,
+          4.5,
+          0.1
+        ],
+        "daily_temp_min": [
+          0.0,
+          -4.0,
+          -4.0,
+          -3.0,
+          -0.0,
+          -6.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          5.0,
+          7.0,
+          8.0,
+          8.0,
+          1.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          55,
+          73,
+          1,
+          3,
+          45,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 4.5
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "岩原滑雪场": {
+      "current": {
+        "temperature": 3.2,
+        "snow_24h": 7.6,
+        "snow_depth": 3.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 15.1,
+        "daily_snowfall": [
+          7.6,
+          4.6,
+          2.8,
+          0,
+          0,
+          0.1,
+          0.1
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -3.0,
+          -1.0,
+          -1.0,
+          2.0,
+          -0.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          2.0,
+          4.0,
+          10.0,
+          12.0,
+          7.0,
+          7.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          73,
+          3,
+          3,
+          80,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 7.6
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "汤泽中里滑雪场": {
+      "current": {
+        "temperature": -0.6,
+        "snow_24h": 6.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.5,
+        "daily_snowfall": [
+          6.0,
+          1.8,
+          0.1,
+          0,
+          0,
+          3.7,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -6.0,
+          -4.0,
+          -1.0,
+          -0.0,
+          -5.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -2.0,
+          2.0,
+          7.0,
+          8.0,
+          3.0,
+          1.0
+        ],
+        "daily_weather_code": [
+          75,
+          73,
+          71,
+          3,
+          3,
+          85,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 6.0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "藤野FU'S滑雪场": {
+      "current": {
+        "temperature": 0.5,
+        "snow_24h": 3.8,
+        "snow_depth": 92.0,
+        "weather_code": 61,
+        "weather_text": "小雨",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.5,
+        "daily_snowfall": [
+          3.8,
+          0,
+          4.3,
+          0.2,
+          0,
+          2.3,
+          0.8
+        ],
+        "daily_temp_min": [
+          -7.0,
+          -9.0,
+          -9.0,
+          -6.0,
+          -3.0,
+          -6.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          0.0,
+          -6.0,
+          -3.0,
+          -0.0,
+          5.0,
+          -3.0,
+          -2.0
+        ],
+        "daily_weather_code": [
+          85,
+          85,
+          85,
+          71,
+          3,
+          71,
+          71
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 4.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "长野蓼科高原滑雪场": {
+      "current": {
+        "temperature": 4.8,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 2,
+        "weather_text": "多云",
+        "snow_emoji": "⛅"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -5.0,
+          -4.0,
+          -4.0,
+          -0.0,
+          -2.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          5.0,
+          5.0,
+          7.0,
+          10.0,
+          12.0,
+          4.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          53,
+          2,
+          0,
+          2,
+          45,
+          45,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "MEIHO滑雪场": {
+      "current": {
+        "temperature": -0.8,
+        "snow_24h": 3.3,
+        "snow_depth": 4.0,
+        "weather_code": 75,
+        "weather_text": "大雪",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 3.3,
+        "daily_snowfall": [
+          3.3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -4.0,
+          -3.0,
+          -0.0,
+          -1.0,
+          -2.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          2.0,
+          4.0,
+          9.0,
+          11.0,
+          7.0,
+          5.0
+        ],
+        "daily_weather_code": [
+          75,
+          3,
+          1,
+          45,
+          45,
+          3,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 3.3
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "富士见丽景度假村": {
+      "current": {
+        "temperature": -0.6,
+        "snow_24h": 0.1,
+        "snow_depth": 1.0,
+        "weather_code": 2,
+        "weather_text": "多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.1,
+        "daily_snowfall": [
+          0.1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -4.0,
+          -1.0,
+          1.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          3.0,
+          6.0,
+          11.0,
+          12.0,
+          9.0,
+          7.0
+        ],
+        "daily_weather_code": [
+          71,
+          1,
+          0,
+          1,
+          0,
+          3,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "LOTTE乐天新井度假村": {
+      "current": {
+        "temperature": 0.6,
+        "snow_24h": 11.4,
+        "snow_depth": 2.0,
+        "weather_code": 0,
+        "weather_text": "晴天",
+        "snow_emoji": "❄️❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 12.9,
+        "daily_snowfall": [
+          11.4,
+          0.1,
+          0,
+          0,
+          0,
+          1.4,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -5.0,
+          -3.0,
+          -1.0,
+          1.0,
+          -5.0,
+          -6.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          0.0,
+          3.0,
+          6.0,
+          9.0,
+          3.0,
+          3.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          2,
+          3,
+          45,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 11.4
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "赤仓观光度假滑雪场": {
+      "current": {
+        "temperature": 1.7,
+        "snow_24h": 2.8,
+        "snow_depth": 2.0,
+        "weather_code": 0,
+        "weather_text": "晴天",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 5.0,
+        "daily_snowfall": [
+          2.8,
+          0.1,
+          0,
+          0,
+          0,
+          2.1,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -5.0,
+          -4.0,
+          -1.0,
+          -2.0,
+          -8.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          3.0,
+          4.0,
+          6.0,
+          6.0,
+          0.0,
+          -0.0
+        ],
+        "daily_weather_code": [
+          73,
+          71,
+          2,
+          3,
+          45,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.8
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "琵琶湖Valley滑雪场": {
+      "current": {
+        "temperature": 5.8,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 51,
+        "weather_text": "小毛毛雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          5.0,
+          3.0,
+          4.0,
+          4.0,
+          4.0,
+          -0.0,
+          -0.0
+        ],
+        "daily_temp_max": [
+          8.0,
+          8.0,
+          9.0,
+          11.0,
+          13.0,
+          6.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          61,
+          3,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "神立高原滑雪场": {
+      "current": {
+        "temperature": 2.2,
+        "snow_24h": 1.0,
+        "snow_depth": 4.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 11.7,
+        "daily_snowfall": [
+          1.0,
+          3.6,
+          1.5,
+          0,
+          0,
+          5.6,
+          0.1
+        ],
+        "daily_temp_min": [
+          -0.0,
+          -3.0,
+          -1.0,
+          -2.0,
+          1.0,
+          -3.0,
+          -4.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          2.0,
+          5.0,
+          8.0,
+          10.0,
+          5.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          73,
+          75,
+          73,
+          3,
+          3,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.6
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "六甲山滑雪场": {
+      "current": {
+        "temperature": 5.3,
+        "snow_24h": 0.0,
+        "snow_depth": 29.0,
+        "weather_code": 53,
+        "weather_text": "毛毛雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          4.0,
+          2.0,
+          1.0,
+          -0.0,
+          -1.0,
+          -2.0,
+          -3.0
+        ],
+        "daily_temp_max": [
+          7.0,
+          9.0,
+          8.0,
+          10.0,
+          9.0,
+          4.0,
+          5.0
+        ],
+        "daily_weather_code": [
+          63,
+          2,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "高鹫SNOWPARK滑雪场": {
+      "current": {
+        "temperature": -0.6,
+        "snow_24h": 9.1,
+        "snow_depth": 6.0,
+        "weather_code": 75,
+        "weather_text": "大雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 9.1,
+        "daily_snowfall": [
+          9.1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -5.0,
+          -5.0,
+          -3.0,
+          1.0,
+          -1.0,
+          -1.0
+        ],
+        "daily_temp_max": [
+          4.0,
+          2.0,
+          4.0,
+          10.0,
+          12.0,
+          8.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          75,
+          3,
+          1,
+          2,
+          2,
+          3,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 9.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "富士山YETI滑雪场": {
+      "current": {
+        "temperature": 1.2,
+        "snow_24h": 0.0,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌤️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 2.1,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2.1
+        ],
+        "daily_temp_min": [
+          -2.0,
+          -3.0,
+          -4.0,
+          -0.0,
+          -2.0,
+          -1.0,
+          -2.0
+        ],
+        "daily_temp_max": [
+          6.0,
+          2.0,
+          6.0,
+          7.0,
+          7.0,
+          6.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          63,
+          3,
+          0,
+          2,
+          0,
+          3,
+          77
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.1
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "玉原滑雪公园": {
+      "current": {
+        "temperature": 0.2,
+        "snow_24h": 1.8,
+        "snow_depth": 1.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 3.7,
+        "daily_snowfall": [
+          1.8,
+          0.6,
+          0,
+          0,
+          0,
+          1.3,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -6.0,
+          -3.0,
+          -1.0,
+          1.0,
+          -4.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          1.0,
+          -1.0,
+          3.0,
+          7.0,
+          9.0,
+          2.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          73,
+          73,
+          2,
+          3,
+          2,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.8
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "箱馆山滑雪场": {
+      "current": {
+        "temperature": 3.4,
+        "snow_24h": 0.0,
+        "snow_depth": 23.0,
+        "weather_code": 53,
+        "weather_text": "毛毛雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 0.0,
+        "daily_snowfall": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          3.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0,
+          3.0
+        ],
+        "daily_temp_max": [
+          6.0,
+          6.0,
+          8.0,
+          13.0,
+          14.0,
+          9.0,
+          7.0
+        ],
+        "daily_weather_code": [
+          63,
+          51,
+          1,
+          2,
+          2,
+          80,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 0
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "安比高原滑雪场": {
+      "current": {
+        "temperature": -1.7,
+        "snow_24h": 1.5,
+        "snow_depth": 136.0,
+        "weather_code": 2,
+        "weather_text": "多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 3.9,
+        "daily_snowfall": [
+          1.5,
+          0.7,
+          0.6,
+          0,
+          0,
+          1.1,
+          0
+        ],
+        "daily_temp_min": [
+          -6.0,
+          -7.0,
+          -9.0,
+          -4.0,
+          1.0,
+          -5.0,
+          -7.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -1.0,
+          2.0,
+          5.0,
+          4.0,
+          0.0,
+          -1.0
+        ],
+        "daily_weather_code": [
+          73,
+          73,
+          73,
+          3,
+          3,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.5
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "丸沼高原滑雪场": {
+      "current": {
+        "temperature": -2.8,
+        "snow_24h": 5.5,
+        "snow_depth": 2.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 5.7,
+        "daily_snowfall": [
+          5.5,
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -8.0,
+          -11.0,
+          -8.0,
+          -6.0,
+          -3.0,
+          -7.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          -2.0,
+          -7.0,
+          -1.0,
+          4.0,
+          6.0,
+          -1.0,
+          -3.0
+        ],
+        "daily_weather_code": [
+          75,
+          71,
+          2,
+          3,
+          1,
+          3,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.5
+      },
+      "updated_at": "2026-02-11 22:55"
+    },
+    "猪苗代滑雪场": {
+      "current": {
+        "temperature": -0.2,
+        "snow_24h": 0.8,
+        "snow_depth": 12.0,
+        "weather_code": 0,
+        "weather_text": "晴天",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.8,
+        "daily_snowfall": [
+          0.8,
+          1.0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -5.0,
+          -5.0,
+          1.0,
+          2.0,
+          -0.0,
+          -1.0
+        ],
+        "daily_temp_max": [
+          1.0,
+          -1.0,
+          2.0,
+          10.0,
+          12.0,
+          7.0,
+          6.0
+        ],
+        "daily_weather_code": [
+          73,
+          73,
+          2,
+          2,
+          3,
+          80,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.0
+      },
+      "updated_at": "2026-02-11 22:56"
+    },
+    "雫石滑雪场": {
+      "current": {
+        "temperature": -0.4,
+        "snow_24h": 5.4,
+        "snow_depth": 78.0,
+        "weather_code": 71,
+        "weather_text": "小雪",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 9.9,
+        "daily_snowfall": [
+          5.4,
+          2.2,
+          2.0,
+          0,
+          0,
+          0.2,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -7.0,
+          -7.0,
+          -2.0,
+          2.0,
+          -6.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          1.0,
+          -2.0,
+          0.0,
+          4.0,
+          5.0,
+          2.0,
+          0.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          75,
+          85,
+          3,
+          71,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 5.4
+      },
+      "updated_at": "2026-02-11 22:56"
+    },
+    "GRANDECO滑雪度假村": {
+      "current": {
+        "temperature": -1.1,
+        "snow_24h": 2.2,
+        "snow_depth": 12.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "🌨️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 4.1,
+        "daily_snowfall": [
+          2.2,
+          1.8,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -5.0,
+          -8.0,
+          -6.0,
+          -2.0,
+          -0.0,
+          -2.0,
+          -3.0
+        ],
+        "daily_temp_max": [
+          -1.0,
+          -4.0,
+          -1.0,
+          8.0,
+          10.0,
+          5.0,
+          5.0
+        ],
+        "daily_weather_code": [
+          73,
+          73,
+          3,
+          3,
+          3,
+          80,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 2.2
+      },
+      "updated_at": "2026-02-11 22:56"
+    },
+    "八甲田滑雪场": {
+      "current": {
+        "temperature": -1.8,
+        "snow_24h": 5.3,
+        "snow_depth": 28.0,
+        "weather_code": 3,
+        "weather_text": "阴天",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 19.2,
+        "daily_snowfall": [
+          5.3,
+          11.5,
+          2.2,
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "daily_temp_min": [
+          -8.0,
+          -9.0,
+          -9.0,
+          -4.0,
+          -0.0,
+          -8.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          -1.0,
+          -6.0,
+          -2.0,
+          5.0,
+          7.0,
+          -0.0,
+          1.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          75,
+          3,
+          3,
+          85,
+          85
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 11.5
+      },
+      "updated_at": "2026-02-11 22:56"
+    },
+    "森吉山阿仁滑雪场": {
+      "current": {
+        "temperature": 1.0,
+        "snow_24h": 0.0,
+        "snow_depth": 21.0,
+        "weather_code": 51,
+        "weather_text": "小毛毛雨",
+        "snow_emoji": "🌧️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 1.5,
+        "daily_snowfall": [
+          0,
+          1.5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "daily_temp_min": [
+          -3.0,
+          -4.0,
+          -7.0,
+          -4.0,
+          1.0,
+          -3.0,
+          -5.0
+        ],
+        "daily_temp_max": [
+          2.0,
+          -1.0,
+          3.0,
+          6.0,
+          8.0,
+          1.0,
+          2.0
+        ],
+        "daily_weather_code": [
+          63,
+          75,
+          61,
+          80,
+          80,
+          85,
+          3
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 1.5
+      },
+      "updated_at": "2026-02-11 22:56"
+    },
+    "八海山滑雪场": {
+      "current": {
+        "temperature": 2.6,
+        "snow_24h": 8.6,
+        "snow_depth": 2.0,
+        "weather_code": 1,
+        "weather_text": "晴间多云",
+        "snow_emoji": "❄️"
+      },
+      "forecast": {
+        "total_7day_snowfall": 17.3,
+        "daily_snowfall": [
+          8.6,
+          4.3,
+          0,
+          0,
+          0,
+          4.4,
+          0
+        ],
+        "daily_temp_min": [
+          -1.0,
+          -4.0,
+          -2.0,
+          0.0,
+          1.0,
+          -6.0,
+          -8.0
+        ],
+        "daily_temp_max": [
+          3.0,
+          1.0,
+          4.0,
+          6.0,
+          8.0,
+          2.0,
+          3.0
+        ],
+        "daily_weather_code": [
+          75,
+          75,
+          3,
+          3,
+          3,
+          85,
+          45
+        ],
+        "daily_dates": [
+          "2026-02-11",
+          "2026-02-12",
+          "2026-02-13",
+          "2026-02-14",
+          "2026-02-15",
+          "2026-02-16",
+          "2026-02-17"
+        ],
+        "max_day_snowfall": 8.6
+      },
+      "updated_at": "2026-02-11 22:56"
+    }
+  }
+}

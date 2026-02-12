@@ -1,0 +1,45 @@
+# 忽略不需要提交的文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv
+*/venv/
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# 忽略临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 忽略敏感信息
+.env
+.env.local
+.env.production
+secrets.json
+*.pem
+*.key
+.claude/
+
+# 保留 .env.example 作为模板
+!.env.example
+
+# 忽略大文件
+*.zip
+*.tar.gz
+
+# scraper (已删除)
+# scraper/venv/
+
+# 保留这些文件
+!index.html
+!resort_details_full.json
+!forecast_7day.json
+!resort_detail_*.html

@@ -1,0 +1,1864 @@
+{
+  "updated_at": "2026-02-08 00:56:08",
+  "total_resorts": 71,
+  "resorts": [
+    {
+      "resort_name": "二世谷联合雪场",
+      "english_name": "Niseko United",
+      "japanese_name": "ニセコユナイテッド",
+      "address": "北海道虻田郡倶知安町ニセコひらふ 1 条 2 丁目 9 番 1 号",
+      "website": "https://www.niseko.ne.jp/",
+      "coordinates": "142.8694,42.8247",
+      "ticket_prices": {
+        "one_day_adult": "¥8,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "粉雪天花板，进阶玩家天堂，网红餐厅 / 温泉扎堆；踩雷：旺季人挤、物价高、住宿贵",
+      "highlights": "308-1308m，76 雪道，粉雪量 15m+",
+      "night_skiing_info": "有；Grand Hirafu 区 ¥3,500，时间 17:00-22:00（12.13-3.22）",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：Niseko United Shuttle（https://www.niseko.ne.jp/access/shuttle/），免费，倶知安站→雪场 40min；新千岁机场→雪场巴士（https://www.niseko.ne.jp/access/bus/），成人 ¥3,000，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→二世谷直达巴士（NSD / 北海道 Access Network）\n\n【备选交通】JR 倶知安站→免费接驳车（分区域）\n\n【耗时/票价】2.6h/¥6600（在线）\n\n【购票渠道】① NSD 官网；② 机场国内线 1 楼 NDS 柜台\n\n【乘车点】新千岁 T2-1F 4 号站台（地面有 “Niseko” 字样）\n\n【末班车】二世谷→新千岁：18:00/19:30（旺季加开）\n\n【行李/儿童规则】雪板放车身侧面专用架，28 寸箱可入行李舱；儿童 3-11 岁 ¥5500，婴儿免费（需带护照）",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 10,
+        "snow_emoji": "❄️❄️",
+        "weather_text": "中雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "hero_image": "https://www.niseko.ne.jp/en/wp-content/uploads/2026/01/NU_Janblog_5.jpg",
+      "weather_url": "https://www.niseko.ne.jp/en/niseko-lift-status/",
+      "live_camera": "https://www.niseko.ne.jp/en/livecamera/",
+      "trail_map": "https://www.niseko.ne.jp/en/map/",
+      "ticket_url": "https://www.niseko.ne.jp/en/online-liftpass/",
+      "transport_page": "https://www.niseko.ne.jp/en/niseko/niseko-access/",
+      "trail_map_image": "https://www.niseko.ne.jp/en/wp-content/uploads/2026/02/2025-2026_WEBMAP_EG-1-scaled.jpg",
+      "sub_resorts": [
+        {
+          "name": "ANNUPURI",
+          "name_cn": "安努普利",
+          "description": "最安静的区域，适合中高级滑雪者"
+        },
+        {
+          "name": "NISEKO VILLAGE",
+          "name_cn": "二世谷村",
+          "description": "高端度假村区域，有希尔顿酒店"
+        },
+        {
+          "name": "GRAND HIRAFU",
+          "name_cn": "比罗夫",
+          "description": "最热闹的区域，餐厅酒吧最多，有夜场"
+        },
+        {
+          "name": "HANAZONO",
+          "name_cn": "花园",
+          "description": "最新开发区域，亲子友好，有地形公园"
+        }
+      ]
+    },
+    {
+      "resort_name": "富良野滑雪场",
+      "english_name": "Furano Ski Resort",
+      "japanese_name": "富良野スキー場",
+      "address": "北海道富良野市字中御料 356-1",
+      "website": "https://www.princehotels.co.jp/ski/furano/",
+      "coordinates": "142.4072,43.4575",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "内陆干粉雪质稳定，雪道宽缓新手友好，人少不挤；王子酒店配套完善，《北国之恋》取景地",
+      "highlights": "235-1209m，18雪道，王子酒店直通，《北国之恋》取景地",
+      "night_skiing_info": "无",
+      "transport": "最近机场：旭川机场；JR 站：JR 富良野站；公交：Hokkaido Access Network巴士（https://www.access-n.jp/winter2025/en/skibus/），成人 ¥500，20min；旭川机场→富良野站巴士 ¥1,200，1h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→富良野直达巴士（北海道 Access Network）\n\n【备选交通】旭川机场→富良野巴士（旭川巴士）\n\n【JR路线】旭川站→JR富良野站（富良野线）→接驳巴士20min到雪场\n\n【自驾】新千岁机场→富良野约150km；旭川机场→富良野约50km\n\n【耗时/票价】3h/¥7500；1h/¥1200；1h10min/¥1290；2.5h自驾；1h自驾\n\n【购票渠道】① access-n.jp（3 天前 18:00 截止）；② 旭川机场 1 楼巴士柜台\n\n【乘车点】新千岁国内线 1 楼北海道度假村巴士柜台；旭川机场 1 楼 2 号站台；JR旭川站；新千岁机场租车柜台；旭川机场租车柜台",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 7,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "hero_image": "https://www.princehotels.com/en/ski/furano/img/p06.jpg",
+      "weather_url": "https://www.princehotels.co.jp/ski/furano/informations/snowreport",
+      "live_camera": "https://www.princehotels.co.jp/ski/furano/livecamera/",
+      "trail_map": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+      "ticket_url": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+      "transport_page": "https://www.princehotels.co.jp/ski/furano/winter/access/",
+      "trail_map_image": "https://www.princehotels.co.jp/image.jsp?id=496562"
+    },
+    {
+      "resort_name": "留寿都度假村",
+      "english_name": "Rusutsu Resort",
+      "japanese_name": "留寿都リゾート",
+      "address": "北海道虻田郡留寿都村泉川 13 番地",
+      "website": "https://rusutsu.com/",
+      "coordinates": "142.7978,42.9289",
+      "ticket_prices": {
+        "one_day_adult": "¥7,700",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "亲子友好天花板，有游乐园 / 温泉，三峰雪道适配全水平；夸：雪质好、配套全，适合家庭游",
+      "highlights": "400-994m，37 雪道，三峰相连",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：留寿都接驳巴士（https://rusutsu.com/），新千岁机场→雪场 ¥5,500（在线预约 ¥5,000），1.5h；倶知安站→雪场 ¥1,200，40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→留寿都直达巴士（bigruns）\n耗时 2h / ¥5000（在线）/ ¥5500（现场）\n\n【备选交通】JR 倶知安站→留寿都巴士\n耗时 40min / ¥1,200\n\n【购票渠道】① 留寿都官网（7 天前 24:00 截止）；② 机场 T1-2F bigruns 柜台\n\n【乘车点】新千岁 T1-2F 5 号站台（黄色 Rusutsu 旗帜）\n\n【末班车】留寿都→新千岁：17:30/19:00\n\n【行李/儿童规则】支持银联；车内有中文播报 + 充电口；司机帮忙固定雪板，无需自备绑带",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 2,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 2,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "hero_image": "https://rusutsu.com/wp-content/uploads/freedom-park_4.jpg",
+      "live_camera": "https://rusutsu.com/live-mountain-cams/",
+      "trail_map": "https://rusutsu.com/trail-map/",
+      "ticket_url": "https://rusutsu.com/winter-lift-tickets/",
+      "transport_page": "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
+      "weather_url": "https://rusutsu.com/snow-and-weather-report/",
+      "trail_map_image": "https://rusutsu.com/wp-content/uploads/trail-map-winter.jpg"
+    },
+    {
+      "resort_name": "星野 TOMAMU 度假村",
+      "english_name": "Hoshino Resorts TOMAMU",
+      "japanese_name": "星野リゾートトマム",
+      "address": "北海道勇払郡占冠村中トマム 079-2204",
+      "website": "https://www.snowtomamu.jp/",
+      "coordinates": "142.4869,43.3406",
+      "ticket_prices": {
+        "one_day_adult": "¥7,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "网红冰城 / 雾凇平台出片，亲子设施拉满，粉雪优质；踩雷：旺季房间难订、餐饮偏贵",
+      "highlights": "450-1239m，29 雪道，雾凇平台 + 冰城",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 南千岁站；公交：星野 TOMAMU 巴士（https://www.snowtomamu.jp/bus_25w/index_zh.html），新千岁机场→雪场 ¥6,000，1.5h；南千岁站→度假村接驳巴士免费（需预约），30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→TOMAMU 直达巴士（星野 Resorts）\n\n【备选交通】JR 南千岁站→免费接驳车（需邮件预约）\n\n【耗时/票价】1.5h/¥6000（非住客）；住客免费\n\n【购票渠道】① 酒店入住备注（住客）；② 星野 TOMAMU 官网（非住客）\n\n【乘车点】新千岁 T2-1F 3 号站台（蓝色 “TOMAMU” 标识）\n\n【末班车】TOMAMU→新千岁：18:30/20:00\n\n【行李/儿童规则】儿童 7 岁以下免费（需登记出生日期 + 带护照）；下车后有工作人员帮拿行李",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:49"
+      },
+      "hero_image": "https://www.snowtomamu.jp/assets/ski/images/home/pic04.jpg",
+      "weather_url": "https://www.snowtomamu.jp/winter/ski/ski-slope/condition/",
+      "trail_map": "https://www.snowtomamu.jp/assets/ski/pdf/areamap/map2526-jp.pdf",
+      "ticket_url": "https://www.snowtomamu.jp/winter/ski/ticket/",
+      "live_camera": "--",
+      "transport_page": "https://www.snowtomamu.jp/winter/access/"
+    },
+    {
+      "resort_name": "喜乐乐雪世界",
+      "english_name": "Kiroro Ski Resort",
+      "japanese_name": "キロロスキーリゾート",
+      "address": "北海道积丹郡余市町字喜乐乐",
+      "website": "https://www.kiroro.co.jp/ja/",
+      "coordinates": "140.9058,43.3256",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "北海道性价比之王，降雪量超 20 米，新手友好；夸：人少、雪道宽，札幌 1h 可达",
+      "highlights": "570-1180m，23 雪道，年降雪 20m+",
+      "night_skiing_info": "有；¥2,900，时间 16:30-20:00（12.13-4.5）",
+      "transport": "最近机场：新千岁机场；JR 站：JR 小樽站；公交：JR 小樽站→雪场巴士，¥1,800，40min；札幌站→雪场 ¥2,000，1h（详见官网 https://www.kiroro.co.jp/ja/）",
+      "images": [],
+      "transport_detailed": "暂无详细交通信息",
+      "weather_data": {
+        "temperature": -11,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "hero_image": "https://www.kiroro.co.jp/wp-content/webp-express/webp-images/uploads/2019/01/kiroro_peak_E122_001-1.jpeg.webp",
+      "trail_map": "https://www.kiroro.co.jp/ja/guide_map/",
+      "ticket_url": "https://webstore.kiroro.co.jp/JP/",
+      "transport_page": "https://www.kiroro.co.jp/ja/access-winter/",
+      "live_camera": "https://www.kiroro.co.jp/ja/livecamera/",
+      "weather_url": "https://www.kiroro.co.jp/ja/dashboard/"
+    },
+    {
+      "resort_name": "志贺高原",
+      "english_name": "Shiga Kogen Ski Resort",
+      "japanese_name": "志賀高原スキー場",
+      "address": "长野县下高井郡山之内町志贺高原",
+      "website": "https://resv.shigakogen.gr.jp/",
+      "coordinates": "138.5817,36.6569",
+      "ticket_prices": {
+        "one_day_adult": "¥7,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "冬奥会赛场，18 雪场互通，雪季至 5 月初，雪道多；夸：进阶友好，温泉配套全",
+      "highlights": "1300-2307m，84 雪道，雪季至 5 月",
+      "night_skiing_info": "有；熊之汤区域 ¥3,000，时间 18:30-21:00（指定日期）",
+      "transport": "最近机场：长野机场；JR 站：JR 长野站；公交：Alpico 巴士（https://www.alpico.co.jp/），长野站→雪场 ¥2,000，1h；信浓大町站→雪场 ¥1,000，30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】长野站→Alpico 巴士（直达中央 / 熊之汤）\n\n【耗时/票价】1h/¥2000\n\n【购票渠道】① Alpico 官网；② 长野站 2 楼 Alpico 巴士总站 1 号窗口\n\n【乘车点】长野站 2 楼 Alpico 巴士总站 1 号站台（橙色车身）\n\n【末班车】志贺高原→长野：18:00\n\n【行李/儿童规则】可买 “巴士 + 18 雪场通票”（¥9800/3 天）；有中文工作人员，雪场间免费接驳",
+      "weather_data": {
+        "temperature": -11,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 1,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "hero_image": "https://www.shigakogen.gr.jp/manage/wp-content/themes/shiga_dx/assets/renew/img/pages/miryoku/winter-message2.jpg",
+      "trail_map": "https://skg.jcld.jp/app/shigakogen_navigator/#/",
+      "transport_page": "https://www.shigakogen.gr.jp/access/index.html",
+      "ticket_url": "https://resv.shigakogen.gr.jp/",
+      "live_camera": "https://www.shigakogen.gr.jp/live/index.html",
+      "weather_url": "https://www.shigakogen.gr.jp/lift_information/"
+    },
+    {
+      "resort_name": "野泽温泉",
+      "english_name": "Nozawa Onsen Ski Resort",
+      "japanese_name": "野沢温泉スキー場",
+      "address": "长野县下高井郡野泽温泉村",
+      "website": "https://www.nozawa-onsen.com/",
+      "coordinates": "138.4872,36.7569",
+      "ticket_prices": {
+        "one_day_adult": "¥7,300",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "滑雪 + 温泉双核心，小镇氛围浓，粉雪优质；夸：性价比高，适合多日深度游",
+      "highlights": "565-1650m，44 雪道，温泉小镇 + 粉雪",
+      "night_skiing_info": "有；¥2,500，时间 18:00-21:00（12.20-3.20）",
+      "transport": "最近机场：长野机场；JR 站：JR 饭山线野泽温泉站；公交：野泽温泉站→雪场步行 5min；长野站→雪场巴士（https://www.nozawa-onsen.com/），¥2,500，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】长野站→长野巴士中心→野泽温泉巴士\n\n【耗时/票价】1.5h/¥2500\n\n【购票渠道】长野巴士中心 3 号站台窗口\n\n【乘车点】长野站北出口步行 5 分钟至巴士中心 3 号站台（红色 “野沢温泉” 标识）\n\n【末班车】野泽温泉→长野：16:30\n\n【行李/儿童规则】巴士票含雪场地图；部分民宿提供 “车站→民宿” 免费接驳，需提前 1 天联系",
+      "weather_data": {
+        "temperature": -6,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "苗场",
+      "english_name": "Naeba Ski Resort",
+      "japanese_name": "苗場スキー場",
+      "address": "新潟县南鱼沼市苗场",
+      "website": "https://www.princehotels.com/ski/naeba/",
+      "coordinates": "138.9375,36.9214",
+      "ticket_prices": {
+        "one_day_adult": "¥7,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "与神乐互通缆车，日本最长缆车，雪道多；夸：中高级友好，粉雪好；踩雷：周末人多",
+      "highlights": "450-1947m，28 雪道，互通缆车 + 粉雪",
+      "night_skiing_info": "有；¥3,000，时间 16:30-21:00（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：JR 东日本巴士（https://www.jreast.co.jp/），越后汤泽站→雪场 ¥1,000，25min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 25min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→王子巴士中心→苗场巴士\n\n【耗时/票价】25min/¥1000\n\n【购票渠道】王子巴士中心 1 号窗口\n\n【乘车点】越后汤泽站东出口右转 100 米至王子巴士中心（红色 “苗场スキー場” 标识）\n\n【末班车】苗场→越后汤泽：18:30\n\n【行李/儿童规则】可买 “苗场 + 神乐通票”（¥9000）含两雪场缆车 + 往返巴士；末班车后无打车点",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "GALA 汤泽",
+      "english_name": "GALA Yuzawa Ski Resort",
+      "japanese_name": "ガーラ湯沢スキー場",
+      "address": "新潟县南鱼沼市汤泽",
+      "website": "https://gala.co.jp/winter/",
+      "coordinates": "139.0389,36.9422",
+      "ticket_prices": {
+        "one_day_adult": "¥7,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "东京打工人单日往返天花板，新干线站直连，步行 2min；夸：交通无敌，新手友好",
+      "highlights": "275-1045m，21 雪道，新干线直达",
+      "night_skiing_info": "有；¥2,800，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR GALA 汤泽站；公交：无（JR 站步行 2min）；新潟机场→JR 越后汤泽站巴士 ¥1,800，1h，再转新干线至 GALA 汤泽站 10min，票价 ¥800",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】东京→JR GALA 汤泽站新干线（自由席）\n\n【耗时/票价】1h10min/¥4130\n\n【购票渠道】① JR 东日本官网；② 东京站绿色窗口\n\n【乘车点】东京站新干线 13 号站台（E2 系车身有 “GALA 汤泽” 贴纸）\n\n【末班车】GALA 汤泽→东京：21:00\n\n【行李/儿童规则】买 “新干线 + 一日券” 联票（¥5800）省 ¥1000；出站左转 50 米上扶梯即到缆车口",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      },
+      "transport_page": "https://gala.co.jp/winter/access/",
+      "ticket_url": "https://gala.co.jp/winter/buylift/",
+      "trail_map": "https://gala.co.jp/winter/gelande#c_a1",
+      "live_camera": "https://gala.co.jp/winter/livecam-central/",
+      "weather_url": "https://tenki.jp/season/ski/4/18/13155/",
+      "trail_map_image": "https://gala.co.jp/winter/cmsw/wp-content/themes/gala_bs_1909-1/img/mainmenu/mbt_gelande0.jpg"
+    },
+    {
+      "resort_name": "神乐",
+      "english_name": "Kagura Ski Resort",
+      "japanese_name": "神楽スキー場",
+      "address": "新潟县南鱼沼市神乐",
+      "website": "https://www.princehotels.co.jp/ski/kagura/",
+      "coordinates": "138.9875,36.9542",
+      "ticket_prices": {
+        "one_day_adult": "¥7,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "降雪量超 14 米，树道体验绝，与苗场通票；夸：粉雪不输北海道，进阶首选",
+      "highlights": "650-2000m，31 雪道，树道 + 粉雪 14m+",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：JR 东日本巴士（https://www.jreast.co.jp/），越后汤泽站→雪场 ¥1,500，40min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→神乐巴士（王子巴士）\n\n【耗时/票价】40min/¥1500\n\n【购票渠道】王子巴士中心 2 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 2 号窗口（黄色 “神乐” 标识）\n\n【末班车】神乐→越后汤泽：17:30（旺季加开 18:30）\n\n【行李/儿童规则】巴士班次少，错过需等 1.5h；与苗场有互通缆车",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "妙高高原",
+      "english_name": "Myoko Kogen Ski Resort",
+      "japanese_name": "妙高高原スキー場",
+      "address": "新潟县妙高市",
+      "website": "https://www.myoko.tv/",
+      "coordinates": "138.4833,36.8500",
+      "ticket_prices": {
+        "one_day_adult": "¥7,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "新潟性价比之王，5 大区域互通，人少雪好；夸：新手 / 进阶都适配，温泉配套全",
+      "highlights": "350-1645m，48 雪道，5 区互通 + 温泉",
+      "night_skiing_info": "有；¥2,500，时间 17:00-20:30（12.10-3.20）",
+      "transport": "最近机场：新潟机场；JR 站：JR 妙高高原站；公交：妙高巴士，妙高高原站→雪场 ¥800，20min；新潟机场→妙高高原站巴士 ¥1,500，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 妙高高原站→Myoko Kotsu 巴士\n\n【耗时/票价】20min/¥800\n\n【购票渠道】站外 2 号站台自动售票机\n\n【乘车点】妙高高原站东出口 2 号站台（绿色 “Myoko Kotsu” 标识）\n\n【末班车】妙高→妙高高原站：18:00\n\n【行李/儿童规则】可买 “妙高全域交通卡”（¥2000/3 天），无限坐雪场间巴士；支持 Suica",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "草津温泉滑雪场",
+      "english_name": "Kusatsu Ski Resort",
+      "japanese_name": "草津温泉スキー場",
+      "address": "群马县吾妻郡草津町",
+      "website": "https://www.932-onsen.com/winter/top",
+      "coordinates": "138.6458,36.7167",
+      "ticket_prices": {
+        "one_day_adult": "¥7,400",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "温泉封神，雪季至 5 月，雪道缓；夸：滑雪 + 泡汤一站式，亲子友好；踩雷：交通稍远",
+      "highlights": "1200-2174m，18 雪道，温泉 + 长雪季",
+      "night_skiing_info": "无",
+      "transport": "最近机场：东京羽田机场；JR 站：JR 长野原草津口站；公交：群马巴士，长野原草津口站→雪场 ¥1,200，40min；羽田机场→长野原草津口站巴士 ¥5,000，3h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 长野原草津口站→群马巴士→草津滑雪场\n\n【耗时/票价】40min/¥1200\n\n【购票渠道】站台自动售票机（现金 / Suica）\n\n【乘车点】长野原草津口站西出口 2 号站台（绿色 “群马巴士” 标识）\n\n【末班车】草津→长野原草津口：17:00\n\n【行李/儿童规则】买 “巴士 + 滑雪 + 温泉” 联票（¥2500）省 ¥800；28 寸箱需寄存车站（¥800 / 天）",
+      "weather_data": {
+        "temperature": -10,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 1,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "藏王温泉",
+      "english_name": "Zao Onsen Ski Resort",
+      "japanese_name": "蔵王温泉スキー場 中央ゲレンデ",
+      "address": "山形县山形市蔵王温泉 990-2301",
+      "website": "http://www.zao-ski.or.jp/",
+      "coordinates": "140.4017,38.1705",
+      "ticket_prices": {
+        "one_day_adult": "¥7,600",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "树冰网红打卡天花板，滑雪 + 树冰 + 温泉；夸：出片率高，雪质好；踩雷：旺季树冰区人挤",
+      "highlights": "450-1666m，28 雪道，树冰 + 温泉",
+      "night_skiing_info": "有；¥2,700，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：山形机场；JR 站：JR 藏王站；公交：山形巴士，藏王站→雪场 ¥900，30min；山形机场→藏王站巴士 ¥800，30min，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】山形机场→藏王站巴士→藏王雪场巴士\n\n【备选交通】JR 山形站→藏王雪场巴士\n\n【耗时/票价】30min+30min/¥800+¥900；1h/¥1500\n\n【购票渠道】① 山形机场 1 楼 1 号站台；② 山形站东出口 3 号站台\n\n【乘车点】山形机场 1 楼 1 号站台；山形站东出口 3 号站台（红色 “藏王温泉” 标识）\n\n【末班车】藏王→山形：18:30（树冰季加开 19:00）\n\n【行李/儿童规则】山路易积雪，巴士晚点 10-20 分钟，提前到站等",
+      "weather_data": {
+        "temperature": -11,
+        "snow_24h": 2,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 1,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://zaomountainresort.com/parking/",
+      "ticket_url": "https://zaomountainresort.com/chrage/",
+      "trail_map": "https://zaomountainresort.com/gerende/",
+      "live_camera": "https://zaomountainresort.com/live-camera-ski/",
+      "weather_url": "https://zaomountainresort.com/area-information/"
+    },
+    {
+      "resort_name": "白马五竜",
+      "english_name": "Hakuba Goryu Ski Resort",
+      "japanese_name": "エイブル白馬五竜スキー場",
+      "address": "长野县北安昙郡白马村神城 22184-10",
+      "website": "https://www.hakubagoryu.com/",
+      "coordinates": "137.9333,36.6167",
+      "ticket_prices": {
+        "one_day_adult": "¥7,300",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马地区新手友好天花板，雪道宽缓，人少；夸：性价比高，适合入门练手",
+      "highlights": "650-1830m，21 雪道，新手友好 + 宽雪道",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥600，15min；长野机场→白马站巴士 ¥1,500，1h，再转公交 15min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】长野机场→Alpico 巴士→白马站→五竜公交\n\n【耗时/票价】4h/¥8000；1h+15min/¥1500+¥600\n\n【购票渠道】① JAM JAM LINER 官网；② 长野机场 1 楼 Alpico 柜台\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；长野机场 1 楼 2 号站台\n\n【末班车】五竜→白马站：18:00\n\n【行李/儿童规则】冬季限定直达，需提前预约；错过末班车打车约 ¥2000；儿童 6 岁以下免费需抱坐",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "白马栂池高原",
+      "english_name": "Hakuba Tsugaike Ski Resort",
+      "japanese_name": "白馬栂池高原スキー場",
+      "address": "长野县北安昙郡白马村大字栂池",
+      "website": "https://www.tsugaike.gr.jp/",
+      "coordinates": "137.8833,36.6333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,400",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马超长雪道代表，雪季至 5 月，中高级友好；夸：视野绝，雪质稳定",
+      "highlights": "950-2353m，24 雪道，长雪道 + 雪季至 5 月",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥800，20min；长野机场→白马站巴士 ¥1,500，1h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "暂无详细交通信息",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "札幌手稻滑雪场",
+      "english_name": "Sapporo Teine Ski Resort",
+      "japanese_name": "札幌手稲スキー場",
+      "address": "北海道札幌市手稻区手稻本町 298-1",
+      "website": "https://sapporo-teine.com/snow/",
+      "coordinates": "141.2769,43.1833",
+      "ticket_prices": {
+        "one_day_adult": "¥6,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "札幌市区 30min 可达，冬奥会赛场；夸：交通方便，性价比高；踩雷：雪道偏短，旺季人多",
+      "highlights": "340-1023m，21 雪道，市区近 + 冬奥会场地",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 手稻站；公交：札幌市营巴士，手稻站→雪场 ¥300，15min；新千岁机场→札幌站巴士 ¥1,000，1h，再转市营巴士 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】札幌站→市营 26 路巴士\n\n【耗时/票价】28min/¥300\n\n【购票渠道】巴士内自动售票机（投币 / Suica）\n\n【乘车点】札幌站南出口巴士总站 3 号站台（电子屏显示 “手稲スキー場行”）\n\n【末班车】手稻→札幌：18:30\n\n【行李/儿童规则】6 岁以下免费，无儿童座椅；错过末班车打车约 ¥4000",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "佐幌度假村",
+      "english_name": "Sahoro Resort",
+      "japanese_name": "サホロリゾート",
+      "address": "北海道上川郡上川町サホロ",
+      "website": "https://sahoro-resort.com/",
+      "coordinates": "143.0500,43.6500",
+      "ticket_prices": {
+        "one_day_adult": "¥7,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "北海道小众宝藏，人少雪好，亲子设施全；夸：配套完善，适合放空游；踩雷：交通稍远",
+      "highlights": "460-1060m，20 雪道，亲子友好 + 晴天率 70%",
+      "night_skiing_info": "无",
+      "transport": "最近机场：旭川机场；JR 站：JR 上川站；公交：佐幌接驳巴士（https://sahoro-resort.com/winter/），上川站→雪场 ¥1,000，30min；旭川机场→上川站巴士 ¥800，40min，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】旭川机场→上川站巴士→佐幌接驳车\n\n【备选交通】JR 上川站→佐幌接驳车（需预约）\n\n【耗时/票价】1h+30min/¥1800；30min / 免费\n\n【购票渠道】① 旭川巴士官网；② Sahoro 官网\n\n【乘车点】旭川机场 1 楼 2 号站台；上川站东出口接驳车点\n\n【末班车】佐幌→上川：17:00\n\n【行李/儿童规则】接驳车需提前 1 天预约；车内有儿童安全座椅",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 4,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 2,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://sahoro-resort.com/access",
+      "ticket_url": "https://sahoro.axess.shop/ja/Products/Tickets/",
+      "trail_map": "https://sahoro-resort.com/winter/ski/course-info",
+      "live_camera": "https://sahoro-resort.com/winter/live-camera-24",
+      "weather_url": "https://sahoro-resort.com/winter/ski"
+    },
+    {
+      "resort_name": "神居滑雪场",
+      "english_name": "Kamui Ski Links",
+      "japanese_name": "カムイスキーリンクス",
+      "address": "北海道旭川市神居町",
+      "website": "https://www.kamui-skilinks.com/",
+      "coordinates": "142.4667,43.7500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "旭川周边首选，粉雪优质，人少；夸：性价比高，适合周边游；踩雷：雪道数量偏少",
+      "highlights": "260-940m，15 雪道，粉雪 + 旭川近郊",
+      "night_skiing_info": "无",
+      "transport": "最近机场：旭川机场；JR 站：JR 旭川站；公交：旭川巴士，旭川站→雪场 ¥800，40min；旭川机场→旭川站巴士 ¥300，20min，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】旭川站→神居巴士（旭川巴士）\n\n【耗时/票价】40min/¥800\n\n【购票渠道】旭川巴士中心 4 号站台\n\n【乘车点】旭川站东出口步行 5 分钟至巴士中心 4 号站台（绿色 “神居” 标识）\n\n【末班车】神居→旭川：16:00\n\n【行李/儿童规则】巴士只停 “神居スキー場前” 1 站；有免费停车场",
+      "weather_data": {
+        "temperature": -6,
+        "snow_24h": 9,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://www.kamui-skilinks.com/accsess/",
+      "ticket_url": "https://kamuiski.axess.shop/",
+      "trail_map": "https://www.kamui-skilinks.com/today/#coursemap",
+      "live_camera": "https://powdercam.net/app/show.php?serial_number=00000000ab91a18b",
+      "weather_url": "https://www.kamui-skilinks.com/today/",
+      "trail_map_image": "https://www.kamui-skilinks.com/wp/wp-content/themes/Circles/images/course-image2024.webp"
+    },
+    {
+      "resort_name": "旭岳滑雪场",
+      "english_name": "Asahidake Ski Resort",
+      "japanese_name": "旭岳スキー場",
+      "address": "北海道上川郡上川町旭岳",
+      "website": "http://asahidake.hokkaido.jp/ja/",
+      "coordinates": "142.7833,43.8333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "北海道雪季最长（至 6 月），火山雪景震撼；夸：小众出片，雪质好；注意：海拔高，需坐缆车上山，注意保暖",
+      "highlights": "1100-1600m，12 雪道，火山景观 + 长雪季",
+      "night_skiing_info": "无",
+      "transport": "最近机场：旭川机场；JR 站：JR 上川站；公交：旭川巴士，上川站→雪场 ¥1,500，1h；旭川机场→上川站巴士 ¥300，20min，再转公交 1h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】上川站→旭岳巴士（旭川巴士）\n\n【耗时/票价】1h/¥1500\n\n【购票渠道】旭川巴士中心 5 号站台\n\n【乘车点】上川站东出口步行 3 分钟至巴士中心 5 号站台（红色 “旭岳” 标识）\n\n【末班车】旭岳→上川：15:00\n\n【行李/儿童规则】巴士票含缆车费（¥2000 / 人）；冬季需自带防寒装备",
+      "weather_data": {
+        "temperature": -15,
+        "snow_24h": 15,
+        "snow_emoji": "❄️❄️",
+        "weather_text": "中雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "札幌国际滑雪场",
+      "english_name": "Sapporo Kokusai Ski Resort",
+      "japanese_name": "札幌国際スキー場",
+      "address": "北海道札幌市南区定山溪温泉",
+      "website": "http://www.sapporo-kokusai.jp/cn/",
+      "coordinates": "141.5000,42.9500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,300",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "札幌市区 1h 内，雪道宽缓，亲子友好；夸：性价比高，适合家庭游；踩雷：雪质略逊于手稻",
+      "highlights": "630-1100m，18 雪道，市区近 + 亲子友好",
+      "night_skiing_info": "有；¥2,000，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：新千岁机场；JR 站：JR 札幌站；公交：札幌市营巴士，札幌站→雪场 ¥800，1h；新千岁机场→札幌站巴士 ¥1,000，1h，再转市营巴士 1h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】札幌站→定山溪巴士\n\n【耗时/票价】1h/¥800\n\n【购票渠道】札幌站北出口 2 号站台柜台\n\n【乘车点】札幌站北出口 2 号站台（蓝色 “定山溪” 标识）\n\n【末班车】定山溪→札幌：17:30\n\n【行李/儿童规则】适合白天滑雪；可顺路玩定山溪温泉，巴士站有温泉馆指示牌",
+      "weather_data": {
+        "temperature": -11,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "盘溪滑雪场",
+      "english_name": "Sapporo Bankei Ski Area",
+      "japanese_name": "札幌盤溪スキー場",
+      "address": "北海道札幌市中央区盘溪",
+      "website": "http://www.bankei.co.jp/multilingual/s_chinese.html",
+      "coordinates": "141.3500,43.0500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "札幌市区最近雪场（20min），夜场天花板；夸：交通无敌，适合下班后滑；踩雷：雪道短，人多",
+      "highlights": "320-440m，8 雪道，市区最近 + 夜场友好",
+      "night_skiing_info": "有；¥1,800，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：新千岁机场；JR 站：JR 札幌站；公交：札幌市营巴士，札幌站→雪场 ¥300，20min；新千岁机场→札幌站巴士 ¥1,000，1h，再转市营巴士 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】札幌站→市营 5 路巴士\n\n【耗时/票价】20min/¥300\n\n【购票渠道】巴士内投币（不找零）\n\n【乘车点】札幌站中央出口 1 号站台（红色 “盤渓スキー場” 标识）\n\n【末班车】盘溪→札幌：21:30（夜场运营到 21:00）\n\n【行李/儿童规则】站台有电子屏显示实时班次",
+      "weather_data": {
+        "temperature": -11,
+        "snow_24h": 2,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "札幌藻岩山滑雪场",
+      "english_name": "Sapporo Moiwayama Ski",
+      "japanese_name": "札幌藻岩山スキー場",
+      "address": "北海道札幌市中央区藻岩山",
+      "website": "https://sapporo-moiwa.jp/",
+      "coordinates": "141.3167,43.0333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "札幌夜景 + 滑雪双体验，小众；夸：出片率高，人少；注意：雪道偏陡，更适合中高级滑雪者",
+      "highlights": "290-531m，10 雪道，夜景 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 札幌站；公交：札幌市营巴士，札幌站→雪场 ¥500，30min；新千岁机场→札幌站巴士 ¥1,000，1h，再转市营巴士 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】札幌站→市营 39 路巴士\n\n【耗时/票价】30min/¥500\n\n【购票渠道】巴士内投币（支持 Suica）\n\n【乘车点】札幌站南出口 5 号站台（绿色 “藻岩山” 标识）\n\n【末班车】藻岩山→札幌：20:00（适合看夜景滑雪）\n\n【行李/儿童规则】巴士只到缆车口，需坐缆车到雪场（缆车 ¥1500 / 人）",
+      "weather_data": {
+        "temperature": -12,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 1,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "二世谷安努普利",
+      "english_name": "Niseko Annupuri Ski Resort",
+      "japanese_name": "ニセコアンヌプリスキー場",
+      "address": "北海道虻田郡倶知安町ニセコアンヌプリ",
+      "website": "https://annupuri.info/",
+      "coordinates": "142.8333,42.8333",
+      "ticket_prices": {
+        "one_day_adult": "¥8,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "二世谷最小众区域，人少雪好；夸：进阶友好，粉雪优质；踩雷：配套稍少",
+      "highlights": "480-1308m，15 雪道，小众 + 粉雪",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：Niseko United Shuttle（https://www.niseko.ne.jp/access/shuttle/），免费，倶知安站→雪场 45min；新千岁机场→雪场巴士 ¥3,000，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→二世谷直达巴士（NSD）\n\n【备选交通】JR 倶知安站→安努普利免费接驳车\n\n【耗时/票价】2.6h/¥6600；45min / 免费\n\n【购票渠道】① NSD 官网；② 倶知安站东出口蓝色牌子处\n\n【乘车点】新千岁 T2-1F 4 号站台；倶知安站东出口蓝色牌子处\n\n【末班车】安努普利→倶知安：18:00\n\n【行李/儿童规则】接驳车需扫码登记（Niseko Annupuri 公众号）；下车点近缆车口",
+      "weather_data": {
+        "temperature": -10,
+        "snow_24h": 8,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://annupuri.info/",
+      "ticket_url": "https://annupuri.bookfast.jp/public/landing/ja/shop.html",
+      "trail_map": "https://annupuri.info/gelande/",
+      "weather_url": "https://www.niseko.ne.jp/ja/niseko-lift-status/#tag_annupuri",
+      "trail_map_image": "https://annupuri.info/gelande/img/gelande_map.webp"
+    },
+    {
+      "resort_name": "二世谷花园度假村",
+      "english_name": "Niseko Hanazono Ski Resort",
+      "japanese_name": "ニセコハナゾノスキー場",
+      "address": "北海道虻田郡倶知安町ニセコハナゾノ",
+      "website": "https://hanazononiseko.com/",
+      "coordinates": "142.8500,42.8167",
+      "ticket_prices": {
+        "one_day_adult": "¥8,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "二世谷亲子友好区域，雪道缓；夸：适合家庭，配套完善；踩雷：旺季人挤",
+      "highlights": "308-1170m，12 雪道，亲子友好 + 新缆车",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：Niseko United Shuttle（https://www.niseko.ne.jp/access/shuttle/），免费，倶知安站→雪场 35min；新千岁机场→雪场巴士 ¥3,000，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→二世谷直达巴士（NSD）\n\n【备选交通】JR 倶知安站→花园接驳车\n\n【耗时/票价】2.6h/¥6600；35min/¥500\n\n【购票渠道】① NSD 官网；② 倶知安站东出口绿色牌子处\n\n【乘车点】新千岁 T2-1F 4 号站台；倶知安站东出口绿色牌子处\n\n【末班车】花园→倶知安：18:30\n\n【行李/儿童规则】接驳车支持微信支付；有中文工作人员",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 8,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://hanazononiseko.com/en/winter/resort/access",
+      "ticket_url": "https://hanazononiseko.com/en/winter/resort/lift-tickets",
+      "trail_map": "https://hanazononiseko.com/en/winter/resort/maps",
+      "live_camera": "https://hanazononiseko.com/en/winter/resort/live-camera",
+      "weather_url": "https://hanazononiseko.com/en/winter/resort/weather",
+      "trail_map_image": "https://cdn.hanazononiseko.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1UxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9b1732f66f8576b012cc8440975336ad90dd273f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdERG9MWm05eWJXRjBPZ2xxY0dWbk9oUnpZVzF3YkdsdVoxOW1ZV04wYjNKSklnbzBPakk2TUFZNkJrVlVPZ3B6ZEhKcGNGUTZEbWx1ZEdWeWJHRmpaVWtpQ1VwUVJVY0dPd2hVT2c5amIyeHZjbk53WVdObFNTSUpjMUpIUWdZN0NGUTZESEYxWVd4cGRIbHBWVG9VY21WemFYcGxYM1J2WDJ4cGJXbDBXd2RwQWtBR2FRSkFCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--00af911dca67b1e1e9227acf33d706adb97ce918/2025-2026_WEBMAP_EG.jpg"
+    },
+    {
+      "resort_name": "二世谷比罗夫",
+      "english_name": "Niseko Grand Hirafu",
+      "japanese_name": "ニセコグランドヒラフ",
+      "address": "北海道虻田郡倶知安町ニセコひらふ",
+      "website": "https://www.grand-hirafu.jp/",
+      "coordinates": "142.8833,42.8250",
+      "ticket_prices": {
+        "one_day_adult": "¥8,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "二世谷最热闹区域，配套最全，网红店多；夸：吃喝玩乐一站式；踩雷：人最多，物价高",
+      "highlights": "308-1200m，20 雪道，配套全 + 网红聚集",
+      "night_skiing_info": "有；¥3,500，时间 17:00-22:00（12.13-3.22）",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：Niseko United Shuttle（https://www.niseko.ne.jp/access/shuttle/），免费，倶知安站→雪场 30min；新千岁机场→雪场巴士 ¥3,000，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→二世谷直达巴士（NSD）\n\n【备选交通】JR 倶知安站→比罗夫免费接驳车\n\n【耗时/票价】2.6h/¥6600；30min / 免费\n\n【购票渠道】① NSD 官网；② 倶知安站东出口橙色牌子处\n\n【乘车点】新千岁 T2-1F 4 号站台；倶知安站东出口橙色牌子处\n\n【末班车】比罗夫→倶知安：19:00（旺季加开）\n\n【行李/儿童规则】接驳车有行李架，可放雪板",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 8,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://www.grand-hirafu.jp/access/",
+      "ticket_url": "https://www.grand-hirafu.jp/tickets/",
+      "trail_map": "https://www.grand-hirafu.jp/maps/",
+      "live_camera": "https://www.grand-hirafu.jp/livecam/",
+      "weather_url": "https://weather.jldn-info.jp/Weather/index.html?key=28ReUOF6KZjGJP"
+    },
+    {
+      "resort_name": "二世谷村滑雪场",
+      "english_name": "Niseko Village Ski Resort",
+      "japanese_name": "ニセコヴィレッジスキー場",
+      "address": "北海道虻田郡倶知安町ニセコヴィレッジ",
+      "website": "https://www.niseko-village.com/",
+      "coordinates": "142.8167,42.8333",
+      "ticket_prices": {
+        "one_day_adult": "¥8,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "二世谷高端区域，人少景美，酒店高端；夸：私密性好，雪质佳；踩雷：价格贵",
+      "highlights": "350-1250m，18 雪道，高端 + 私密",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 倶知安站；公交：Niseko Village 接驳巴士（https://www.niseko-village.com/），倶知安站→雪场 ¥1,000，40min；新千岁机场→雪场巴士 ¥3,200，1.5h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】新千岁机场→二世谷直达巴士（NSD）\n\n【备选交通】JR 倶知安站→村滑雪场巴士\n\n【耗时/票价】2.6h/¥6600；40min/¥1000\n\n【购票渠道】① NSD 官网；② 倶知安站东出口巴士柜台\n\n【乘车点】新千岁 T2-1F 4 号站台；倶知安站东出口巴士柜台\n\n【末班车】村滑雪场→倶知安：17:30\n\n【行李/儿童规则】巴士直达酒店门口；可买 “巴士 + 住宿” 套餐",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 8,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "weather_code": 71,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://www.niseko-village.com/getting-here/",
+      "ticket_url": "https://www.niseko.ne.jp/en/niseko-lift-status/",
+      "live_camera": "https://www.niseko-village.com/ja/nisekovillage/webcam/",
+      "weather_url": "https://openweathermap.org/city/6941783"
+    },
+    {
+      "resort_name": "朝里川温泉滑雪场",
+      "english_name": "Asarigawa Onsen Ski Resort",
+      "japanese_name": "朝里川温泉スキー場",
+      "address": "北海道积丹郡积丹町朝里川",
+      "website": "https://asari-ski.com/",
+      "coordinates": "140.7833,43.3500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,600",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "札幌周边小众，滑雪 + 温泉，人少；夸：性价比高，适合放松；踩雷：雪道数量少",
+      "highlights": "400-1000m，12 雪道，温泉 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 积丹站；公交：积丹巴士，积丹站→雪场 ¥500，20min；新千岁机场→积丹站巴士 ¥1,500，1.5h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】积丹站→朝里川巴士（积丹巴士）\n\n【耗时/票价】20min/¥500\n\n【购票渠道】积丹巴士中心 1 号站台\n\n【乘车点】积丹站东出口步行 3 分钟至巴士中心 1 号站台（蓝色 “朝里川” 标识）\n\n【末班车】朝里川→积丹：16:00\n\n【行李/儿童规则】巴士班次少，建议提前查时刻表（Shakotan Kotsu 官网）",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "小樽天狗山滑雪场",
+      "english_name": "Otaru Tenguyama Ski Resort",
+      "japanese_name": "小樽天狗山スキー場",
+      "address": "北海道小樽市天狗山",
+      "website": "https://tenguyama.ckk.chuo-bus.co.jp/",
+      "coordinates": "140.9833,43.1833",
+      "ticket_prices": {
+        "one_day_adult": "¥6,400",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "滑雪 + 小樽夜景双 buff，网红打卡点；夸：出片率高，适合短途游；注意：雪道较短，更适合新手和观光",
+      "highlights": "300-532m，9 雪道，夜景 + 短途游",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新千岁机场；JR 站：JR 小樽站；公交：小樽市营巴士，小樽站→雪场 ¥300，15min；新千岁机场→小樽站 JR¥1,000，1h，再转公交 15min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】小樽站→市营 2 路巴士\n\n【耗时/票价】15min/¥300\n\n【购票渠道】巴士内投币（支持 Suica）\n\n【乘车点】小樽站中央出口 3 号站台（蓝色 “天狗山” 标识）\n\n【末班车】天狗山→小樽：17:30\n\n【行李/儿童规则】可买 “巴士 + 缆车” 联票（¥800）；适合白天滑雪 + 晚上逛小樽运河",
+      "weather_data": {
+        "temperature": -6,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "函馆七饭滑雪场",
+      "english_name": "Hakodate Nanae Ski Resort",
+      "japanese_name": "函館七飯スキー場",
+      "address": "北海道函馆市七饭町",
+      "website": "https://hakodate-nanae.jp/",
+      "coordinates": "140.5000,41.8500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,700",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "函馆周边首选，人少雪好，海景滑雪；夸：小众宝藏，出片；踩雷：交通稍远，雪季短",
+      "highlights": "450-1050m，14 雪道，海景 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：函馆机场；JR 站：JR 七饭站；公交：函馆巴士，七饭站→雪场 ¥400，15min；函馆机场→七饭站巴士 ¥800，40min，再转公交 15min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】函馆站→七饭巴士\n\n【耗时/票价】1h/¥1200\n\n【购票渠道】函馆巴士中心 2 号站台\n\n【乘车点】函馆站南出口步行 5 分钟至巴士中心 2 号站台（红色 “七飯スキー場” 标识）\n\n【末班车】七饭→函馆：16:00\n\n【行李/儿童规则】巴士停 “七飯スキー場前” 站，步行 5min 到入口；雪场有海景雪道",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 2,
+        "updated_at": "2026-02-07 16:08"
+      }
+    },
+    {
+      "resort_name": "白马八方尾根",
+      "english_name": "Hakuba Happo-one Ski Resort",
+      "japanese_name": "白馬八方尾根スキー場",
+      "address": "长野县北安昙郡白马村大字八方",
+      "website": "https://www.happo-one.jp/",
+      "coordinates": "137.9167,36.6333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马地区顶流，雪道多，视野绝；夸：进阶友好，雪季至 5 月；踩雷：旺季人多",
+      "highlights": "750-2050m，37 雪道，雪道多 + 长雪季",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥500，10min（步行 5-10min）；长野机场→白马站巴士 ¥1,500，1h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】长野站→Alpico 特快巴士→白马八方巴士总站\n\n【耗时/票价】4h/¥8000；1h15min/¥2000\n\n【购票渠道】① JAM JAM LINER 官网；② 长野站 2 楼 Alpico 巴士总站\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；长野站 2 楼 1 号站台\n\n【末班车】八方尾根→长野：17:30\n\n【行李/儿童规则】直达巴士停靠 “八方 Info” 站，步行 5min 到缆车口；Alpico 巴士支持 Suica",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:08"
+      },
+      "transport_page": "https://www.happo-one.jp/access",
+      "ticket_url": "https://www.happo-one.jp/ticket/onlineticket",
+      "trail_map": "https://www.happo-one.jp/gelande",
+      "live_camera": "https://www.happo-one.jp/gelande/livecamera",
+      "weather_url": "https://www.happo-one.jp/gelande/condition",
+      "trail_map_image": "https://www.happo-one.jp/wp2019/wp-content/themes/happo-one2020/img/gelande/index/image01.jpg"
+    },
+    {
+      "resort_name": "白马 47 滑雪场",
+      "english_name": "Hakuba 47 Ski Resort",
+      "japanese_name": "白馬 47 スキー場",
+      "address": "长野县北安昙郡白马村神城",
+      "website": "https://www.hakuba47.co.jp/",
+      "coordinates": "137.9500,36.6167",
+      "ticket_prices": {
+        "one_day_adult": "¥7,400",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马网红雪场，树道体验好，人少；夸：出片率高，中高级友好；注意：部分雪道偏陡，适合进阶滑雪者",
+      "highlights": "800-1800m，20 雪道，树道 + 网红打卡",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥700，25min；长野机场→白马站巴士 ¥1,500，1h，再转公交 25min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】白马站→47 公交（Alpico）\n\n【耗时/票价】4h/¥8000；25min/¥700\n\n【购票渠道】① JAM JAM LINER 官网；② Alpico 3 号站台\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；白马站 Alpico 3 号站台\n\n【末班车】47 滑雪场→白马站：18:30\n\n【行李/儿童规则】公交支持 Suica；雪场树道多，适合中高级滑雪者",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "白马 Cortina 滑雪场",
+      "english_name": "Hakuba Cortina Ski Resort",
+      "japanese_name": "白馬コルティーナスキー場",
+      "address": "长野县北安昙郡白马村大字北城",
+      "website": "https://www.hakubacortina.com/",
+      "coordinates": "137.8667,36.6333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马小众宝藏，雪道宽缓，人少；夸：新手友好，性价比高；踩雷：配套稍简",
+      "highlights": "700-1750m，16 雪道，新手友好 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥900，40min；长野机场→白马站巴士 ¥1,500，1h，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】白马站→Cortina 公交（Alpico）\n\n【耗时/票价】4h/¥8000；40min/¥900\n\n【购票渠道】① JAM JAM LINER 官网；② Alpico 4 号站台\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；白马站 Alpico 4 号站台\n\n【末班车】Cortina→白马站：17:00\n\n【行李/儿童规则】公交末班车 16:30，错过需打车（¥3000 / 车）；新手雪道占比 70%",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "白马岩岳滑雪场",
+      "english_name": "Hakuba Iwatake Ski Resort",
+      "japanese_name": "白馬岩岳スキー場",
+      "address": "长野县北安昙郡白马村大字岩岳",
+      "website": "https://iwatake-mountain-resort.com/winter/",
+      "coordinates": "137.9000,36.6500",
+      "ticket_prices": {
+        "one_day_adult": "¥7,300",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马公园滑雪天花板，道具多，单板友好；夸：玩公园首选，人少；踩雷：新手慎选",
+      "highlights": "850-1850m，14 雪道，公园滑雪 + 单板友好",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥600，20min；长野机场→白马站巴士 ¥1,500，1h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】白马站→岩岳公交（Alpico）\n\n【耗时/票价】4h/¥8000；20min/¥600\n\n【购票渠道】① JAM JAM LINER 官网；② Alpico 2 号站台\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；白马站 Alpico 2 号站台\n\n【末班车】岩岳→白马站：18:00\n\n【行李/儿童规则】雪场公园道具多，单板友好；公交站有 “岩岳スキー場” 绿色标识",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 3,
+        "snow_emoji": "❄️",
+        "weather_text": "小雪",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "白马乘鞍温泉滑雪场",
+      "english_name": "Hakuba Norikura Onsen Ski Resort",
+      "japanese_name": "白馬乗鞍温泉スキー場",
+      "address": "长野县北安昙郡白马村大字乘鞍",
+      "website": "https://www.hakubavalley.com/ja/ski_resort/hakuba_norikura_onsen/",
+      "coordinates": "137.8333,36.6667",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "滑雪 + 温泉，白马小众，人少；夸：性价比高，适合放松；踩雷：雪道数量偏少",
+      "highlights": "780-1800m，12 雪道，温泉 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥1,000，30min；长野机场→白马站巴士 ¥1,500，1h，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】名古屋中部机场→白马直达巴士（JAM JAM LINER）\n\n【备选交通】白马站→乘鞍公交（Alpico）\n\n【耗时/票价】4h/¥8000；30min/¥1000\n\n【购票渠道】① JAM JAM LINER 官网；② Alpico 5 号站台\n\n【乘车点】中部机场 T1-7 号 / T2-21 号站台；白马站 Alpico 5 号站台\n\n【末班车】乘鞍→白马站：17:30\n\n【行李/儿童规则】公交含温泉入场券（¥800 / 人）；滑雪后可直接泡温泉",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "白马鹿岛槍滑雪场",
+      "english_name": "Hakuba Kashimayari Ski Resort",
+      "japanese_name": "白馬鹿島槍スキー場",
+      "address": "长野县大町市平 20490-4",
+      "website": "https://www.kashimayari.net/",
+      "coordinates": "137.6500,36.7000",
+      "ticket_prices": {
+        "one_day_adult": "¥7,100",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马亲子友好天花板，设施全，雪道缓；夸：适合家庭游，人少；踩雷：中高级雪道少",
+      "highlights": "600-1700m，15 雪道，亲子友好 + 设施全",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 大町站；公交：大町巴士，大町站→雪场 ¥800，30min；长野机场→大町站巴士 ¥1,200，1h，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】大町站→鹿岛槍巴士（大町巴士）\n\n【耗时/票价】30min/¥800\n\n【购票渠道】大町巴士中心 1 号站台\n\n【乘车点】大町站东出口步行 3 分钟至巴士中心 1 号站台（红色 “鹿岛槍” 标识）\n\n【末班车】鹿岛槍→大町：16:30\n\n【行李/儿童规则】巴士需提前 1 天预约（Kashimayari 官网）；亲子设施全",
+      "weather_data": {
+        "temperature": -9,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "白马 Sanosaka 滑雪场",
+      "english_name": "Hakuba Sanosaka Ski Resort",
+      "japanese_name": "白馬佐野坂スキー場",
+      "address": "长野县北安昙郡白马村大字佐野坂",
+      "website": "https://www.hakubavalley.com/ja/ski_resort/hakuba_sanosaka/",
+      "coordinates": "137.8167,36.6333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,900",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "白马超小众，野雪体验好；夸：粉雪优质，人少；踩雷：交通稍远，配套简",
+      "highlights": "700-1750m，10 雪道，野雪 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 白马站；公交：Alpico 巴士（https://www.alpico.co.jp/），白马站→雪场 ¥1,200，45min；长野机场→白马站巴士 ¥1,500，1h，再转公交 45min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】白马站→Sanosaka 公交（Alpico）\n\n【耗时/票价】45min/¥1200\n\n【购票渠道】Alpico 6 号站台\n\n【乘车点】白马站 Alpico 6 号站台\n\n【末班车】Sanosaka→白马站：16:00\n\n【行李/儿童规则】公交班次少，建议选 10:00 前班次；野雪区域大，需结伴而行",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "斑尾高原滑雪场",
+      "english_name": "Madarao Kogen Ski Resort",
+      "japanese_name": "斑尾高原スキー場",
+      "address": "长野县下高井郡斑尾高原町",
+      "website": "https://www.madarao.jp/ski/",
+      "coordinates": "138.3333,36.7500",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野小众，雪道宽缓，人少；夸：亲子友好，性价比高；踩雷：交通稍远",
+      "highlights": "800-1600m，22 雪道，亲子友好 + 性价比高",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 饭山站；公交：饭山巴士，饭山站→雪场 ¥1,000，40min；长野机场→饭山站巴士 ¥1,500，1.5h，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】饭山站→斑尾巴士\n\n【耗时/票价】40min/¥1000\n\n【购票渠道】饭山巴士中心 3 号站台\n\n【乘车点】饭山站东出口步行 3 分钟至巴士中心 3 号站台（黄色 “斑尾高原” 标识）\n\n【末班车】斑尾→饭山：17:00\n\n【行李/儿童规则】可买 “巴士 + 雪票” 联票（¥7800）省 ¥1200；雪场有宠物友好区域",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://www.madarao.jp/ski/access",
+      "ticket_url": "https://www.madarao.jp/ski/get-tickets",
+      "trail_map": "https://www.madarao.jp/ski/course",
+      "live_camera": "https://www.madarao.jp/ski/live-camera",
+      "weather_url": "https://www.madarao.jp/ski/conditions",
+      "trail_map_image": "https://www.madarao.jp/system/wp-content/uploads/2021/10/4d3fbf915f2ce1415ab61be19dc6b66e-1-720x481.jpg"
+    },
+    {
+      "resort_name": "轻井泽王子滑雪场",
+      "english_name": "Karuizawa Prince Ski Resort",
+      "japanese_name": "軽井沢プリンススキー場",
+      "address": "长野县北佐久郡轻井泽町",
+      "website": "https://www.princehotels.com/ski/karuizawa/",
+      "coordinates": "138.5667,36.3333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "东京周边亲子天花板，配套全，有游乐园；夸：交通方便，适合家庭游；踩雷：雪质略逊",
+      "highlights": "600-1000m，21 雪道，亲子友好 + 游乐园",
+      "night_skiing_info": "有；¥2,200，时间 17:00-20:30（12.1-3.31）",
+      "transport": "最近机场：东京羽田机场；JR 站：JR 轻井泽站；公交：王子接驳巴士（https://www.princehotels.co.jp/ski/karuizawa/），轻井泽站→雪场 ¥300，10min；羽田机场→轻井泽站新干线 ¥4,000，1h，再转公交 10min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】东京→JR 轻井泽站新干线→王子接驳车\n\n【耗时/票价】1h+10min/¥4000 + 免费\n\n【购票渠道】① JR 东日本官网；② 轻井泽站东出口接驳车点\n\n【乘车点】东京站新干线 11 号站台；轻井泽站东出口（白色 “王子接驳车” 标识）\n\n【末班车】轻井泽→东京：20:00\n\n【行李/儿童规则】接驳车每 15 分钟一班；联票含雪场 + 游乐园门票，适合带娃",
+      "weather_data": {
+        "temperature": -4,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 1,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "菅平高原滑雪场",
+      "english_name": "Sugadaira Kogen Ski Resort",
+      "japanese_name": "菅平高原スキー場",
+      "address": "长野县上田市菅平高原",
+      "website": "https://sugadaira-snowresort.com/",
+      "coordinates": "138.2333,36.5000",
+      "ticket_prices": {
+        "one_day_adult": "¥7,200",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野雪道数量第二，晴天率 80%，人少；夸：进阶友好，视野绝；踩雷：交通稍远",
+      "highlights": "800-1900m，60 雪道，晴天率 80%+ 多雪道",
+      "night_skiing_info": "有；¥2,800，时间 17:00-20:30（12.1-3.31）",
+      "transport": "最近机场：长野机场；JR 站：JR 上田站；公交：上田巴士，上田站→雪场 ¥1,200，1h；长野机场→上田站巴士 ¥800，30min，再转公交 1h",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】上田站→菅平巴士（上田巴士）\n\n【耗时/票价】1h/¥1200\n\n【购票渠道】上田巴士中心 2 号站台\n\n【乘车点】上田站东出口步行 5 分钟至巴士中心 2 号站台（蓝色 “菅平高原” 标识）\n\n【末班车】菅平→上田：17:00\n\n【行李/儿童规则】雪场晴天率 80%，视野好；巴士支持现金 / 信用卡",
+      "weather_data": {
+        "temperature": -8,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:10"
+      }
+    },
+    {
+      "resort_name": "车山高原滑雪场",
+      "english_name": "Kurumayama Kogen Ski Resort",
+      "japanese_name": "車山高原スキー場",
+      "address": "长野县佐久市车山高原",
+      "website": "https://www.kurumayama-ski.com/",
+      "coordinates": "138.4167,36.4333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野小众，野雪体验好，粉雪优质；夸：人少，性价比高；踩雷：配套简",
+      "highlights": "900-1800m，18 雪道，野雪 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 佐久平站；公交：佐久巴士，佐久平站→雪场 ¥800，40min；长野机场→佐久平站巴士 ¥600，20min，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】佐久平站→车山巴士（佐久巴士）\n\n【耗时/票价】40min/¥800\n\n【购票渠道】佐久巴士中心 1 号站台\n\n【乘车点】佐久平站东出口步行 3 分钟至巴士中心 1 号站台（绿色 “车山高原” 标识）\n\n【末班车】车山→佐久平：15:30\n\n【行李/儿童规则】野雪体验好，需自带雪杖；末班车早，建议早去早回",
+      "weather_data": {
+        "temperature": -6,
+        "snow_24h": 0,
+        "snow_emoji": "🌤️",
+        "weather_text": "多云",
+        "weather_code": 2,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "竜王滑雪公园",
+      "english_name": "Ryuoo Ski Park",
+      "japanese_name": "竜王スキーパーク",
+      "address": "长野县山ノ内町",
+      "website": "https://www.ryuoo.com/",
+      "coordinates": "138.5833,36.7833",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野网红公园，道具多，单板友好；夸：玩公园首选，出片；注意：公园道具多，更适合有经验的滑雪者",
+      "highlights": "850-1700m，16 雪道，公园滑雪 + 网红打卡",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 信浓追分站；公交：信浓巴士，信浓追分站→雪场 ¥500，20min；长野机场→信浓追分站巴士 ¥800，30min，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】信浓追分站→竜王巴士（信浓巴士）\n\n【耗时/票价】20min/¥500\n\n【购票渠道】信浓巴士中心 3 号站台\n\n【乘车点】信浓追分站东出口 2 号站台（黄色 “竜王” 标识）\n\n【末班车】竜王→信浓追分：18:30\n\n【行李/儿童规则】公园道具免费使用；公交支持 Suica，无需备零钱",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://ryuoo.com/access/",
+      "ticket_url": "https://ryuoo.com/winter/price_w/",
+      "trail_map": "https://ryuoo.com/winter/gelande/",
+      "trail_map_image": "https://ryuoo.com/zP7gL2nW/wp-content/themes/ryuoo/assets/img/gelande/img_park_main01.jpg"
+    },
+    {
+      "resort_name": "黑姬高原滑雪场",
+      "english_name": "Kurohime Kogen Snow Park",
+      "japanese_name": "黒姫高原スノーパーク",
+      "address": "长野县北安昙郡黑姬町",
+      "website": "https://kurohime-kogen.co.jp/",
+      "coordinates": "137.9833,36.8333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,900",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野亲子友好，有宠物友好区域，雪道缓；夸：适合带娃 / 带宠，人少；踩雷：雪道短",
+      "highlights": "700-1400m，15 雪道，亲子 + 宠物友好",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 黑姬站；公交：黑姬巴士，黑姬站→雪场 ¥400，15min；长野机场→黑姬站巴士 ¥1,000，1h，再转公交 15min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】黑姬站→黑姬公交（黑姬巴士）\n\n【耗时/票价】15min/¥400\n\n【购票渠道】黑姬巴士中心 2 号站台\n\n【乘车点】黑姬站东出口 1 号站台（红色 “黑姬高原” 标识）\n\n【末班车】黑姬→黑姬站：18:30\n\n【行李/儿童规则】有宠物友好区域，可带宠物进入；适合傍晚滑雪",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "❄️",
+        "weather_text": "雪",
+        "weather_code": 73,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "长野蓼科高原滑雪场",
+      "english_name": "Tateshina Kogen Ski Resort",
+      "japanese_name": "蓼科高原スキー場",
+      "address": "长野县茅野市蓼科高原",
+      "website": "https://www.tateshina-tokyu.com/ski/",
+      "coordinates": "138.1500,36.4000",
+      "ticket_prices": {
+        "one_day_adult": "¥6,700",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野小众，温泉配套，人少；夸：性价比高，适合放松；踩雷：雪道数量少",
+      "highlights": "1000-1500m，12 雪道，温泉 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 茅野站；公交：茅野巴士，茅野站→雪场 ¥800，30min；长野机场→茅野站巴士 ¥500，20min，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】茅野站→蓼科巴士（茅野巴士）\n\n【耗时/票价】30min/¥800\n\n【购票渠道】茅野巴士中心 1 号站台\n\n【乘车点】茅野站南出口步行 3 分钟至巴士中心 1 号站台（蓝色 “蓼科高原” 标识）\n\n【末班车】蓼科→茅野：17:00\n\n【行李/儿童规则】温泉配套全；可买 “巴士 + 温泉” 联票（¥1800）省 ¥500",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "长野清里滑雪场",
+      "english_name": "Kiyosato Ski Resort",
+      "japanese_name": "清里スキー場",
+      "address": "长野县北佐久郡清里町",
+      "website": "https://www.sunmeadows.co.jp/winter/",
+      "coordinates": "138.5000,36.2833",
+      "ticket_prices": {
+        "one_day_adult": "¥6,500",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野亲子天花板，设施全，雪道超缓；夸：适合零基础，家庭游；踩雷：雪质一般",
+      "highlights": "800-1200m，10 雪道，亲子友好 + 零基础适配",
+      "night_skiing_info": "有；¥1,800，时间 17:00-20:00（12.1-3.31）",
+      "transport": "最近机场：东京羽田机场；JR 站：JR 小海线清里站；公交：小海线巴士，清里站→雪场 ¥300，10min；羽田机场→清里站巴士 ¥4,000，3h，再转公交 10min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】清里站→清里公交（小海线巴士）\n\n【耗时/票价】10min/¥300\n\n【购票渠道】小海线巴士中心 2 号站台\n\n【乘车点】清里站东出口 1 号站台（绿色 “清里スキー場” 标识）\n\n【末班车】清里→清里站：20:00\n\n【行李/儿童规则】新手雪道超缓，适合零基础；支持夜滑",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "长野户隐滑雪场",
+      "english_name": "Togakushi Ski Resort",
+      "japanese_name": "戸隠スキー場",
+      "address": "长野县上水内郡户隐村",
+      "website": "https://www.togakusi.com/ski/",
+      "coordinates": "138.2833,36.7833",
+      "ticket_prices": {
+        "one_day_adult": "¥6,600",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "长野小众，文化 + 滑雪，人少；夸：出片率高，性价比高；踩雷：交通稍远",
+      "highlights": "900-1600m，14 雪道，文化 + 滑雪",
+      "night_skiing_info": "无",
+      "transport": "最近机场：长野机场；JR 站：JR 户隐站；公交：户隐巴士，户隐站→雪场 ¥500，20min；长野机场→户隐站巴士 ¥1,000，1h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】户隐站→户隐巴士（户隐巴士）\n\n【耗时/票价】20min/¥500\n\n【购票渠道】户隐巴士中心 1 号站台\n\n【乘车点】户隐站东出口 1 号站台（红色 “户隐” 标识）\n\n【末班车】户隐→户隐站：17:30\n\n【行李/儿童规则】有文化体验区，可了解户隐忍者文化；巴士站有中文时刻表",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☀️",
+        "weather_text": "晴天",
+        "updated_at": "2026-02-07 15:50"
+      }
+    },
+    {
+      "resort_name": "汤泽高原滑雪场",
+      "english_name": "Yuzawa Kogen Ski Resort",
+      "japanese_name": "湯沢高原スキー場",
+      "address": "新潟县南鱼沼市汤泽",
+      "website": "https://www.yuzawakogen.com/",
+      "coordinates": "139.0167,36.9333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "汤泽片区小众，滑雪 + 温泉，与 GALA 互通；夸：人少，性价比高；踩雷：配套稍简",
+      "highlights": "800-1300m，18 雪道，温泉 + 互通缆车",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：汤泽巴士，越后汤泽站→雪场 ¥600，20min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 20min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→汤泽高原巴士（王子巴士）\n\n【耗时/票价】20min/¥600\n\n【购票渠道】王子巴士中心 3 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 3 号窗口（蓝色 “汤泽高原” 标识）\n\n【末班车】汤泽高原→越后汤泽：18:30\n\n【行李/儿童规则】可与 GALA 汤泽买互通票（¥10000/2 天）；支持 Suica",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://www.yuzawakogen.com/winter/area_guide/",
+      "ticket_url": "https://www.kkday.com/ja/promo/yuzawakogen",
+      "trail_map": "https://www.yuzawakogen.com/winter/gelaende/",
+      "live_camera": "https://www.yuzawakogen.com/live_camera/",
+      "weather_url": "https://www.yuzawakogen.com/",
+      "trail_map_image": "https://www.yuzawakogen.com/wordpress/wp-content/uploads/2024/12/241202win_map.jpg"
+    },
+    {
+      "resort_name": "石打丸山滑雪场",
+      "english_name": "Ishiuchi Maruyama Ski Resort",
+      "japanese_name": "石打丸山スキー場",
+      "address": "新潟县南鱼沼市石打",
+      "website": "https://ishiuchi.or.jp/",
+      "coordinates": "138.9667,36.9833",
+      "ticket_prices": {
+        "one_day_adult": "¥7,300",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "汤泽片区中高级友好，雪道陡，粉雪好；夸：进阶首选，有夜场；踩雷：周末人多",
+      "highlights": "700-1600m，25 雪道，中高级 + 夜场友好",
+      "night_skiing_info": "有；¥3,000，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：石打巴士（https://ishiuchi.or.jp/），越后汤泽站→雪场 ¥1,000，30min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 30min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→石打巴士（王子巴士）\n\n【耗时/票价】30min/¥1000\n\n【购票渠道】王子巴士中心 4 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 4 号窗口（红色 “石打丸山” 标识）\n\n【末班车】石打丸山→越后汤泽：21:30（夜场运营到 21:00）\n\n【行李/儿童规则】可买 “夜场票 + 巴士” 联票（¥3500）",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://ishiuchi.or.jp/winter/access",
+      "ticket_url": "https://ishiuchi.or.jp/tips/onlineticket/",
+      "trail_map": "https://ishiuchi.or.jp/winter/ski/lift-course",
+      "live_camera": "https://ishiuchi.or.jp/winter/livecamera/",
+      "weather_url": "https://ishiuchi.or.jp/winter/ski/lift-course/#lift",
+      "trail_map_image": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://ishiuchi.or.jp/winter/wp/wp-content/uploads/2024/10/img_course01-1.jpg"
+    },
+    {
+      "resort_name": "舞子滑雪场",
+      "english_name": "Maiko Ski Resort",
+      "japanese_name": "舞子スキー場",
+      "address": "新潟县南鱼沼市舞子",
+      "website": "https://www.maiko-resort.com/winter/",
+      "coordinates": "138.9167,36.9500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,800",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "汤泽片区亲子友好，雪道缓，设施全；夸：适合家庭游，性价比高；踩雷：雪道短",
+      "highlights": "600-1200m，15 雪道，亲子友好 + 设施全",
+      "night_skiing_info": "有；¥2,200，时间 17:00-20:30（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：汤泽巴士，越后汤泽站→雪场 ¥800，25min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 25min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→舞子巴士（王子巴士）\n\n【耗时/票价】25min/¥800\n\n【购票渠道】王子巴士中心 5 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 5 号窗口（粉色 “舞子スキー場” 标识）\n\n【末班车】舞子→越后汤泽：18:00\n\n【行李/儿童规则】亲子设施全，有儿童雪圈区",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://www.maiko-resort.com/winter/access.html",
+      "ticket_url": "https://www.maiko-resort.com/winter/lift.html",
+      "trail_map": "https://www.maiko-resort.com/winter/gelande.html",
+      "live_camera": "https://skiday.app/46R2YtTNP53wSN7IOLg5/869223046913016/embed",
+      "weather_url": "https://www.maiko-resort.com/winter/today/",
+      "trail_map_image": "https://www.maiko-resort.com/wp/wp-content/themes/maiko2024/assets/images/winter/gelande/main_pc.jpg"
+    },
+    {
+      "resort_name": "上越国际滑雪场",
+      "english_name": "Joetsu Kokusai Ski Resort",
+      "japanese_name": "上越国際スキー場",
+      "address": "新潟县南鱼沼市樺野沢 112 番地 1 号",
+      "website": "https://www.jkokusai.co.jp/",
+      "coordinates": "138.6833,37.0500",
+      "ticket_prices": {
+        "one_day_adult": "¥6,700",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "新潟小众，滑雪 + 温泉，人少；夸：性价比高，适合放松；踩雷：交通稍远",
+      "highlights": "700-1500m，16 雪道，温泉 + 小众",
+      "night_skiing_info": "无",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：上越巴士，越后汤泽站→雪场 ¥1,200，40min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 40min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→上越巴士（王子巴士）\n\n【耗时/票价】40min/¥1200\n\n【购票渠道】王子巴士中心 6 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 6 号窗口（绿色 “上越国际” 标识）\n\n【末班车】上越国际→越后汤泽：15:30\n\n【行李/儿童规则】适合白天滑雪；有免费停车场，自驾方便",
+      "weather_data": {
+        "temperature": -5,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      },
+      "transport_page": "https://jkokusai.co.jp/access"
+    },
+    {
+      "resort_name": "岩原滑雪场",
+      "english_name": "Iwappara Ski Resort",
+      "japanese_name": "岩原スキー場",
+      "address": "新潟县南鱼沼市岩原",
+      "website": "https://www.iwa-ppara.com/",
+      "coordinates": "138.8833,36.9667",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "汤泽片区老牌雪场，配套全，雪道多；夸：适配全水平，性价比高；踩雷：旺季人多",
+      "highlights": "650-1550m，22 雪道，老牌 + 全水平适配",
+      "night_skiing_info": "有；¥2,500，时间 17:00-21:00（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：岩原接驳巴士（https://www.iwa-ppara.com/access/），越后汤泽站→雪场 ¥900，30min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 30min",
+      "images": [],
+      "transport_detailed": "暂无详细交通信息",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:09"
+      }
+    },
+    {
+      "resort_name": "汤泽中里滑雪场",
+      "english_name": "Yuzawa Nakazato Ski Resort",
+      "japanese_name": "湯沢中里スキー場",
+      "address": "新潟县南鱼沼市中里",
+      "website": "https://www.yuzawa-nakazato.com/",
+      "coordinates": "139.0500,36.9167",
+      "ticket_prices": {
+        "one_day_adult": "¥6,900",
+        "season": "2025-2026"
+      },
+      "xiaohongshu_review": "汤泽片区公园滑雪，单板友好，人少；夸：道具多，性价比高；注意：公园道具多，更适合有经验的滑雪者",
+      "highlights": "600-1200m，16 雪道，公园滑雪 + 单板友好",
+      "night_skiing_info": "有；¥2,000，时间 17:00-20:30（12.1-3.31）",
+      "transport": "最近机场：新潟机场；JR 站：JR 越后汤泽站；公交：汤泽中里接驳巴士（https://www.yuzawa-nakazato.com/），越后汤泽站→雪场 ¥600，15min；新潟机场→越后汤泽站巴士 ¥1,800，1h，再转公交 15min",
+      "images": [],
+      "transport_detailed": "【优先机场直达】无直达\n\n【备选交通】JR 越后汤泽站→汤泽中里巴士（王子巴士）\n\n【耗时/票价】15min/¥600\n\n【购票渠道】王子巴士中心 7 号窗口\n\n【乘车点】越后汤泽站东出口王子巴士中心 7 号窗口（蓝色 \"汤泽中里\" 标识）\n\n【末班车】汤泽中里→越后汤泽：18:00\n\n【行李/儿童规则】公园道具多，单板友好；适合中高级滑雪者",
+      "weather_data": {
+        "temperature": -7,
+        "snow_24h": 0,
+        "snow_emoji": "☁️",
+        "weather_text": "阴天",
+        "weather_code": 3,
+        "updated_at": "2026-02-07 16:10"
+      }
+    },
+    {
+      "resort_name": "藤野FU'S滑雪场",
+      "english_name": "Sapporo Fujino Fu's Snow Area",
+      "japanese_name": "札幌藤野フッズスノーエリア",
+      "address": "北海道札幌市南区藤野473番地",
+      "website": "https://www.fujino-yagai-sports.jp/",
+      "coordinates": "141.2847,42.9647",
+      "ticket_prices": {
+        "one_day_adult": "¥3,200",
+        "season": "2025-2026"
+      },
+      "highlights": "落差95m，6雪道，札幌市内最近雪场",
+      "night_skiing_info": "有",
+      "transport": "札幌市内，地铁真�的站转巴士",
+      "xiaohongshu_review": "札幌市内最近雪场，适合初学者和亲子，交通便利",
+      "images": [],
+      "transport_detailed": "【最近机场】新千岁机场\n\n【机场直达】无直达巴士\n\n【备选交通】札幌市营地铁南北线→真驹内站→じょうてつバス（定山溪线）藤野3条2丁目下车→步行5分钟\n\n【耗时/票价】地铁约25分钟¥290 + 巴士约20分钟¥370\n\n【自驾】札幌市中心出发约30分钟；新千岁机场出发约1小时"
+    },
+    {
+      "resort_name": "MEIHO滑雪场",
+      "english_name": "Meiho Ski Resort",
+      "japanese_name": "めいほうスキー場",
+      "address": "岐阜県郡上市明宝奥住水沢上3447-1",
+      "website": "https://www.meihoski.co.jp/",
+      "coordinates": "136.9456,35.8789",
+      "ticket_prices": {
+        "one_day_adult": "¥5,200",
+        "season": "2025-2026"
+      },
+      "highlights": "落差700m，14雪道，最长滑行5000m",
+      "night_skiing_info": "有",
+      "transport": "名古屋出发约2小时",
+      "xiaohongshu_review": "名古屋出发便利，最长滑行5000m，中部地区人气雪场",
+      "images": [],
+      "transport_detailed": "【最近机场】中部国际机场（名古屋）\n\n【机场直达】无直达巴士\n\n【备选交通】名古屋站→高速巴士（岐阜バス）→郡上八幡IC→雪场接驳车（免费需预约）\n\n【耗时/票价】高速巴士约2小时¥2500 + 接驳车约30分钟\n\n【自驾】名古屋出发约2小时（东海北陆自动车道→郡上八幡IC）"
+    },
+    {
+      "resort_name": "富士见丽景度假村",
+      "english_name": "Fujimi Panorama Resort",
+      "japanese_name": "富士見パノラマリゾート",
+      "address": "長野県諏訪郡富士見町富士見6666-703",
+      "website": "https://www.fujimipanorama.com/",
+      "coordinates": "138.2356,35.9089",
+      "ticket_prices": {
+        "one_day_adult": "¥5,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差730m，7雪道，可眺望富士山和八岳",
+      "night_skiing_info": "无",
+      "transport": "JR中央本线富士见站，免费接驳巴士",
+      "xiaohongshu_review": "富士山绝景，雪道宽敞，适合中级滑雪者",
+      "images": [],
+      "transport_detailed": "【最近机场】东京羽田机场\n\n【机场直达】无直达巴士\n\n【备选交通】新宿站→JR中央本线特急あずさ→富士见站→免费接驳巴士约10分钟\n\n【耗时/票价】新宿→富士见约2小时¥4000；接驳巴士免费\n\n【自驾】东京出发约2.5小时（中央自动车道→�的访南IC）"
+    },
+    {
+      "resort_name": "神立高原滑雪场",
+      "english_name": "Kandatsu Snow Resort",
+      "japanese_name": "神立スノーリゾート",
+      "address": "新潟県南魚沼郡湯沢町神立4121-1",
+      "website": "https://www.kandatsu.com/",
+      "coordinates": "138.8167,36.9333",
+      "ticket_prices": {
+        "one_day_adult": "¥5,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差540m，16雪道，天然雪100%，夜滑至凌晨4点",
+      "night_skiing_info": "有；夜滑至凌晨4点",
+      "transport": "JR越后汤�的站，免费接驳巴士10分钟",
+      "xiaohongshu_review": "夜滑至凌晨4点，天然雪100%，粉雪爱好者天堂",
+      "images": [],
+      "transport_detailed": "【最近机场】新潟机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→上越新干线→越后汤泽站→免费接驳巴士约7分钟\n\n【耗时/票价】东京→越后汤泽约1小时20分¥6260；接驳巴士免费\n\n【末班车】神立→越后汤泽：凌晨4:30（夜滑日）\n\n【自驾】东京出发约2.5小时（关越自动车道→汤泽IC）",
+      "transport_page": "https://www.kandatsu.com/access",
+      "ticket_url": "https://www.asoview.com/channel/tickets/FYFBqw2QpG/",
+      "trail_map": "https://www.kandatsu.com/course-guide/",
+      "live_camera": "https://www.kandatsu.com/live-skislope/",
+      "weather_url": "https://www.kandatsu.com/today/"
+    },
+    {
+      "resort_name": "赤仓观光度假滑雪场",
+      "english_name": "Akakura Kanko Resort Ski Area",
+      "japanese_name": "赤倉観光リゾートスキー場",
+      "address": "新潟県妙高市田切216",
+      "website": "https://www.akr-ski.com/",
+      "coordinates": "138.1833,36.8833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差850m，10雪道，妙高山麓粉雪",
+      "night_skiing_info": "有",
+      "transport": "JR妙高高原站，免费接驳巴士",
+      "xiaohongshu_review": "妙高山麓粉雪，温泉街相邻，性价比高",
+      "images": [],
+      "transport_detailed": "【最近机场】新潟机场/富山机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→北陆新干线→长野站→しなの铁道→妙高高原站→免费接驳巴士约20分钟\n\n【耗时/票价】东京→妙高高原约2.5小时¥8500；接驳巴士免费\n\n【自驾】东京出发约3小时（上信越自动车道→妙高高原IC）",
+      "transport_page": "https://akr-ski.com/access",
+      "ticket_url": "https://www.lift-ticket.jp/shopbrand/akakan/",
+      "trail_map": "https://akr-ski.com/slope",
+      "live_camera": "https://skiday.app/6vI7BEo6SU4xin7VmWA6/865036045473095/embed",
+      "weather_url": "https://akr-ski.com/"
+    },
+    {
+      "resort_name": "LOTTE乐天新井度假村",
+      "english_name": "Lotte Arai Resort",
+      "japanese_name": "ロッテアライリゾート",
+      "address": "新潟県妙高市両善寺1966",
+      "website": "https://www.lottehotel.com/arai-resort/",
+      "coordinates": "138.1500,36.9333",
+      "ticket_prices": {
+        "one_day_adult": "¥7,000",
+        "season": "2025-2026"
+      },
+      "highlights": "落差930m，18雪道，日本最大级降雪量",
+      "night_skiing_info": "有",
+      "transport": "JR上越妙高站，免费接驳巴士30分钟",
+      "xiaohongshu_review": "日本最大降雪量，豪华度假村，野雪天堂",
+      "images": [],
+      "transport_detailed": "【最近机场】新潟机场/富山机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→北陆新干线→上越妙高站→免费接驳巴士约30分钟\n\n【耗时/票价】东京→上越妙高约2小时¥8000；接驳巴士免费（住客）/¥1000（非住客）\n\n【自驾】东京出发约3小时（上信越自动车道→新井PA直结）"
+    },
+    {
+      "resort_name": "箱馆山滑雪场",
+      "english_name": "Hakodateyama Ski Resort",
+      "japanese_name": "箱館山スキー場",
+      "address": "滋賀県高島市今津町日置前4201-4",
+      "website": "https://www.hakodateyama.com/",
+      "coordinates": "136.0167,35.4500",
+      "ticket_prices": {
+        "one_day_adult": "¥4,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差110m，8雪道，琵琶湖绝景",
+      "night_skiing_info": "无",
+      "transport": "JR近江今津站，巴士20分钟",
+      "xiaohongshu_review": "琵琶湖绝景，关西最大级雪场，京阪出发便利",
+      "images": [],
+      "transport_detailed": "【最近机场】关西国际机场/伊丹机场\n\n【机场直达】无直达巴士\n\n【备选交通】大阪站→JR湖西线新快速→近江今津站→巴士约20分钟\n\n【耗时/票价】大阪→近江今津约1.5小时¥1520；巴士约20分钟¥400\n\n【自驾】大阪出发约1.5小时（名神高速→京都东IC→湖西道路）"
+    },
+    {
+      "resort_name": "琵琶湖Valley滑雪场",
+      "english_name": "Biwako Valley Ski Resort",
+      "japanese_name": "びわ湖バレイスキー場",
+      "address": "滋賀県大津市木戸1547-1",
+      "website": "https://www.biwako-valley.com/",
+      "coordinates": "135.9167,35.1833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,000",
+        "season": "2025-2026"
+      },
+      "highlights": "落差774m，9雪道，琵琶湖全景缆车",
+      "night_skiing_info": "无",
+      "transport": "JR志贺站，巴士10分钟",
+      "xiaohongshu_review": "琵琶湖全景缆车，京都大阪1小时圈，网红打卡地",
+      "images": [],
+      "transport_detailed": "【最近机场】关西国际机场/伊丹机场\n\n【机场直达】无直达巴士\n\n【备选交通】大阪站→JR湖西线新快速→志贺站→巴士约10分钟\n\n【耗时/票价】大阪→志贺约50分钟¥990；巴士约10分钟¥330\n\n【自驾】大阪出发约1小时（名神高速→京都东IC→湖西道路→志贺IC）"
+    },
+    {
+      "resort_name": "六甲山滑雪场",
+      "english_name": "Rokkosan Snow Park",
+      "japanese_name": "六甲山スノーパーク",
+      "address": "兵庫県神戸市灘区六甲山町北六甲4512-98",
+      "website": "https://www.rokkosan.com/ski/",
+      "coordinates": "135.2500,34.7667",
+      "ticket_prices": {
+        "one_day_adult": "¥2,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差30m，3雪道，神户市内人工雪",
+      "night_skiing_info": "有",
+      "transport": "阪神御影站/JR六甲道站，巴士30分钟",
+      "xiaohongshu_review": "神户市内，初学者/亲子友好，人工雪场，交通便利",
+      "images": [],
+      "transport_detailed": "【最近机场】关西国际机场/伊丹机场/神户机场\n\n【机场直达】无直达巴士\n\n【备选交通】阪神御影站→神户市バス16系统→六甲ケーブル下站→六甲缆车→六甲山上バス→雪场\n\n【耗时/票价】御影站→雪场约50分钟；缆车往返¥1100 + 山上巴士¥260\n\n【自驾】神户市中心出发约30分钟"
+    },
+    {
+      "resort_name": "高鹫SNOWPARK滑雪场",
+      "english_name": "Takasu Snow Park",
+      "japanese_name": "高鷲スノーパーク",
+      "address": "岐阜県郡上市高鷲町西洞3086-1",
+      "website": "https://www.takasu.gr.jp/",
+      "coordinates": "136.8833,35.9500",
+      "ticket_prices": {
+        "one_day_adult": "¥5,400",
+        "season": "2025-2026"
+      },
+      "highlights": "落差650m，12雪道，西日本最大级",
+      "night_skiing_info": "有",
+      "transport": "名古屋出发约1.5小时",
+      "xiaohongshu_review": "西日本最大级，最长滑行4800m，名古屋出发便利",
+      "images": [],
+      "transport_detailed": "【最近机场】中部国际机场（名古屋）\n\n【机场直达】无直达巴士\n\n【备选交通】名古屋站→高速巴士（岐阜バス）→高鹫直达约1.5小时\n\n【耗时/票价】名古屋→高鹫直达巴士约1.5小时¥3000（含雪票套票约¥7500）\n\n【自驾】名古屋出发约1.5小时（东海北陆自动车道→高鹫IC直结）",
+      "transport_page": "https://www.takasu.gr.jp/access/",
+      "ticket_url": "https://www.takasu.gr.jp/ec/",
+      "trail_map": "https://www.takasu.gr.jp/gelande/",
+      "live_camera": "https://www.takasu.gr.jp/condition/#livecamera",
+      "weather_url": "https://www.takasu.gr.jp/condition/",
+      "trail_map_image": "https://www.takasu.gr.jp/assets/img/gelande/map25-26.jpg"
+    },
+    {
+      "resort_name": "富士山YETI滑雪场",
+      "english_name": "Fujiyama Snow Resort Yeti",
+      "japanese_name": "富士山スノーリゾートイエティ",
+      "address": "静岡県裾野市須山字藤原2428",
+      "website": "https://www.yeti-resort.com/",
+      "coordinates": "138.7833,35.3500",
+      "ticket_prices": {
+        "one_day_adult": "¥4,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差150m，4雪道，日本最早开放（10月）",
+      "night_skiing_info": "有",
+      "transport": "JR御殿场站，巴士40分钟",
+      "xiaohongshu_review": "日本最早开放（10月），富士山绝景，东京出发便利",
+      "images": [],
+      "transport_detailed": "【最近机场】东京羽田机场\n\n【机场直达】无直达巴士\n\n【备选交通】新宿站→小田急高速バス→御殿场站→富士急バス→YETI约40分钟\n\n【耗时/票价】新宿→御殿场约1.5小时¥1800；御殿场→YETI约40分钟¥1100\n\n【自驾】东京出发约1.5小时（东名高速→御殿场IC）",
+      "transport_page": "https://www.yeti-resort.com/access/",
+      "ticket_url": "https://www.fujiyamaconnect.jp/tenant/32/",
+      "trail_map": "https://www.yeti-resort.com/guide/",
+      "weather_url": "https://www.yeti-resort.com/guide/#gelande",
+      "trail_map_image": "https://www.yeti-resort.com/guide/img/map2024.jpg"
+    },
+    {
+      "resort_name": "丸沼高原滑雪场",
+      "english_name": "Marunuma Kogen Ski Resort",
+      "japanese_name": "丸沼高原スキー場",
+      "address": "群馬県利根郡片品村東小川4658-58",
+      "website": "https://www.marunuma.jp/",
+      "coordinates": "139.3833,36.8167",
+      "ticket_prices": {
+        "one_day_adult": "¥5,700",
+        "season": "2025-2026"
+      },
+      "highlights": "落差600m，13雪道，关东最高海拔2000m",
+      "night_skiing_info": "无",
+      "transport": "JR�的田站，巴士约1.5小时",
+      "xiaohongshu_review": "关东最高海拔，雪质优良，缆车直达山顶",
+      "images": [],
+      "transport_detailed": "【最近机场】东京羽田机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→JR上越新干线→上毛高原站→关越交通巴士约1.5小时\n\n【耗时/票价】上毛高原→丸沼约1.5小时¥2100\n\n【自驾】东京出发约2.5小时（关越自动车道→沼田IC→国道120号约50分钟）"
+    },
+    {
+      "resort_name": "玉原滑雪公园",
+      "english_name": "Tambara Ski Park",
+      "japanese_name": "たんばらスキーパーク",
+      "address": "群馬県沼田市玉原高原",
+      "website": "https://www.tambara.co.jp/",
+      "coordinates": "139.0667,36.7833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,200",
+        "season": "2025-2026"
+      },
+      "highlights": "落差300m，8雪道，东京2小时圈",
+      "night_skiing_info": "无",
+      "transport": "JR沼田站，巴士约50分钟",
+      "xiaohongshu_review": "东京2小时圈，初中级者天堂，雪季长",
+      "images": [],
+      "transport_detailed": "【最近机场】东京羽田机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→JR上越新干线→上毛高原站→关越交通巴士约50分钟\n\n【耗时/票价】上毛高原→玉原约50分钟¥1200\n\n【自驾】东京出发约2小时（关越自动车道→沼田IC→国道120号约30分钟）",
+      "transport_page": "https://www.tambara.co.jp/winter/access/",
+      "ticket_url": "https://www.tambara.co.jp/winter/ticket/buy/",
+      "trail_map": "https://www.tambara.co.jp/winter/course/",
+      "live_camera": "https://www.tambara.co.jp/winter/livecamera/",
+      "weather_url": "https://www.tambara.co.jp/winter/gelande/",
+      "trail_map_image": "https://www.tambara.co.jp/winter/wp-content/themes/tanbara/assets25/images/course/base.webp"
+    },
+    {
+      "resort_name": "安比高原滑雪场",
+      "english_name": "Appi Kogen Ski Resort",
+      "japanese_name": "安比高原スキー場",
+      "address": "岩手県八幡平市安比高原",
+      "website": "https://www.appi.co.jp/",
+      "coordinates": "141.0167,39.9333",
+      "ticket_prices": {
+        "one_day_adult": "¥6,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差775m，21雪道，东北最大级",
+      "night_skiing_info": "有",
+      "transport": "JR�的�的站，免费接驳巴士约45分钟",
+      "xiaohongshu_review": "东北最大级，阿司匹林粉雪，雪道超长",
+      "images": [],
+      "transport_detailed": "【最近机场】花卷机场/仙台机场\n\n【机场直达】花卷机场→安比直达巴士（冬季限定）约1.5小时¥2500\n\n【备选交通】东京站→东北新干线→盛冈站→岩手县北バス→安比高原约45分钟\n\n【耗时/票价】东京→盛冈约2.5小时¥14000；盛冈→安比巴士约45分钟¥1200\n\n【自驾】盛冈出发约50分钟（东北自动车道→松尾八幡平IC）",
+      "transport_page": "https://www.appi.co.jp/access-winter/",
+      "ticket_url": "https://www.appi.co.jp/snow-mountain-resort/ticket/",
+      "trail_map": "https://www.appi.co.jp/snow-mountain-resort/course/",
+      "live_camera": "https://www.appi.co.jp/live_camera/",
+      "weather_url": "https://www.appi.co.jp/snow-mountain-resort/info/",
+      "trail_map_image": "https://www.appi.co.jp/snow-mountain-resort/assets/img/course/course_main.jpg"
+    },
+    {
+      "resort_name": "雫石滑雪场",
+      "english_name": "Shizukuishi Ski Resort",
+      "japanese_name": "雫石スキー場",
+      "address": "岩手県岩手郡雫石町高倉温泉",
+      "website": "https://www.princehotels.co.jp/ski/shizukuishi/",
+      "coordinates": "140.8833,39.7500",
+      "ticket_prices": {
+        "one_day_adult": "¥5,500",
+        "season": "2025-2026"
+      },
+      "highlights": "落差650m，11雪道，1993年世锦赛举办地",
+      "night_skiing_info": "有",
+      "transport": "JR雫石站，免费接驳巴士约30分钟",
+      "xiaohongshu_review": "1993年世界高山滑雪锦标赛举办地，雪质优良",
+      "images": [],
+      "transport_detailed": "【最近机场】花卷机场/仙台机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→东北新干线→盛冈站→JR田�的湖线→雫石站→免费接驳巴士约30分钟\n\n【耗时/票价】东京→盛冈约2.5小时¥14000；盛冈→雫石站约30分钟¥510\n\n【自驾】盛冈出发约40分钟（东北自动车道→盛冈IC→国道46号）"
+    },
+    {
+      "resort_name": "猪苗代滑雪场",
+      "english_name": "Inawashiro Ski Resort",
+      "japanese_name": "猪苗代スキー場",
+      "address": "福島県耶麻郡猪苗代町葉山7105",
+      "website": "https://www.inawashiro-ski.com/",
+      "coordinates": "140.1167,37.5833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,000",
+        "season": "2025-2026"
+      },
+      "highlights": "落差485m，18雪道，磐梯山麓",
+      "night_skiing_info": "有",
+      "transport": "JR猪苗代站，免费接驳巴士约15分钟",
+      "xiaohongshu_review": "磐梯山麓，猪苗代湖绝景，东京3小时可达",
+      "images": [],
+      "transport_detailed": "【最近机场】福岛机场/仙台机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→东北新干线→�的山站→JR磐越西线→猪苗代站→免费接驳巴士约15分钟\n\n【耗时/票价】东京→猪苗代约2.5小时¥8500；接驳巴士免费\n\n【自驾】东京出发约3小时（东北自动车道→郡山JCT→磐越自动车道→猪苗代磐梯高原IC）",
+      "transport_page": "https://www.inawashiro-ski.com/access/",
+      "ticket_url": "https://www.inawashiro-ski.com/lift/",
+      "trail_map": "https://www.inawashiro-ski.com/gelande/#gelande01",
+      "live_camera": "https://www.youtube.com/channel/UC8AHDeJk9r2ko0f2LWp8h1A",
+      "weather_url": "https://www.inawashiro-ski.com/"
+    },
+    {
+      "resort_name": "GRANDECO滑雪度假村",
+      "english_name": "Grandeco Snow Resort",
+      "japanese_name": "グランデコスノーリゾート",
+      "address": "福島県耶麻郡北塩原村桧原荒砂沢山",
+      "website": "https://www.grandeco.com/",
+      "coordinates": "140.1000,37.6833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,800",
+        "season": "2025-2026"
+      },
+      "highlights": "落差580m，13雪道，神雪品质",
+      "night_skiing_info": "无",
+      "transport": "JR猪苗代站，免费接驳巴士约40分钟",
+      "xiaohongshu_review": "神雪品质，雪季长达5个月，粉雪爱好者必去",
+      "images": [],
+      "transport_detailed": "【最近机场】福岛机场/仙台机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→东北新干线→郡山站→JR磐越西线→猪苗代站→免费接驳巴士约40分钟（需预约）\n\n【耗时/票价】东京→猪苗代约2.5小时¥8500；接驳巴士免费\n\n【自驾】东京出发约3小时（磐越自动车道→猪苗代磐梯高原IC→国道459号约30分钟）"
+    },
+    {
+      "resort_name": "森吉山阿仁滑雪场",
+      "english_name": "Moriyoshizan Ani Ski Resort",
+      "japanese_name": "森吉山阿仁スキー場",
+      "address": "秋田県北秋田市阿仁鍵ノ滝79-5",
+      "website": "https://www.aniski.jp/",
+      "coordinates": "140.4333,39.9500",
+      "ticket_prices": {
+        "one_day_adult": "¥3,800",
+        "season": "2025-2026"
+      },
+      "highlights": "落差600m，8雪道，树冰观赏名所",
+      "night_skiing_info": "无",
+      "transport": "秋田内陆线阿仁合站，巴士约20分钟",
+      "xiaohongshu_review": "树冰观赏名所，秘境雪场，人少雪好",
+      "images": [],
+      "transport_detailed": "【最近机场】秋田机场/大馆能代机场\n\n【机场直达】无直达巴士\n\n【备选交通】秋田站→JR奥羽本线→�的立站→秋田内陆线→阿仁合站→巴士约20分钟\n\n【耗时/票价】秋田→阿仁合约2.5小时¥2500；阿仁合→雪场巴士约20分钟¥500\n\n【自驾】秋田市出发约2小时（秋田自动车道→五城目八郎潟IC→国道285号）"
+    },
+    {
+      "resort_name": "八甲田滑雪场",
+      "english_name": "Hakkoda Ski Resort",
+      "japanese_name": "八甲田スキー場",
+      "address": "青森県青森市荒川寒水沢1-12",
+      "website": "https://www.hakkoda-ropeway.jp/",
+      "coordinates": "140.8667,40.6500",
+      "ticket_prices": {
+        "one_day_adult": "¥5,000",
+        "season": "2025-2026"
+      },
+      "highlights": "落差664m，非压雪野雪天堂，树冰群",
+      "night_skiing_info": "无",
+      "transport": "JR青森站，JR巴士约1小时",
+      "xiaohongshu_review": "野雪天堂，树冰群，backcountry圣地，高手必去",
+      "images": [],
+      "transport_detailed": "【最近机场】青森机场\n\n【机场直达】无直达巴士\n\n【备选交通】青森站→JRバス东北「みずうみ号」→八甲田ロープウェー站前约1小时\n\n【耗时/票价】青森站→八甲田约1小时¥1100\n\n【自驾】青森市出发约1小时（国道103号→八甲田ロープウェー）\n\n【注意】野雪圣地，建议有经验者前往",
+      "transport_page": "https://hakkoda-ropeway.jp/access/",
+      "ticket_url": "https://hakkoda-ropeway.jp/fare_time/",
+      "trail_map": "https://hakkoda-ropeway.jp/ski/",
+      "weather_url": "https://hakkoda-ropeway.jp/",
+      "trail_map_image": "https://hakkoda-ropeway.jp/wp/wp-content/uploads/2025/05/map_ground.png"
+    },
+    {
+      "resort_name": "八海山滑雪场",
+      "english_name": "Hakkaisan Ski Resort",
+      "japanese_name": "八海山スキー場",
+      "address": "新潟県南魚沼市山口1610",
+      "website": "https://www.princehotels.co.jp/ski/hakkaisan/",
+      "coordinates": "139.0167,37.0833",
+      "ticket_prices": {
+        "one_day_adult": "¥5,000",
+        "season": "2025-2026"
+      },
+      "highlights": "落差771m，16雪道，八海山绝景",
+      "night_skiing_info": "无",
+      "transport": "JR六日町站，免费接驳巴士约20分钟",
+      "xiaohongshu_review": "八海山绝景，中上级者向，缆车直达山顶",
+      "images": [],
+      "transport_detailed": "【最近机场】新潟机场\n\n【机场直达】无直达巴士\n\n【备选交通】东京站→上越新干线→越后汤泽站→JR上越线→六日町站→免费接驳巴士约20分钟\n\n【耗时/票价】东京→六日町约1.5小时¥6500；接驳巴士免费\n\n【自驾】东京出发约2.5小时（关越自动车道→六日町IC→国道17号约15分钟）"
+    }
+  ]
+}

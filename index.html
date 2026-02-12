@@ -1,0 +1,3093 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>追雪 - 日本滑雪场完全指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* 固定顶部容器 */
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 15px 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 0.75em;
+            opacity: 0.9;
+        }
+
+        /* 地区筛选 - 横向滚动 */
+        .region-tabs {
+            display: flex;
+            gap: 8px;
+            padding: 12px 15px;
+            background: white;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .region-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .region-tab {
+            flex-shrink: 0;
+            padding: 8px 16px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .region-tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        /* 排序按钮 */
+        .sort-tabs {
+            display: flex;
+            gap: 8px;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            border-bottom: 1px solid #e0e0e0;
+            scrollbar-width: none;
+        }
+
+        .sort-tabs::-webkit-scrollbar {
+            display: none;
+            height: 0;
+        }
+
+        .sort-tab {
+            flex-shrink: 0;
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 18px;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .sort-tab.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* 内容区 */
+        .content {
+            padding: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .resort-card {
+            background: white;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .resort-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+        }
+
+        .resort-card:active {
+            transform: translateY(-2px);
+        }
+
+        .resort-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .resort-name {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        .resort-english {
+            font-size: 0.7em;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        .score-badge {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .resort-info {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 8px;
+            font-size: 0.8em;
+            color: #666;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 2px;
+        }
+
+        .info-value {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .snow-info {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .snow-tag {
+            flex: 1;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .snow-current {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+        }
+
+        .snow-forecast {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .xiaohongshu-review {
+            background: #fff3e0;
+            border-left: 3px solid #ff9800;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 0.75em;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .resort-actions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+        }
+
+        .action-btn {
+            padding: 6px;
+            background: #f8f9fa;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .action-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+        }
+
+        .action-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+        }
+
+        /* 底部联系 */
+        .footer {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-title {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        .show-qr-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 15px auto 0;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .qr-code.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* 桌面端适配 */
+        @media (min-width: 768px) {
+            .header {
+                padding: 30px 20px 20px;
+            }
+
+            .header-title {
+                font-size: 2em;
+            }
+
+            .header-subtitle {
+                font-size: 0.9em;
+            }
+
+            .region-tabs {
+                justify-content: center;
+                padding: 15px 20px;
+            }
+
+            .region-tab {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .sort-tabs {
+                justify-content: center;
+                padding: 12px 20px;
+            }
+
+            .sort-tab {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .resort-card {
+                padding: 15px;
+            }
+
+            .resort-name {
+                font-size: 1.3em;
+            }
+
+            .resort-info {
+                gap: 20px;
+                font-size: 0.9em;
+            }
+
+            .snow-info {
+                gap: 10px;
+            }
+
+            .snow-tag {
+                padding: 12px;
+                font-size: 0.9em;
+            }
+
+            .resort-actions {
+                gap: 10px;
+            }
+
+            .action-btn {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+
+            .footer {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-top">
+        <div class="header">
+            <div class="header-title">❄️ 追雪</div>
+            <div class="header-subtitle">日本滑雪场指南 · 71个雪场 · 实时天气</div>
+        </div>
+
+        <div class="region-tabs">
+        <button class="region-tab active" onclick="filterRegion('全部')">全部</button>
+        <button class="region-tab " onclick="filterRegion('北海道')">北海道</button>
+        <button class="region-tab " onclick="filterRegion('东北')">东北</button>
+        <button class="region-tab " onclick="filterRegion('关东')">关东</button>
+        <button class="region-tab " onclick="filterRegion('中部')">中部</button>
+        <button class="region-tab " onclick="filterRegion('关西')">关西</button>
+    </div>
+
+    <div class="sort-tabs">
+        <button class="sort-tab active" onclick="sortBy('snow')">❄️ 当前降雪</button>
+        <button class="sort-tab" onclick="sortBy('forecast')">🔮 未来降雪</button>
+    </div>
+    </div>
+
+    <div class="content">
+        <div class="cards-grid" id="content">
+
+        <div class="resort-card" data-region="北海道" data-snow="6.1" data-forecast="11.3" onclick="window.location.href='resorts/niseko-united.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">二世谷联合雪场</div>
+                    <div class="resort-english">Niseko United</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥8,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.8247/142.8694?42.8247,142.8694,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.1cm · -5.4°C
+                </a>
+                <a href="https://www.windy.com/42.8247/142.8694?42.8247,142.8694,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 Japow圣地，年降雪15m+，76雪道全水平覆盖；踩雷：旺季人挤、物价高
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/niseko-united.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.niseko.ne.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.8247/142.8694?42.8247,142.8694,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="3.6" data-forecast="8.8" onclick="window.location.href='resorts/furano-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">富良野滑雪场</div>
+                    <div class="resort-english">Furano Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">18条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.4575/142.4072?43.4575,142.4072,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 3.6cm · -1.9°C
+                </a>
+                <a href="https://www.windy.com/43.4575/142.4072?43.4575,142.4072,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 8.8cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 内陆干粉雪质稳定，落差974m，新千岁/旭川均有直达；踩雷：雪道数量偏少(18条)
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/furano-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.co.jp/ski/furano/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.4575/142.4072?43.4575,142.4072,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="8.3" data-forecast="16.7" onclick="window.location.href='resorts/rusutsu-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">留寿都度假村</div>
+                    <div class="resort-english">Rusutsu Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,700</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.9289/142.7978?42.9289,142.7978,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 8.3cm · -4.1°C
+                </a>
+                <a href="https://www.windy.com/42.9289/142.7978?42.9289,142.7978,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 16.7cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 三峰37雪道相连，树林地形丰富，新千岁2h直达；踩雷：无夜场
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/rusutsu-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://rusutsu.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.9289/142.7978?42.9289,142.7978,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="0" data-forecast="0" onclick="window.location.href='resorts/hoshino-resorts-tomamu.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">星野 TOMAMU 度假村</div>
+                    <div class="resort-english">Hoshino Resorts TOMAMU</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.3406/142.4869?43.3406,142.4869,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0cm · 0°C
+                </a>
+                <a href="https://www.windy.com/43.3406/142.4869?43.3406,142.4869,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 -20°C极寒保粉，Ungroomed区域体验好，新千岁1.5h；踩雷：旺季房难订
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hoshino-resorts-tomamu.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.snowtomamu.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.3406/142.4869?43.3406,142.4869,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="0.0" data-forecast="0.3" onclick="window.location.href='resorts/kiroro-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">喜乐乐雪世界</div>
+                    <div class="resort-english">Kiroro Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.3256/140.9058?43.3256,140.9058,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 3.3°C
+                </a>
+                <a href="https://www.windy.com/43.3256/140.9058?43.3256,140.9058,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 年降雪21m北海道第二，札幌站直达巴士1h；踩雷：雪道数量一般(23条)
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kiroro-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.kiroro.co.jp/ja/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.3256/140.9058?43.3256,140.9058,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="6.1" data-forecast="6.3" onclick="window.location.href='resorts/shiga-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">志贺高原</div>
+                    <div class="resort-english">Shiga Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6569/138.5817?36.6569,138.5817,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.1cm · -0.4°C
+                </a>
+                <a href="https://www.windy.com/36.6569/138.5817?36.6569,138.5817,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 6.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 84雪道日本最大，18雪场互通，雪季至5月；踩雷：区域大需时间探索
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/shiga-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://resv.shigakogen.gr.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6569/138.5817?36.6569,138.5817,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="10.0" data-forecast="11.3" onclick="window.location.href='resorts/nozawa-onsen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">野泽温泉</div>
+                    <div class="resort-english">Nozawa Onsen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,300</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7569/138.4872?36.7569,138.4872,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 10.0cm · -0.2°C
+                </a>
+                <a href="https://www.windy.com/36.7569/138.4872?36.7569,138.4872,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 44雪道，年降雪12m，落差1085m；踩雷：小镇住宿需提前订
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/nozawa-onsen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.nozawa-onsen.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7569/138.4872?36.7569,138.4872,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="13.0" data-forecast="23.9" onclick="window.location.href='resorts/naeba-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">苗场</div>
+                    <div class="resort-english">Naeba Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9214/138.9375?36.9214,138.9375,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 13.0cm · 0.3°C
+                </a>
+                <a href="https://www.windy.com/36.9214/138.9375?36.9214,138.9375,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 23.9cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 落差1497m，与神乐5.5km缆车互通；踩雷：周末人多
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/naeba-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.com/ski/naeba/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9214/138.9375?36.9214,138.9375,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="10.0" data-forecast="18.4" onclick="window.location.href='resorts/gala-yuzawa-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">GALA 汤泽</div>
+                    <div class="resort-english">GALA Yuzawa Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9422/139.0389?36.9422,139.0389,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 10.0cm · -0.9°C
+                </a>
+                <a href="https://www.windy.com/36.9422/139.0389?36.9422,139.0389,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 18.4cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 东京77分钟新干线直达，当日往返首选；踩雷：雪道偏短，人工雪比例高
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/gala-yuzawa-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://gala.co.jp/winter/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9422/139.0389?36.9422,139.0389,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0" data-forecast="0" onclick="window.location.href='resorts/kagura-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">神乐</div>
+                    <div class="resort-english">Kagura Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9542/138.9875?36.9542,138.9875,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0cm · 0°C
+                </a>
+                <a href="https://www.windy.com/36.9542/138.9875?36.9542,138.9875,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 年降雪14m+，树林野雪体验绝，粉雪不输北海道；踩雷：缆车班次少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kagura-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.co.jp/ski/kagura/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9542/138.9875?36.9542,138.9875,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="10.2" data-forecast="11.6" onclick="window.location.href='resorts/myoko-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">妙高高原</div>
+                    <div class="resort-english">Myoko Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.8500/138.4833?36.8500,138.4833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 10.2cm · 2.2°C
+                </a>
+                <a href="https://www.windy.com/36.8500/138.4833?36.8500,138.4833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.6cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 48雪道5区互通，年降雪13m；踩雷：区域间需坐接驳巴士
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/myoko-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.myoko.tv/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.8500/138.4833?36.8500,138.4833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关东" data-snow="5.5" data-forecast="5.6" onclick="window.location.href='resorts/kusatsu-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">草津温泉滑雪场</div>
+                    <div class="resort-english">Kusatsu Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,400</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7167/138.6458?36.7167,138.6458,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.5cm · -2.9°C
+                </a>
+                <a href="https://www.windy.com/36.7167/138.6458?36.7167,138.6458,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 5.6cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 基础海拔1200m，雪季至5月，干粉雪质；踩雷：雪道数量少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kusatsu-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.932-onsen.com/winter/top" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7167/138.6458?36.7167,138.6458,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="0.0" data-forecast="1.3" onclick="window.location.href='resorts/zao-onsen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">藏王温泉</div>
+                    <div class="resort-english">Zao Onsen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,600</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/38.1705/140.4017?38.1705,140.4017,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 2.5°C
+                </a>
+                <a href="https://www.windy.com/38.1705/140.4017?38.1705,140.4017,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 树冰穿越滑行独特体验，年降雪10m；踩雷：旺季树冰区人挤
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/zao-onsen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="http://www.zao-ski.or.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/38.1705/140.4017?38.1705,140.4017,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.8" data-forecast="0.8" onclick="window.location.href='resorts/hakuba-goryu-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马五竜</div>
+                    <div class="resort-english">Hakuba Goryu Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,300</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6167/137.9333?36.6167,137.9333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.8cm · 1.5°C
+                </a>
+                <a href="https://www.windy.com/36.6167/137.9333?36.6167,137.9333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.8cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 落差1180m，与白马47互通，名古屋/长野均可直达；踩雷：中高级雪道偏少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-goryu-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakubagoryu.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6167/137.9333?36.6167,137.9333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="1.1" data-forecast="1.5" onclick="window.location.href='resorts/hakuba-tsugaike-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马栂池高原</div>
+                    <div class="resort-english">Hakuba Tsugaike Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,400</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6333/137.8833?36.6333,137.8833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.1cm · 1.4°C
+                </a>
+                <a href="https://www.windy.com/36.6333/137.8833?36.6333,137.8833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 落差1403m，雪季至5月，名古屋直达巴士可达；踩雷：缆车设施较老
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-tsugaike-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.tsugaike.gr.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6333/137.8833?36.6333,137.8833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="5.3" data-forecast="10.1" onclick="window.location.href='resorts/sapporo-teine-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">札幌手稻滑雪场</div>
+                    <div class="resort-english">Sapporo Teine Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.1833/141.2769?43.1833,141.2769,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.3cm · 0.5°C
+                </a>
+                <a href="https://www.windy.com/43.1833/141.2769?43.1833,141.2769,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 10.1cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 札幌站28分钟直达，落差683m；踩雷：旺季本地人多，无夜场
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sapporo-teine-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://sapporo-teine.com/snow/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.1833/141.2769?43.1833,141.2769,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="12.5" data-forecast="28.8" onclick="window.location.href='resorts/sahoro-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">佐幌度假村</div>
+                    <div class="resort-english">Sahoro Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.6500/143.0500?43.6500,143.0500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 12.5cm · -4.1°C
+                </a>
+                <a href="https://www.windy.com/43.6500/143.0500?43.6500,143.0500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 28.8cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 晴天率70%，Cat Skiing可选，旭川机场1.5h；踩雷：规模偏小
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sahoro-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://sahoro-resort.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.6500/143.0500?43.6500,143.0500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="5.2" data-forecast="13.0" onclick="window.location.href='resorts/kamui-ski-links.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">神居滑雪场</div>
+                    <div class="resort-english">Kamui Ski Links</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.7500/142.4667?43.7500,142.4667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.2cm · -2.5°C
+                </a>
+                <a href="https://www.windy.com/43.7500/142.4667?43.7500,142.4667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 13.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 旭川站40分钟，本地粉雪好；踩雷：雪道数量少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kamui-ski-links.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.kamui-skilinks.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.7500/142.4667?43.7500,142.4667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="2.6" data-forecast="11.9" onclick="window.location.href='resorts/asahidake-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">旭岳滑雪场</div>
+                    <div class="resort-english">Asahidake Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.8333/142.7833?43.8333,142.7833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 2.6cm · -1.9°C
+                </a>
+                <a href="https://www.windy.com/43.8333/142.7833?43.8333,142.7833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.9cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 雪季至6月日本最长，登山滑雪圣地；注意：需导滑，非压雪道为主
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/asahidake-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="http://asahidake.hokkaido.jp/ja/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.8333/142.7833?43.8333,142.7833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="1.9" data-forecast="5.1" onclick="window.location.href='resorts/sapporo-kokusai-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">札幌国际滑雪场</div>
+                    <div class="resort-english">Sapporo Kokusai Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,300</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.9500/141.5000?42.9500,141.5000,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.9cm · 1.1°C
+                </a>
+                <a href="https://www.windy.com/42.9500/141.5000?42.9500,141.5000,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 5.1cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 札幌站1小时，夜场至21:00；踩雷：落差一般
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sapporo-kokusai-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="http://www.sapporo-kokusai.jp/cn/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.9500/141.5000?42.9500,141.5000,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="2.7" data-forecast="6.4" onclick="window.location.href='resorts/sapporo-bankei-ski-area.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">盘溪滑雪场</div>
+                    <div class="resort-english">Sapporo Bankei Ski Area</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.0500/141.3500?43.0500,141.3500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 2.7cm · None°C
+                </a>
+                <a href="https://www.windy.com/43.0500/141.3500?43.0500,141.3500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 6.4cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 札幌站20分钟最近，夜场至21:00；踩雷：雪道短，本地人多
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sapporo-bankei-ski-area.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="http://www.bankei.co.jp/multilingual/s_chinese.html" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.0500/141.3500?43.0500,141.3500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="2.7" data-forecast="6.4" onclick="window.location.href='resorts/sapporo-moiwayama-ski.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">札幌藻岩山滑雪场</div>
+                    <div class="resort-english">Sapporo Moiwayama Ski</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.0333/141.3167?43.0333,141.3167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 2.7cm · -0.8°C
+                </a>
+                <a href="https://www.windy.com/43.0333/141.3167?43.0333,141.3167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 6.4cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 札幌夜景+滑雪，中高级坡度；踩雷：落差小，新手慎选
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sapporo-moiwayama-ski.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://sapporo-moiwa.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.0333/141.3167?43.0333,141.3167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="8.3" data-forecast="16.5" onclick="window.location.href='resorts/niseko-annupuri-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">二世谷安努普利</div>
+                    <div class="resort-english">Niseko Annupuri Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥8,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.8333/142.8333?42.8333,142.8333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 8.3cm · -2.1°C
+                </a>
+                <a href="https://www.windy.com/42.8333/142.8333?42.8333,142.8333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 16.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 二世谷最清净区域，粉雪好；踩雷：餐饮配套少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/niseko-annupuri-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://annupuri.info/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.8333/142.8333?42.8333,142.8333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="6.1" data-forecast="11.3" onclick="window.location.href='resorts/niseko-hanazono-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">二世谷花园度假村</div>
+                    <div class="resort-english">Niseko Hanazono Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥8,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.8167/142.8500?42.8167,142.8500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.1cm · -4.9°C
+                </a>
+                <a href="https://www.windy.com/42.8167/142.8500?42.8167,142.8500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 2021新缆车，地形公园好；踩雷：旺季人挤
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/niseko-hanazono-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://hanazononiseko.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.8167/142.8500?42.8167,142.8500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="6.1" data-forecast="11.3" onclick="window.location.href='resorts/niseko-grand-hirafu.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">二世谷比罗夫</div>
+                    <div class="resort-english">Niseko Grand Hirafu</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥8,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.8250/142.8833?42.8250,142.8833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.1cm · -4.0°C
+                </a>
+                <a href="https://www.windy.com/42.8250/142.8833?42.8250,142.8833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 夜场至22:00，配套最全；踩雷：人最多，物价高
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/niseko-grand-hirafu.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.grand-hirafu.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.8250/142.8833?42.8250,142.8833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="6.1" data-forecast="11.3" onclick="window.location.href='resorts/niseko-village-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">二世谷村滑雪场</div>
+                    <div class="resort-english">Niseko Village Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥8,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.8333/142.8167?42.8333,142.8167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.1cm · -4.6°C
+                </a>
+                <a href="https://www.windy.com/42.8333/142.8167?42.8333,142.8167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 Hilton/丽思卡尔顿直通，私密性好；踩雷：价格贵
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/niseko-village-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.niseko-village.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.8333/142.8167?42.8333,142.8167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="0.0" data-forecast="0.3" onclick="window.location.href='resorts/asarigawa-onsen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">朝里川温泉滑雪场</div>
+                    <div class="resort-english">Asarigawa Onsen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,600</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.3500/140.7833?43.3500,140.7833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 3.3°C
+                </a>
+                <a href="https://www.windy.com/43.3500/140.7833?43.3500,140.7833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 小樽站40分钟，本地小众；踩雷：雪道数量少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/asarigawa-onsen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://asari-ski.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.3500/140.7833?43.3500,140.7833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="0.1" data-forecast="6.7" onclick="window.location.href='resorts/otaru-tenguyama-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">小樽天狗山滑雪场</div>
+                    <div class="resort-english">Otaru Tenguyama Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,400</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/43.1833/140.9833?43.1833,140.9833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.1cm · 2.1°C
+                </a>
+                <a href="https://www.windy.com/43.1833/140.9833?43.1833,140.9833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 6.7cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 小樽站15分钟，观光+滑雪组合；踩雷：落差小，雪道短
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/otaru-tenguyama-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://tenguyama.ckk.chuo-bus.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/43.1833/140.9833?43.1833,140.9833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="0.0" data-forecast="5.7" onclick="window.location.href='resorts/hakodate-nanae-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">函馆七饭滑雪场</div>
+                    <div class="resort-english">Hakodate Nanae Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,700</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/41.8500/140.5000?41.8500,140.5000,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 2.6°C
+                </a>
+                <a href="https://www.windy.com/41.8500/140.5000?41.8500,140.5000,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 5.7cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 函馆周边唯一，海景滑行；踩雷：雪季较短
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakodate-nanae-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://hakodate-nanae.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/41.8500/140.5000?41.8500,140.5000,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="1.6" data-forecast="2.0" onclick="window.location.href='resorts/hakuba-happo-one-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马八方尾根</div>
+                    <div class="resort-english">Hakuba Happo-one Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6333/137.9167?36.6333,137.9167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.6cm · 0.9°C
+                </a>
+                <a href="https://www.windy.com/36.6333/137.9167?36.6333,137.9167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 2.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 37雪道，8km最长滑行，落差1300m；踩雷：旺季人多
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-happo-one-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.happo-one.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6333/137.9167?36.6333,137.9167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.8" data-forecast="0.8" onclick="window.location.href='resorts/hakuba-47-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马 47 滑雪场</div>
+                    <div class="resort-english">Hakuba 47 Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,400</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6167/137.9500?36.6167,137.9500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.8cm · 1.5°C
+                </a>
+                <a href="https://www.windy.com/36.6167/137.9500?36.6167,137.9500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.8cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 与五竜互通，树林滑行好；踩雷：部分雪道陡峭
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-47-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakuba47.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6167/137.9500?36.6167,137.9500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="1.1" data-forecast="1.5" onclick="window.location.href='resorts/hakuba-cortina-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马 Cortina 滑雪场</div>
+                    <div class="resort-english">Hakuba Cortina Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6333/137.8667?36.6333,137.8667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.1cm · 1.4°C
+                </a>
+                <a href="https://www.windy.com/36.6333/137.8667?36.6333,137.8667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 年降雪12m，野雪区开放；踩雷：配套设施简单
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-cortina-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakubacortina.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6333/137.8667?36.6333,137.8667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="1.1" data-forecast="1.5" onclick="window.location.href='resorts/hakuba-iwatake-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马岩岳滑雪场</div>
+                    <div class="resort-english">Hakuba Iwatake Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,300</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6500/137.9000?36.6500,137.9000,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.1cm · 1.4°C
+                </a>
+                <a href="https://www.windy.com/36.6500/137.9000?36.6500,137.9000,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 地形公园好，单板友好；踩雷：非公园玩家选择少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-iwatake-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://iwatake-mountain-resort.com/winter/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6500/137.9000?36.6500,137.9000,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="9.3" data-forecast="9.6" onclick="window.location.href='resorts/hakuba-norikura-onsen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马乘鞍温泉滑雪场</div>
+                    <div class="resort-english">Hakuba Norikura Onsen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6667/137.8333?36.6667,137.8333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 9.3cm · -0.5°C
+                </a>
+                <a href="https://www.windy.com/36.6667/137.8333?36.6667,137.8333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 9.6cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 白马小众，滑后温泉直达；踩雷：雪道数量少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-norikura-onsen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakubavalley.com/ja/ski_resort/hakuba_norikura_onsen/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6667/137.8333?36.6667,137.8333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="24.6" data-forecast="25.8" onclick="window.location.href='resorts/hakuba-kashimayari-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马鹿岛槍滑雪场</div>
+                    <div class="resort-english">Hakuba Kashimayari Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,100</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7000/137.6500?36.7000,137.6500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️❄️ 24.6cm · 0.3°C
+                </a>
+                <a href="https://www.windy.com/36.7000/137.6500?36.7000,137.6500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 25.8cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 初中级为主，家庭首选；踩雷：中高级雪道少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-kashimayari-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.kashimayari.net/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7000/137.6500?36.7000,137.6500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="9.3" data-forecast="9.6" onclick="window.location.href='resorts/hakuba-sanosaka-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">白马 Sanosaka 滑雪场</div>
+                    <div class="resort-english">Hakuba Sanosaka Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,900</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.6333/137.8167?36.6333,137.8167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 9.3cm · -0.5°C
+                </a>
+                <a href="https://www.windy.com/36.6333/137.8167?36.6333,137.8167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 9.6cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 野雪区域好，本地小众；踩雷：配套简单
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakuba-sanosaka-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakubavalley.com/ja/ski_resort/hakuba_sanosaka/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.6333/137.8167?36.6333,137.8167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="2.9" onclick="window.location.href='resorts/madarao-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">斑尾高原滑雪场</div>
+                    <div class="resort-english">Madarao Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7500/138.3333?36.7500,138.3333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 2.5°C
+                </a>
+                <a href="https://www.windy.com/36.7500/138.3333?36.7500,138.3333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 2.9cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 年降雪11m，树林滑行好，饭山站40min；踩雷：知名度低住宿选择少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/madarao-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.madarao.jp/ski/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7500/138.3333?36.7500,138.3333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/karuizawa-prince-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">轻井泽王子滑雪场</div>
+                    <div class="resort-english">Karuizawa Prince Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.3333/138.5667?36.3333,138.5667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 2.5°C
+                </a>
+                <a href="https://www.windy.com/36.3333/138.5667?36.3333,138.5667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 东京1小时新干线直达；踩雷：人工造雪为主，雪质一般
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/karuizawa-prince-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.com/ski/karuizawa/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.3333/138.5667?36.3333,138.5667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.1" data-forecast="0.1" onclick="window.location.href='resorts/sugadaira-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">菅平高原滑雪场</div>
+                    <div class="resort-english">Sugadaira Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.5000/138.2333?36.5000,138.2333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.1cm · 4.0°C
+                </a>
+                <a href="https://www.windy.com/36.5000/138.2333?36.5000,138.2333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.1cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 60雪道长野第二，晴天率80%，上田站1h；踩雷：需要时间探索
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sugadaira-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://sugadaira-snowresort.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.5000/138.2333?36.5000,138.2333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="7.9" data-forecast="8.3" onclick="window.location.href='resorts/kurumayama-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">车山高原滑雪场</div>
+                    <div class="resort-english">Kurumayama Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.4333/138.4167?36.4333,138.4167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 7.9cm · -0.4°C
+                </a>
+                <a href="https://www.windy.com/36.4333/138.4167?36.4333,138.4167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 8.3cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 野雪区域好，本地小众；踩雷：配套简单
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kurumayama-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.kurumayama-ski.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.4333/138.4167?36.4333,138.4167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="10.2" data-forecast="10.2" onclick="window.location.href='resorts/ryuoo-ski-park.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">竜王滑雪公园</div>
+                    <div class="resort-english">Ryuoo Ski Park</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7833/138.5833?36.7833,138.5833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 10.2cm · 0.1°C
+                </a>
+                <a href="https://www.windy.com/36.7833/138.5833?36.7833,138.5833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 10.2cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 地形公园好，SORA Terrace云海；踩雷：非公园玩家选择少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/ryuoo-ski-park.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.ryuoo.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7833/138.5833?36.7833,138.5833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="15.1" data-forecast="16.5" onclick="window.location.href='resorts/kurohime-kogen-snow-park.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">黑姬高原滑雪场</div>
+                    <div class="resort-english">Kurohime Kogen Snow Park</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,900</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.8333/137.9833?36.8333,137.9833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 15.1cm · -0.1°C
+                </a>
+                <a href="https://www.windy.com/36.8333/137.9833?36.8333,137.9833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 16.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 初级为主，宠物可入场；踩雷：雪道短
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kurohime-kogen-snow-park.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://kurohime-kogen.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.8333/137.9833?36.8333,137.9833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/tateshina-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">长野蓼科高原滑雪场</div>
+                    <div class="resort-english">Tateshina Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,700</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.4000/138.1500?36.4000,138.1500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ⛅ 0.0cm · 4.8°C
+                </a>
+                <a href="https://www.windy.com/36.4000/138.1500?36.4000,138.1500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 长野小众，滑后温泉；踩雷：雪道数量少
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/tateshina-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.tateshina-tokyu.com/ski/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.4000/138.1500?36.4000,138.1500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/kiyosato-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">长野清里滑雪场</div>
+                    <div class="resort-english">Kiyosato Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.2833/138.5000?36.2833,138.5000,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 3.4°C
+                </a>
+                <a href="https://www.windy.com/36.2833/138.5000?36.2833,138.5000,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 初级为主，夜场至20:00；踩雷：雪质一般
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kiyosato-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.sunmeadows.co.jp/winter/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.2833/138.5000?36.2833,138.5000,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="4.9" onclick="window.location.href='resorts/togakushi-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">长野户隐滑雪场</div>
+                    <div class="resort-english">Togakushi Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,600</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7833/138.2833?36.7833,138.2833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 2.0°C
+                </a>
+                <a href="https://www.windy.com/36.7833/138.2833?36.7833,138.2833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 4.9cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 长野小众，忍者文化体验；踩雷：知名度低
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/togakushi-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.togakusi.com/ski/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7833/138.2833?36.7833,138.2833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="13.0" data-forecast="22.4" onclick="window.location.href='resorts/yuzawa-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">汤泽高原滑雪场</div>
+                    <div class="resort-english">Yuzawa Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9333/139.0167?36.9333,139.0167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 13.0cm · -1.1°C
+                </a>
+                <a href="https://www.windy.com/36.9333/139.0167?36.9333,139.0167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 22.4cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 与GALA互通，汤泽小众；踩雷：配套简单
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/yuzawa-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.yuzawakogen.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9333/139.0167?36.9333,139.0167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="11.8" data-forecast="23.0" onclick="window.location.href='resorts/ishiuchi-maruyama-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">石打丸山滑雪场</div>
+                    <div class="resort-english">Ishiuchi Maruyama Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,300</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9833/138.9667?36.9833,138.9667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 11.8cm · 2.7°C
+                </a>
+                <a href="https://www.windy.com/36.9833/138.9667?36.9833,138.9667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 23.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 中高级坡度好，夜场至21:00，越后汤泽30min；踩雷：周末人多
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/ishiuchi-maruyama-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://ishiuchi.or.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9833/138.9667?36.9833,138.9667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="14.1" data-forecast="24.4" onclick="window.location.href='resorts/maiko-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">舞子滑雪场</div>
+                    <div class="resort-english">Maiko Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9500/138.9167?36.9500,138.9167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 14.1cm · 2.0°C
+                </a>
+                <a href="https://www.windy.com/36.9500/138.9167?36.9500,138.9167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 24.4cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 初级为主，夜场至20:30，越后汤泽25min；踩雷：雪道短
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/maiko-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.maiko-resort.com/winter/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9500/138.9167?36.9500,138.9167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/joetsu-kokusai-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">上越国际滑雪场</div>
+                    <div class="resort-english">Joetsu Kokusai Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,700</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/37.0500/138.6833?37.0500,138.6833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 0.9°C
+                </a>
+                <a href="https://www.windy.com/37.0500/138.6833?37.0500,138.6833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 JR上越国际滑雪场前站直达(东京2h新干线+在来线)；踩雷：设施较老
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/joetsu-kokusai-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.jkokusai.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/37.0500/138.6833?37.0500,138.6833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="7.6" data-forecast="15.1" onclick="window.location.href='resorts/iwappara-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">岩原滑雪场</div>
+                    <div class="resort-english">Iwappara Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9667/138.8833?36.9667,138.8833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 7.6cm · 3.2°C
+                </a>
+                <a href="https://www.windy.com/36.9667/138.8833?36.9667,138.8833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 15.1cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 夜场至21:00，全水平适配，越后汤泽站30min；踩雷：旺季人多
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/iwappara-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.iwa-ppara.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9667/138.8833?36.9667,138.8833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="6.0" data-forecast="11.5" onclick="window.location.href='resorts/yuzawa-nakazato-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">汤泽中里滑雪场</div>
+                    <div class="resort-english">Yuzawa Nakazato Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,900</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9167/139.0500?36.9167,139.0500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 6.0cm · -0.6°C
+                </a>
+                <a href="https://www.windy.com/36.9167/139.0500?36.9167,139.0500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.5cm
+                </a>
+            </div>
+
+            <div class="xiaohongshu-review">
+                💬 地形公园好，夜场至20:30；踩雷：雪道短
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/yuzawa-nakazato-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.yuzawa-nakazato.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9167/139.0500?36.9167,139.0500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="北海道" data-snow="3.8" data-forecast="11.5" onclick="window.location.href='resorts/sapporo-fujino-fu's-snow-area.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">藤野FU'S滑雪场</div>
+                    <div class="resort-english">Sapporo Fujino Fu's Snow Area</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差95m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">6条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥3,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/42.9647/141.2847?42.9647,141.2847,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 3.8cm · 0.5°C
+                </a>
+                <a href="https://www.windy.com/42.9647/141.2847?42.9647,141.2847,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.5cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/sapporo-fujino-fu's-snow-area.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.fujino-yagai-sports.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/42.9647/141.2847?42.9647,141.2847,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="3.3" data-forecast="3.3" onclick="window.location.href='resorts/meiho-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">MEIHO滑雪场</div>
+                    <div class="resort-english">Meiho Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差700m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">14条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.8789/136.9456?35.8789,136.9456,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 3.3cm · -0.8°C
+                </a>
+                <a href="https://www.windy.com/35.8789/136.9456?35.8789,136.9456,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 3.3cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/meiho-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.meihoski.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.8789/136.9456?35.8789,136.9456,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="0.1" data-forecast="0.1" onclick="window.location.href='resorts/fujimi-panorama-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">富士见丽景度假村</div>
+                    <div class="resort-english">Fujimi Panorama Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差730m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">7条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.9089/138.2356?35.9089,138.2356,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.1cm · -0.6°C
+                </a>
+                <a href="https://www.windy.com/35.9089/138.2356?35.9089,138.2356,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.1cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/fujimi-panorama-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.fujimipanorama.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.9089/138.2356?35.9089,138.2356,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="1.0" data-forecast="11.7" onclick="window.location.href='resorts/kandatsu-snow-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">神立高原滑雪场</div>
+                    <div class="resort-english">Kandatsu Snow Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差540m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">16条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9333/138.8167?36.9333,138.8167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.0cm · 2.2°C
+                </a>
+                <a href="https://www.windy.com/36.9333/138.8167?36.9333,138.8167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 11.7cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/kandatsu-snow-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.kandatsu.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9333/138.8167?36.9333,138.8167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="2.8" data-forecast="5.0" onclick="window.location.href='resorts/akakura-kanko-resort-ski-area.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">赤仓观光度假滑雪场</div>
+                    <div class="resort-english">Akakura Kanko Resort Ski Area</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差850m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">10条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.8833/138.1833?36.8833,138.1833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 2.8cm · 1.7°C
+                </a>
+                <a href="https://www.windy.com/36.8833/138.1833?36.8833,138.1833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 5.0cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/akakura-kanko-resort-ski-area.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.akr-ski.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.8833/138.1833?36.8833,138.1833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="11.4" data-forecast="12.9" onclick="window.location.href='resorts/lotte-arai-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">LOTTE乐天新井度假村</div>
+                    <div class="resort-english">Lotte Arai Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差930m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">18条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥7,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.9333/138.1500?36.9333,138.1500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️❄️ 11.4cm · 0.6°C
+                </a>
+                <a href="https://www.windy.com/36.9333/138.1500?36.9333,138.1500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 12.9cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/lotte-arai-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.lottehotel.com/arai-resort/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.9333/138.1500?36.9333,138.1500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关西" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/hakodateyama-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">箱馆山滑雪场</div>
+                    <div class="resort-english">Hakodateyama Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差110m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">8条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥4,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.4500/136.0167?35.4500,136.0167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 3.4°C
+                </a>
+                <a href="https://www.windy.com/35.4500/136.0167?35.4500,136.0167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakodateyama-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakodateyama.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.4500/136.0167?35.4500,136.0167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关西" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/biwako-valley-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">琵琶湖Valley滑雪场</div>
+                    <div class="resort-english">Biwako Valley Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差774m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">9条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.1833/135.9167?35.1833,135.9167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 5.8°C
+                </a>
+                <a href="https://www.windy.com/35.1833/135.9167?35.1833,135.9167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/biwako-valley-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.biwako-valley.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.1833/135.9167?35.1833,135.9167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关西" data-snow="0.0" data-forecast="0.0" onclick="window.location.href='resorts/rokkosan-snow-park.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">六甲山滑雪场</div>
+                    <div class="resort-english">Rokkosan Snow Park</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差30m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">3条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥2,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/34.7667/135.2500?34.7667,135.2500,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 5.3°C
+                </a>
+                <a href="https://www.windy.com/34.7667/135.2500?34.7667,135.2500,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 0.0cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/rokkosan-snow-park.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.rokkosan.com/ski/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/34.7667/135.2500?34.7667,135.2500,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="9.1" data-forecast="9.1" onclick="window.location.href='resorts/takasu-snow-park.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">高鹫SNOWPARK滑雪场</div>
+                    <div class="resort-english">Takasu Snow Park</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差650m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">12条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,400</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.9500/136.8833?35.9500,136.8833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 9.1cm · -0.6°C
+                </a>
+                <a href="https://www.windy.com/35.9500/136.8833?35.9500,136.8833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 9.1cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/takasu-snow-park.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.takasu.gr.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.9500/136.8833?35.9500,136.8833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关东" data-snow="0.0" data-forecast="2.1" onclick="window.location.href='resorts/fujiyama-snow-resort-yeti.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">富士山YETI滑雪场</div>
+                    <div class="resort-english">Fujiyama Snow Resort Yeti</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差150m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">4条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥4,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/35.3500/138.7833?35.3500,138.7833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌤️ 0.0cm · 1.2°C
+                </a>
+                <a href="https://www.windy.com/35.3500/138.7833?35.3500,138.7833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 2.1cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/fujiyama-snow-resort-yeti.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.yeti-resort.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/35.3500/138.7833?35.3500,138.7833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关东" data-snow="5.5" data-forecast="5.7" onclick="window.location.href='resorts/marunuma-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">丸沼高原滑雪场</div>
+                    <div class="resort-english">Marunuma Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差600m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">13条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,700</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.8167/139.3833?36.8167,139.3833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.5cm · -2.8°C
+                </a>
+                <a href="https://www.windy.com/36.8167/139.3833?36.8167,139.3833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 5.7cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/marunuma-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.marunuma.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.8167/139.3833?36.8167,139.3833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="关东" data-snow="1.8" data-forecast="3.7" onclick="window.location.href='resorts/tambara-ski-park.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">玉原滑雪公园</div>
+                    <div class="resort-english">Tambara Ski Park</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差300m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">8条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,200</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/36.7833/139.0667?36.7833,139.0667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.8cm · 0.2°C
+                </a>
+                <a href="https://www.windy.com/36.7833/139.0667?36.7833,139.0667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 3.7cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/tambara-ski-park.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.tambara.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/36.7833/139.0667?36.7833,139.0667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="1.5" data-forecast="3.9" onclick="window.location.href='resorts/appi-kogen-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">安比高原滑雪场</div>
+                    <div class="resort-english">Appi Kogen Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差775m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">21条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/39.9333/141.0167?39.9333,141.0167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 1.5cm · -1.7°C
+                </a>
+                <a href="https://www.windy.com/39.9333/141.0167?39.9333,141.0167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 3.9cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/appi-kogen-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.appi.co.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/39.9333/141.0167?39.9333,141.0167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="5.4" data-forecast="9.9" onclick="window.location.href='resorts/shizukuishi-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">雫石滑雪场</div>
+                    <div class="resort-english">Shizukuishi Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差650m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">11条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,500</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/39.7500/140.8833?39.7500,140.8833,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.4cm · -0.4°C
+                </a>
+                <a href="https://www.windy.com/39.7500/140.8833?39.7500,140.8833,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 9.9cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/shizukuishi-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.co.jp/ski/shizukuishi/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/39.7500/140.8833?39.7500,140.8833,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="0.8" data-forecast="1.8" onclick="window.location.href='resorts/inawashiro-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">猪苗代滑雪场</div>
+                    <div class="resort-english">Inawashiro Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差485m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">18条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/37.5833/140.1167?37.5833,140.1167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 0.8cm · -0.2°C
+                </a>
+                <a href="https://www.windy.com/37.5833/140.1167?37.5833,140.1167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.8cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/inawashiro-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.inawashiro-ski.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/37.5833/140.1167?37.5833,140.1167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="2.2" data-forecast="4.1" onclick="window.location.href='resorts/grandeco-snow-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">GRANDECO滑雪度假村</div>
+                    <div class="resort-english">Grandeco Snow Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差580m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">13条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/37.6833/140.1000?37.6833,140.1000,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌨️ 2.2cm · -1.1°C
+                </a>
+                <a href="https://www.windy.com/37.6833/140.1000?37.6833,140.1000,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 4.1cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/grandeco-snow-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.grandeco.com/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/37.6833/140.1000?37.6833,140.1000,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="0.0" data-forecast="1.5" onclick="window.location.href='resorts/moriyoshizan-ani-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">森吉山阿仁滑雪场</div>
+                    <div class="resort-english">Moriyoshizan Ani Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差600m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">8条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥3,800</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/39.9500/140.4333?39.9500,140.4333,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🌧️ 0.0cm · 1.0°C
+                </a>
+                <a href="https://www.windy.com/39.9500/140.4333?39.9500,140.4333,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 1.5cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/moriyoshizan-ani-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.aniski.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/39.9500/140.4333?39.9500,140.4333,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="东北" data-snow="5.3" data-forecast="19.2" onclick="window.location.href='resorts/hakkoda-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">八甲田滑雪场</div>
+                    <div class="resort-english">Hakkoda Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差664m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/40.6500/140.8667?40.6500,140.8667,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 5.3cm · -1.8°C
+                </a>
+                <a href="https://www.windy.com/40.6500/140.8667?40.6500,140.8667,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 19.2cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakkoda-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.hakkoda-ropeway.jp/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/40.6500/140.8667?40.6500,140.8667,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+        <div class="resort-card" data-region="中部" data-snow="8.6" data-forecast="17.3" onclick="window.location.href='resorts/hakkaisan-ski-resort.html'">
+            <div class="resort-header">
+                <div>
+                    <div class="resort-name">八海山滑雪场</div>
+                    <div class="resort-english">Hakkaisan Ski Resort</div>
+                </div>
+            </div>
+
+            <div class="resort-info">
+                <div class="info-item">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">落差771m</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">雪道</span>
+                    <span class="info-value">16条</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥5,000</span>
+                </div>
+            </div>
+
+            <div class="snow-info">
+                <a href="https://www.windy.com/37.0833/139.0167?37.0833,139.0167,10,snow" target="_blank" class="snow-tag snow-current" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    ❄️ 8.6cm · 2.6°C
+                </a>
+                <a href="https://www.windy.com/37.0833/139.0167?37.0833,139.0167,10,snow" target="_blank" class="snow-tag snow-forecast" style="text-decoration: none;" onclick="event.stopPropagation()">
+                    🔮 未来5天: 17.3cm
+                </a>
+            </div>
+
+            <div class="resort-actions">
+                <a href="resorts/hakkaisan-ski-resort.html" class="action-btn" onclick="event.stopPropagation()">📄 详情</a>
+                <a href="https://www.princehotels.co.jp/ski/hakkaisan/" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌐 官网</a>
+                <a href="https://www.windy.com/37.0833/139.0167?37.0833,139.0167,10,snow" target="_blank" class="action-btn" onclick="event.stopPropagation()">🌤️ 天气</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">💬 联系站长</div>
+        <div class="footer-text">有问题或建议？欢迎交流</div>
+        <div class="qr-code" style="display: block;">
+            <img src="wx.jpg" alt="微信二维码">
+        </div>
+    </div>
+
+    <script>
+        let currentRegion = '全部';
+        let currentSort = 'default';
+
+        function filterRegion(region) {
+            currentRegion = region;
+
+            // 更新标签状态
+            document.querySelectorAll('.region-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent === region) {
+                    tab.classList.add('active');
+                }
+            });
+
+            // 显示/隐藏卡片
+            document.querySelectorAll('.resort-card').forEach(card => {
+                if (region === '全部' || card.dataset.region === region) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            // 重新应用当前排序
+            if (currentSort !== 'default') {
+                sortBy(currentSort);
+            }
+
+            // 滚动到顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function sortBy(type) {
+            currentSort = type;
+
+            // 更新按钮状态
+            document.querySelectorAll('.sort-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            const container = document.getElementById('content');
+            const cards = Array.from(container.querySelectorAll('.resort-card:not(.hidden)'));
+
+            if (type === 'default') {
+                // 默认排序：按地区和原始顺序
+                cards.sort((a, b) => {
+                    const regionOrder = ['全部', '北海道', '长野', '新潟', '群马', '山形'];
+                    const regionA = regionOrder.indexOf(a.dataset.region);
+                    const regionB = regionOrder.indexOf(b.dataset.region);
+                    return regionA - regionB;
+                });
+            } else {
+                // 按数值排序
+                cards.sort((a, b) => {
+                    let valA, valB;
+                    if (type === 'snow') {
+                        valA = parseFloat(a.dataset.snow);
+                        valB = parseFloat(b.dataset.snow);
+                    } else if (type === 'forecast') {
+                        valA = parseFloat(a.dataset.forecast);
+                        valB = parseFloat(b.dataset.forecast);
+                    } else if (type === 'score') {
+                        valA = parseFloat(a.dataset.score);
+                        valB = parseFloat(b.dataset.score);
+                    }
+                    return valB - valA; // 降序
+                });
+            }
+
+            // 重新排列
+            cards.forEach(card => container.appendChild(card));
+        }
+    </script>
+</body>
+</html>

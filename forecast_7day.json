@@ -1,0 +1,1525 @@
+{
+  "updated_at": "2026-02-11 22:56:09",
+  "forecast_days": 7,
+  "source": "Open-Meteo",
+  "resorts": {
+    "富良野滑雪场": {
+      "total_7day_snowfall": 8.8,
+      "daily_snowfall": [
+        3.6,
+        0,
+        2.2,
+        1.6,
+        1.1,
+        0.4,
+        0
+      ],
+      "daily_temperature": [
+        -7.0,
+        -9.0,
+        -10.0,
+        -7.0,
+        -5.0,
+        -10.0,
+        -13.0
+      ],
+      "max_day_snowfall": 3.6
+    },
+    "留寿都度假村": {
+      "total_7day_snowfall": 16.7,
+      "daily_snowfall": [
+        8.3,
+        2.2,
+        2.0,
+        0.2,
+        3.6,
+        0.4,
+        0
+      ],
+      "daily_temperature": [
+        -12.0,
+        -15.0,
+        -15.0,
+        -10.0,
+        -6.0,
+        -14.0,
+        -15.0
+      ],
+      "max_day_snowfall": 8.3
+    },
+    "二世谷联合雪场": {
+      "total_7day_snowfall": 11.3,
+      "daily_snowfall": [
+        6.1,
+        1.1,
+        0.6,
+        0,
+        3.6,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -12.0,
+        -15.0,
+        -15.0,
+        -10.0,
+        -8.0,
+        -14.0,
+        -14.0
+      ],
+      "max_day_snowfall": 6.1
+    },
+    "志贺高原": {
+      "total_7day_snowfall": 6.3,
+      "daily_snowfall": [
+        6.1,
+        0,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -7.0,
+        -9.0,
+        -7.0,
+        -2.0,
+        -2.0,
+        -8.0,
+        -9.0
+      ],
+      "max_day_snowfall": 6.1
+    },
+    "喜乐乐雪世界": {
+      "total_7day_snowfall": 0.3,
+      "daily_snowfall": [
+        0,
+        0,
+        0.3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -0.0,
+        -2.0,
+        -1.0,
+        1.0,
+        3.0,
+        -1.0,
+        -0.0
+      ],
+      "max_day_snowfall": 0.3
+    },
+    "野泽温泉": {
+      "total_7day_snowfall": 11.3,
+      "daily_snowfall": [
+        10.0,
+        0.1,
+        0,
+        0,
+        0,
+        1.3,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -9.0,
+        -8.0,
+        -7.0,
+        -1.0,
+        -2.0,
+        -3.0
+      ],
+      "max_day_snowfall": 10.0
+    },
+    "GALA 汤泽": {
+      "total_7day_snowfall": 18.4,
+      "daily_snowfall": [
+        10.0,
+        2.9,
+        0.2,
+        0,
+        0,
+        5.2,
+        0
+      ],
+      "daily_temperature": [
+        -4.0,
+        -7.0,
+        -4.0,
+        -2.0,
+        -1.0,
+        -6.0,
+        -8.0
+      ],
+      "max_day_snowfall": 10.0
+    },
+    "苗场": {
+      "total_7day_snowfall": 23.9,
+      "daily_snowfall": [
+        13.0,
+        5.0,
+        3.4,
+        0,
+        0,
+        2.4,
+        0
+      ],
+      "daily_temperature": [
+        -4.0,
+        -7.0,
+        -4.0,
+        -2.0,
+        0.0,
+        -5.0,
+        -6.0
+      ],
+      "max_day_snowfall": 13.0
+    },
+    "妙高高原": {
+      "total_7day_snowfall": 11.6,
+      "daily_snowfall": [
+        10.2,
+        0.1,
+        0,
+        0,
+        0,
+        1.3,
+        0
+      ],
+      "daily_temperature": [
+        -4.0,
+        -8.0,
+        -7.0,
+        -6.0,
+        -1.0,
+        -3.0,
+        -4.0
+      ],
+      "max_day_snowfall": 10.2
+    },
+    "草津温泉滑雪场": {
+      "total_7day_snowfall": 5.6,
+      "daily_snowfall": [
+        5.5,
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -9.0,
+        -7.0,
+        -4.0,
+        -1.0,
+        -7.0,
+        -8.0
+      ],
+      "max_day_snowfall": 5.5
+    },
+    "白马五竜": {
+      "total_7day_snowfall": 0.8,
+      "daily_snowfall": [
+        0.8,
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -6.0,
+        -5.0,
+        -3.0,
+        -1.0,
+        -4.0,
+        -5.0
+      ],
+      "max_day_snowfall": 0.8
+    },
+    "藏王温泉": {
+      "total_7day_snowfall": 1.3,
+      "daily_snowfall": [
+        0,
+        1.3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -5.0,
+        -5.0,
+        1.0,
+        0.0,
+        -2.0,
+        -4.0
+      ],
+      "max_day_snowfall": 1.3
+    },
+    "白马栂池高原": {
+      "total_7day_snowfall": 1.5,
+      "daily_snowfall": [
+        1.1,
+        0.1,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -6.0,
+        -4.0,
+        -0.0,
+        -8.0,
+        -8.0
+      ],
+      "max_day_snowfall": 1.1
+    },
+    "佐幌度假村": {
+      "total_7day_snowfall": 28.8,
+      "daily_snowfall": [
+        12.5,
+        2.7,
+        3.0,
+        2.5,
+        5.5,
+        2.6,
+        0
+      ],
+      "daily_temperature": [
+        -12.0,
+        -15.0,
+        -15.0,
+        -11.0,
+        -7.0,
+        -15.0,
+        -16.0
+      ],
+      "max_day_snowfall": 12.5
+    },
+    "神居滑雪场": {
+      "total_7day_snowfall": 13.0,
+      "daily_snowfall": [
+        5.2,
+        0.3,
+        2.6,
+        2.7,
+        1.3,
+        0.8,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -8.0,
+        -10.0,
+        -6.0,
+        -4.0,
+        -10.0,
+        -12.0
+      ],
+      "max_day_snowfall": 5.2
+    },
+    "旭岳滑雪场": {
+      "total_7day_snowfall": 11.9,
+      "daily_snowfall": [
+        2.6,
+        0.1,
+        3.6,
+        1.8,
+        1.8,
+        1.9,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -8.0,
+        -9.0,
+        -6.0,
+        -4.0,
+        -10.0,
+        -14.0
+      ],
+      "max_day_snowfall": 3.6
+    },
+    "盘溪滑雪场": {
+      "total_7day_snowfall": 6.4,
+      "daily_snowfall": [
+        2.7,
+        0,
+        2.2,
+        0.1,
+        0,
+        1.1,
+        0.3
+      ],
+      "daily_temperature": [
+        -7.0,
+        -9.0,
+        -11.0,
+        -8.0,
+        -3.0,
+        -7.0,
+        -7.0
+      ],
+      "max_day_snowfall": 2.7
+    },
+    "札幌国际滑雪场": {
+      "total_7day_snowfall": 5.1,
+      "daily_snowfall": [
+        1.9,
+        0,
+        1.8,
+        0,
+        0,
+        0.1,
+        1.3
+      ],
+      "daily_temperature": [
+        -5.0,
+        -8.0,
+        -10.0,
+        -8.0,
+        -4.0,
+        -5.0,
+        -8.0
+      ],
+      "max_day_snowfall": 1.9
+    },
+    "二世谷安努普利": {
+      "total_7day_snowfall": 16.5,
+      "daily_snowfall": [
+        8.3,
+        2.2,
+        2.0,
+        0.2,
+        3.4,
+        0.4,
+        0
+      ],
+      "daily_temperature": [
+        -10.0,
+        -13.0,
+        -13.0,
+        -8.0,
+        -4.0,
+        -12.0,
+        -13.0
+      ],
+      "max_day_snowfall": 8.3
+    },
+    "札幌手稻滑雪场": {
+      "total_7day_snowfall": 10.1,
+      "daily_snowfall": [
+        5.3,
+        0,
+        2.7,
+        0,
+        0,
+        1.4,
+        0.7
+      ],
+      "daily_temperature": [
+        -5.0,
+        -7.0,
+        -7.0,
+        -4.0,
+        -1.0,
+        -5.0,
+        -5.0
+      ],
+      "max_day_snowfall": 5.3
+    },
+    "二世谷花园度假村": {
+      "total_7day_snowfall": 11.3,
+      "daily_snowfall": [
+        6.1,
+        1.1,
+        0.6,
+        0,
+        3.6,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -12.0,
+        -14.0,
+        -14.0,
+        -10.0,
+        -7.0,
+        -13.0,
+        -14.0
+      ],
+      "max_day_snowfall": 6.1
+    },
+    "二世谷比罗夫": {
+      "total_7day_snowfall": 11.3,
+      "daily_snowfall": [
+        6.1,
+        1.1,
+        0.6,
+        0,
+        3.6,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -11.0,
+        -13.0,
+        -13.0,
+        -9.0,
+        -6.0,
+        -12.0,
+        -13.0
+      ],
+      "max_day_snowfall": 6.1
+    },
+    "二世谷村滑雪场": {
+      "total_7day_snowfall": 11.3,
+      "daily_snowfall": [
+        6.1,
+        1.1,
+        0.6,
+        0,
+        3.6,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -11.0,
+        -14.0,
+        -14.0,
+        -10.0,
+        -7.0,
+        -13.0,
+        -14.0
+      ],
+      "max_day_snowfall": 6.1
+    },
+    "朝里川温泉滑雪场": {
+      "total_7day_snowfall": 0.3,
+      "daily_snowfall": [
+        0,
+        0,
+        0.3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -0.0,
+        -2.0,
+        -1.0,
+        1.0,
+        3.0,
+        -1.0,
+        -0.0
+      ],
+      "max_day_snowfall": 0.3
+    },
+    "札幌藻岩山滑雪场": {
+      "total_7day_snowfall": 6.4,
+      "daily_snowfall": [
+        2.7,
+        0,
+        2.2,
+        0.1,
+        0,
+        1.1,
+        0.3
+      ],
+      "daily_temperature": [
+        -8.0,
+        -10.0,
+        -12.0,
+        -9.0,
+        -4.0,
+        -8.0,
+        -8.0
+      ],
+      "max_day_snowfall": 2.7
+    },
+    "小樽天狗山滑雪场": {
+      "total_7day_snowfall": 6.7,
+      "daily_snowfall": [
+        0.1,
+        0,
+        4.3,
+        0,
+        0,
+        2.0,
+        0.3
+      ],
+      "daily_temperature": [
+        -4.0,
+        -7.0,
+        -7.0,
+        -5.0,
+        -2.0,
+        -4.0,
+        -6.0
+      ],
+      "max_day_snowfall": 4.3
+    },
+    "白马八方尾根": {
+      "total_7day_snowfall": 2.0,
+      "daily_snowfall": [
+        1.6,
+        0.2,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -5.0,
+        -5.0,
+        -3.0,
+        -1.0,
+        -8.0,
+        -9.0
+      ],
+      "max_day_snowfall": 1.6
+    },
+    "白马 47 滑雪场": {
+      "total_7day_snowfall": 0.8,
+      "daily_snowfall": [
+        0.8,
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -6.0,
+        -5.0,
+        -3.0,
+        -0.0,
+        -4.0,
+        -4.0
+      ],
+      "max_day_snowfall": 0.8
+    },
+    "函馆七饭滑雪场": {
+      "total_7day_snowfall": 5.7,
+      "daily_snowfall": [
+        0,
+        5.2,
+        0.3,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -7.0,
+        -6.0,
+        -1.0,
+        -0.0,
+        -3.0,
+        -4.0
+      ],
+      "max_day_snowfall": 5.2
+    },
+    "白马岩岳滑雪场": {
+      "total_7day_snowfall": 1.5,
+      "daily_snowfall": [
+        1.1,
+        0.1,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -6.0,
+        -4.0,
+        -2.0,
+        -9.0,
+        -10.0
+      ],
+      "max_day_snowfall": 1.1
+    },
+    "白马鹿岛槍滑雪场": {
+      "total_7day_snowfall": 25.8,
+      "daily_snowfall": [
+        24.6,
+        1.2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -9.0,
+        -7.0,
+        -5.0,
+        6.0,
+        -0.0,
+        -1.0
+      ],
+      "max_day_snowfall": 24.6
+    },
+    "白马 Sanosaka 滑雪场": {
+      "total_7day_snowfall": 9.6,
+      "daily_snowfall": [
+        9.3,
+        0.1,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -8.0,
+        -6.0,
+        -3.0,
+        -2.0,
+        -9.0,
+        -9.0
+      ],
+      "max_day_snowfall": 9.3
+    },
+    "白马 Cortina 滑雪场": {
+      "total_7day_snowfall": 1.5,
+      "daily_snowfall": [
+        1.1,
+        0.1,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -6.0,
+        -4.0,
+        -1.0,
+        -8.0,
+        -9.0
+      ],
+      "max_day_snowfall": 1.1
+    },
+    "斑尾高原滑雪场": {
+      "total_7day_snowfall": 2.9,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2.9,
+        0.1
+      ],
+      "daily_temperature": [
+        1.0,
+        -3.0,
+        -3.0,
+        -2.0,
+        1.0,
+        -4.0,
+        -5.0
+      ],
+      "max_day_snowfall": 2.9
+    },
+    "轻井泽王子滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -6.0,
+        -5.0,
+        -4.0,
+        -1.0,
+        -3.0,
+        -4.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "车山高原滑雪场": {
+      "total_7day_snowfall": 8.3,
+      "daily_snowfall": [
+        7.9,
+        0,
+        0,
+        0,
+        0,
+        0.4,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -9.0,
+        -7.0,
+        -3.0,
+        -3.0,
+        -8.0,
+        -9.0
+      ],
+      "max_day_snowfall": 7.9
+    },
+    "白马乘鞍温泉滑雪场": {
+      "total_7day_snowfall": 9.6,
+      "daily_snowfall": [
+        9.3,
+        0.1,
+        0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -8.0,
+        -6.0,
+        -3.0,
+        -0.0,
+        -8.0,
+        -8.0
+      ],
+      "max_day_snowfall": 9.3
+    },
+    "竜王滑雪公园": {
+      "total_7day_snowfall": 10.2,
+      "daily_snowfall": [
+        10.2,
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -10.0,
+        -8.0,
+        -7.0,
+        null,
+        -6.0,
+        -7.0
+      ],
+      "max_day_snowfall": 10.2
+    },
+    "黑姬高原滑雪场": {
+      "total_7day_snowfall": 16.5,
+      "daily_snowfall": [
+        15.1,
+        0.6,
+        0,
+        0,
+        0,
+        0.8,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -8.0,
+        -5.0,
+        -6.0,
+        0.0,
+        -5.0,
+        -5.0
+      ],
+      "max_day_snowfall": 15.1
+    },
+    "菅平高原滑雪场": {
+      "total_7day_snowfall": 0.1,
+      "daily_snowfall": [
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -4.0,
+        -2.0,
+        -2.0,
+        -3.0,
+        -5.0
+      ],
+      "max_day_snowfall": 0.1
+    },
+    "长野清里滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -6.0,
+        -5.0,
+        -4.0,
+        2.0,
+        -2.0,
+        -4.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "汤泽高原滑雪场": {
+      "total_7day_snowfall": 22.4,
+      "daily_snowfall": [
+        12.9,
+        4.2,
+        0.8,
+        0,
+        0,
+        4.4,
+        0
+      ],
+      "daily_temperature": [
+        -4.0,
+        -7.0,
+        -5.0,
+        -3.0,
+        -3.0,
+        -8.0,
+        -9.0
+      ],
+      "max_day_snowfall": 12.9
+    },
+    "石打丸山滑雪场": {
+      "total_7day_snowfall": 23.0,
+      "daily_snowfall": [
+        11.8,
+        4.6,
+        1.3,
+        0,
+        0,
+        5.2,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -4.0,
+        -2.0,
+        -4.0,
+        -7.0,
+        -12.0,
+        -14.0
+      ],
+      "max_day_snowfall": 11.8
+    },
+    "舞子滑雪场": {
+      "total_7day_snowfall": 24.4,
+      "daily_snowfall": [
+        14.1,
+        5.1,
+        2.2,
+        0,
+        0,
+        2.9,
+        0.1
+      ],
+      "daily_temperature": [
+        -3.0,
+        -6.0,
+        -4.0,
+        -2.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "max_day_snowfall": 14.1
+    },
+    "上越国际滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        0.0,
+        -2.0,
+        -1.0,
+        -1.0,
+        4.0,
+        -0.0,
+        -2.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "长野户隐滑雪场": {
+      "total_7day_snowfall": 4.9,
+      "daily_snowfall": [
+        0,
+        0.3,
+        0,
+        0,
+        0,
+        4.5,
+        0.1
+      ],
+      "daily_temperature": [
+        0.0,
+        -4.0,
+        -4.0,
+        -3.0,
+        -0.0,
+        -6.0,
+        -7.0
+      ],
+      "max_day_snowfall": 4.5
+    },
+    "岩原滑雪场": {
+      "total_7day_snowfall": 15.1,
+      "daily_snowfall": [
+        7.6,
+        4.6,
+        2.8,
+        0,
+        0,
+        0.1,
+        0.1
+      ],
+      "daily_temperature": [
+        -1.0,
+        -3.0,
+        -1.0,
+        -1.0,
+        2.0,
+        -0.0,
+        -2.0
+      ],
+      "max_day_snowfall": 7.6
+    },
+    "汤泽中里滑雪场": {
+      "total_7day_snowfall": 11.5,
+      "daily_snowfall": [
+        6.0,
+        1.8,
+        0.1,
+        0,
+        0,
+        3.7,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -6.0,
+        -4.0,
+        -1.0,
+        -0.0,
+        -5.0,
+        -7.0
+      ],
+      "max_day_snowfall": 6.0
+    },
+    "藤野FU'S滑雪场": {
+      "total_7day_snowfall": 11.5,
+      "daily_snowfall": [
+        3.8,
+        0,
+        4.3,
+        0.2,
+        0,
+        2.3,
+        0.8
+      ],
+      "daily_temperature": [
+        -7.0,
+        -9.0,
+        -9.0,
+        -6.0,
+        -3.0,
+        -6.0,
+        -7.0
+      ],
+      "max_day_snowfall": 4.3
+    },
+    "长野蓼科高原滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -5.0,
+        -4.0,
+        -4.0,
+        -0.0,
+        -2.0,
+        -4.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "MEIHO滑雪场": {
+      "total_7day_snowfall": 3.3,
+      "daily_snowfall": [
+        3.3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -4.0,
+        -3.0,
+        -0.0,
+        -1.0,
+        -2.0,
+        -2.0
+      ],
+      "max_day_snowfall": 3.3
+    },
+    "富士见丽景度假村": {
+      "total_7day_snowfall": 0.1,
+      "daily_snowfall": [
+        0.1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -4.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -2.0
+      ],
+      "max_day_snowfall": 0.1
+    },
+    "LOTTE乐天新井度假村": {
+      "total_7day_snowfall": 12.9,
+      "daily_snowfall": [
+        11.4,
+        0.1,
+        0,
+        0,
+        0,
+        1.4,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -5.0,
+        -3.0,
+        -1.0,
+        1.0,
+        -5.0,
+        -6.0
+      ],
+      "max_day_snowfall": 11.4
+    },
+    "赤仓观光度假滑雪场": {
+      "total_7day_snowfall": 5.0,
+      "daily_snowfall": [
+        2.8,
+        0.1,
+        0,
+        0,
+        0,
+        2.1,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -5.0,
+        -4.0,
+        -1.0,
+        -2.0,
+        -8.0,
+        -8.0
+      ],
+      "max_day_snowfall": 2.8
+    },
+    "琵琶湖Valley滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        5.0,
+        3.0,
+        4.0,
+        4.0,
+        4.0,
+        -0.0,
+        -0.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "神立高原滑雪场": {
+      "total_7day_snowfall": 11.7,
+      "daily_snowfall": [
+        1.0,
+        3.6,
+        1.5,
+        0,
+        0,
+        5.6,
+        0.1
+      ],
+      "daily_temperature": [
+        -0.0,
+        -3.0,
+        -1.0,
+        -2.0,
+        1.0,
+        -3.0,
+        -4.0
+      ],
+      "max_day_snowfall": 5.6
+    },
+    "六甲山滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        4.0,
+        2.0,
+        1.0,
+        -0.0,
+        -1.0,
+        -2.0,
+        -3.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "高鹫SNOWPARK滑雪场": {
+      "total_7day_snowfall": 9.1,
+      "daily_snowfall": [
+        9.1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -2.0,
+        -5.0,
+        -5.0,
+        -3.0,
+        1.0,
+        -1.0,
+        -1.0
+      ],
+      "max_day_snowfall": 9.1
+    },
+    "富士山YETI滑雪场": {
+      "total_7day_snowfall": 2.1,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2.1
+      ],
+      "daily_temperature": [
+        -2.0,
+        -3.0,
+        -4.0,
+        -0.0,
+        -2.0,
+        -1.0,
+        -2.0
+      ],
+      "max_day_snowfall": 2.1
+    },
+    "玉原滑雪公园": {
+      "total_7day_snowfall": 3.7,
+      "daily_snowfall": [
+        1.8,
+        0.6,
+        0,
+        0,
+        0,
+        1.3,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -6.0,
+        -3.0,
+        -1.0,
+        1.0,
+        -4.0,
+        -5.0
+      ],
+      "max_day_snowfall": 1.8
+    },
+    "箱馆山滑雪场": {
+      "total_7day_snowfall": 0.0,
+      "daily_snowfall": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        3.0,
+        1.0,
+        1.0,
+        1.0,
+        4.0,
+        4.0,
+        3.0
+      ],
+      "max_day_snowfall": 0
+    },
+    "安比高原滑雪场": {
+      "total_7day_snowfall": 3.9,
+      "daily_snowfall": [
+        1.5,
+        0.7,
+        0.6,
+        0,
+        0,
+        1.1,
+        0
+      ],
+      "daily_temperature": [
+        -6.0,
+        -7.0,
+        -9.0,
+        -4.0,
+        1.0,
+        -5.0,
+        -7.0
+      ],
+      "max_day_snowfall": 1.5
+    },
+    "丸沼高原滑雪场": {
+      "total_7day_snowfall": 5.7,
+      "daily_snowfall": [
+        5.5,
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -8.0,
+        -11.0,
+        -8.0,
+        -6.0,
+        -3.0,
+        -7.0,
+        -8.0
+      ],
+      "max_day_snowfall": 5.5
+    },
+    "猪苗代滑雪场": {
+      "total_7day_snowfall": 1.8,
+      "daily_snowfall": [
+        0.8,
+        1.0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -5.0,
+        -5.0,
+        1.0,
+        2.0,
+        -0.0,
+        -1.0
+      ],
+      "max_day_snowfall": 1.0
+    },
+    "雫石滑雪场": {
+      "total_7day_snowfall": 9.9,
+      "daily_snowfall": [
+        5.4,
+        2.2,
+        2.0,
+        0,
+        0,
+        0.2,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -7.0,
+        -7.0,
+        -2.0,
+        2.0,
+        -6.0,
+        -8.0
+      ],
+      "max_day_snowfall": 5.4
+    },
+    "GRANDECO滑雪度假村": {
+      "total_7day_snowfall": 4.1,
+      "daily_snowfall": [
+        2.2,
+        1.8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -5.0,
+        -8.0,
+        -6.0,
+        -2.0,
+        -0.0,
+        -2.0,
+        -3.0
+      ],
+      "max_day_snowfall": 2.2
+    },
+    "八甲田滑雪场": {
+      "total_7day_snowfall": 19.2,
+      "daily_snowfall": [
+        5.3,
+        11.5,
+        2.2,
+        0,
+        0,
+        0,
+        0.2
+      ],
+      "daily_temperature": [
+        -8.0,
+        -9.0,
+        -9.0,
+        -4.0,
+        -0.0,
+        -8.0,
+        -8.0
+      ],
+      "max_day_snowfall": 11.5
+    },
+    "森吉山阿仁滑雪场": {
+      "total_7day_snowfall": 1.5,
+      "daily_snowfall": [
+        0,
+        1.5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_temperature": [
+        -3.0,
+        -4.0,
+        -7.0,
+        -4.0,
+        1.0,
+        -3.0,
+        -5.0
+      ],
+      "max_day_snowfall": 1.5
+    },
+    "八海山滑雪场": {
+      "total_7day_snowfall": 17.3,
+      "daily_snowfall": [
+        8.6,
+        4.3,
+        0,
+        0,
+        0,
+        4.4,
+        0
+      ],
+      "daily_temperature": [
+        -1.0,
+        -4.0,
+        -2.0,
+        0.0,
+        1.0,
+        -6.0,
+        -8.0
+      ],
+      "max_day_snowfall": 8.6
+    }
+  }
+}

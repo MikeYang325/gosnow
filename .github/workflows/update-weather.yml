@@ -1,0 +1,44 @@
+name: Update Weather Data
+
+on:
+  schedule:
+    # 每天早上6点和下午6点（北京时间）运行
+    # UTC 22:00 = 北京时间 06:00
+    # UTC 10:00 = 北京时间 18:00
+    - cron: '0 22 * * *'
+    - cron: '0 10 * * *'
+  workflow_dispatch: # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch weather data
+        run: python3 fetch_openmeteo_forecast.py
+
+      - name: Regenerate HTML pages
+        run: |
+          python3 generate_mobile_version.py
+          python3 generate_detail_pages.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add weather_data.json forecast_7day.json index.html detail_*.html
+          git diff --staged --quiet || git commit -m "自动更新天气数据 $(date +'%Y-%m-%d %H:%M' -d '+8 hours')"
+          git push

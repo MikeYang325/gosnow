@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>神居滑雪场 - 追雪</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .hero-section {
+            background: white;
+            border-radius: 12px;
+            padding: 0;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .header-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .header-subtitle {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .section-title {
+            font-size: 1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .info-table {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-size: 0.8em;
+            color: #999;
+            width: 80px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+        }
+
+        .weather-box {
+            background: linear-gradient(135deg, #42a5f5 0%, #1976d2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .weather-current {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .forecast-grid {
+            display: flex;
+            gap: 4px;
+            margin-top: 12px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 4px;
+        }
+
+        .forecast-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .forecast-day {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 8px 4px;
+            text-align: center;
+            flex: 1;
+            min-width: 54px;
+        }
+
+        .forecast-date {
+            font-size: 0.7em;
+            color: #999;
+            margin-bottom: 4px;
+        }
+
+        .forecast-temp {
+            font-size: 0.75em;
+            font-weight: 700;
+            color: #ff6b6b;
+        }
+
+        .forecast-snow-val {
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #1976d2;
+            margin-top: 2px;
+            white-space: nowrap;
+        }
+
+        .text-content {
+            font-size: 0.85em;
+            color: #555;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        /* 交通信息样式 */
+        .transport-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .transport-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 12px;
+            border-left: 3px solid #667eea;
+        }
+
+        .transport-label {
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+
+        .transport-value {
+            font-size: 0.85em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .transport-link {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dashed #667eea;
+        }
+
+        .transport-link:hover {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+        }
+
+        .transport-simple {
+            font-size: 0.85em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .transport-summary {
+            font-size: 0.9em;
+            color: #333;
+            line-height: 2;
+        }
+
+        .review-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .dimension-grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dimension-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dimension-item:last-child {
+            border-bottom: none;
+        }
+
+        .dimension-row1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dimension-name {
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #333;
+            width: 65px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .dimension-bar {
+            flex: 1;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .dimension-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 3px;
+        }
+
+        .dimension-score {
+            font-size: 0.75em;
+            color: #667eea;
+            font-weight: 600;
+            width: 30px;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .dimension-comment {
+            font-size: 0.75em;
+            color: #666;
+            line-height: 1.4;
+            margin-top: 4px;
+            padding-left: 75px;
+        }
+
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            font-size: 0.85em;
+            color: #555;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .tips-list li:last-child {
+            border-bottom: none;
+        }
+
+        .tips-list li::before {
+            content: '💡';
+            flex-shrink: 0;
+        }
+
+        .review-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .btn-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #2c3e50;
+        }
+
+        .btn-secondary:active {
+            background: #e9ecef;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .quick-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 12px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .quick-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                padding: 20px 25px;
+            }
+
+            .header-title {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .section {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .info-table {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="back-btn">← 返回列表</a>
+        <div class="header-title">神居滑雪场</div>
+        <div class="header-subtitle">Kamui Ski Links</div>
+    </div>
+
+    <div class="content">
+        <!-- 基本信息 -->
+        <div class="section">
+            <div class="section-title">📍 基本信息</div>
+            <div class="info-table">
+                <div class="info-row">
+                    <span class="info-label">日文名称</span>
+                    <span class="info-value">カムイスキーリンクス</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">一日券</span>
+                    <span class="info-value">¥6,800</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">海拔范围</span>
+                    <span class="info-value">260m - 940m</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">落差</span>
+                    <span class="info-value">680m</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">雪道数量</span>
+                    <span class="info-value">15条</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">特色</span>
+                    <span class="info-value">260-940m，15 雪道，粉雪 + 旭川近郊</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">地址</span>
+                    <span class="info-value">北海道旭川市神居町</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 天气与降雪 -->
+        <div class="section">
+            <div class="section-title">🌤️ 天气与降雪</div>
+            <div class="weather-box">
+                <a href="https://www.kamui-skilinks.com/today/" target="_blank" class="weather-current" style="text-decoration: none; color: inherit; display: block;">
+                    ❄️ 当前: 5.2cm · -2.5°C · 小雪
+                </a>
+                <a href="https://www.kamui-skilinks.com/today/" target="_blank" style="font-size: 0.9em; opacity: 0.9; text-decoration: none; color: inherit; display: block;">
+                    🔮 未来7天预计: 13.0cm
+                </a>
+            </div>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <div class="forecast-date">02-11</div>
+                    <div class="forecast-temp">-6.0°~0.0°</div>
+                    <div class="forecast-snow-val">❄️ 5.2cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-12</div>
+                    <div class="forecast-temp">-8.0°~-5.0°</div>
+                    <div class="forecast-snow-val">❄️ 0.3cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-13</div>
+                    <div class="forecast-temp">-10.0°~-4.0°</div>
+                    <div class="forecast-snow-val">❄️ 2.6cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-14</div>
+                    <div class="forecast-temp">-6.0°~-1.0°</div>
+                    <div class="forecast-snow-val">❄️ 2.7cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-15</div>
+                    <div class="forecast-temp">-4.0°~4.0°</div>
+                    <div class="forecast-snow-val">❄️ 1.3cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-16</div>
+                    <div class="forecast-temp">-10.0°~-1.0°</div>
+                    <div class="forecast-snow-val">❄️ 0.8cm</div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-date">02-17</div>
+                    <div class="forecast-temp">-12.0°~-2.0°</div>
+                    <div class="forecast-snow-val">☁️ -</div>
+                </div>
+            </div>
+            <div class="quick-links">
+                <a href="https://www.kamui-skilinks.com/today/" target="_blank" class="quick-link">🌤️ 官网天气</a><a href="https://powdercam.net/app/show.php?serial_number=00000000ab91a18b" target="_blank" class="quick-link">📹 实时摄像头</a><a href="https://www.kamui-skilinks.com/today/#coursemap" target="_blank" class="quick-link">🗺️ 雪道图</a><a href="https://kamuiski.axess.shop/" target="_blank" class="quick-link">🎫 购买雪票</a><a href="https://www.windy.com/43.7500/142.4667?43.7500,142.4667,10,snow" target="_blank" class="quick-link">🌬️ Windy预报</a>
+            </div>
+        </div>
+        <!-- 交通信息 -->
+        <div class="section">
+            <div class="section-title">🚌 交通信息</div>
+            <a href="https://www.kamui-skilinks.com/accsess/" target="_blank" class="btn" style="display: block; text-align: center;">🔗 查看官网交通详情</a>
+        </div>
+        <!-- 游客评价 -->
+        <div class="section">
+            <div class="section-title">💬 游客评价</div>
+            <div class="review-box">旭川周边首选，粉雪优质，人少；夸：性价比高，适合周边游；踩雷：雪道数量偏少</div>
+        </div>
+        <!-- 雪道图 -->
+        <div class="section">
+            <div class="section-title">🗺️ 雪道图</div>
+            <div style="text-align: center;">
+                <a href="https://www.kamui-skilinks.com/today/#coursemap" target="_blank">
+                    <img src="https://www.kamui-skilinks.com/wp/wp-content/themes/Circles/images/course-image2024.webp" alt="神居滑雪场雪道图" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
+                </a>
+                <p style="margin-top: 8px; font-size: 0.75em; color: #999;">点击图片查看大图</p>
+            </div>
+        </div>
+        <!-- 操作按钮 -->
+        <div class="btn-group">
+            <a href="https://www.kamui-skilinks.com/" target="_blank" class="btn">🌐 访问官网</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=神居滑雪场" target="_blank" class="btn btn-secondary">🗺️ 地图导航</a>
+        </div>
+    </div>
+</body>
+</html>

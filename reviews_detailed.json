@@ -1,0 +1,246 @@
+{
+  "updated_at": "2026-02-08",
+  "version": "1.0",
+  "reviews": {
+    "二世谷联合雪场": {
+      "summary": "粉雪天花板，进阶玩家天堂，北海道顶流雪场",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "Japow圣地，年降雪15m+，粉雪质量世界顶级"},
+        "crowd": {"score": 2, "comment": "旺季人挤，尤其比罗夫区域，需要早起抢首滑"},
+        "terrain": {"score": 5, "comment": "76条雪道，308-1308m落差，全水平覆盖"},
+        "dining": {"score": 5, "comment": "网红餐厅/温泉扎堆，配套最全"},
+        "value": {"score": 2, "comment": "票价¥8,200偏贵，物价高，住宿贵"},
+        "transport": {"score": 4, "comment": "新千岁机场2.5h直达，有免费区间接驳"}
+      },
+      "tips": ["建议住在比罗夫区域，配套最全", "夜场性价比高，17:00-22:00", "旺季建议提前3个月订房", "安努普利区域人少雪好"]
+    },
+    "富良野滑雪场": {
+      "summary": "内陆干粉雪质稳定，滑雪+薰衣草田双体验",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "内陆干粉雪质稳定，雪量略不稳定"},
+        "crowd": {"score": 4, "comment": "人少不挤，体验舒适"},
+        "terrain": {"score": 3, "comment": "18条雪道，235-1209m落差，雪道数量偏少"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择一般，但有特色美食"},
+        "value": {"score": 4, "comment": "票价¥7,000合理，性价比不错"},
+        "transport": {"score": 3, "comment": "新千岁3h/旭川1h，交通稍远"}
+      },
+      "tips": ["夏季可看薰衣草田", "雪道宽缓新手友好", "建议住在富良野市区", "可与旭山动物园组合游玩"]
+    },
+    "留寿都度假村": {
+      "summary": "亲子友好天花板，三峰雪道适配全水平",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "粉雪优质，树林地形丰富"},
+        "crowd": {"score": 4, "comment": "人流适中，体验舒适"},
+        "terrain": {"score": 4, "comment": "37条雪道，三峰相连，400-994m落差"},
+        "dining": {"score": 4, "comment": "度假村配套全，有游乐园/温泉"},
+        "value": {"score": 4, "comment": "票价¥7,700合理，适合家庭游"},
+        "transport": {"score": 4, "comment": "新千岁机场2h直达，有直达巴士"}
+      },
+      "tips": ["适合家庭游，有游乐园", "三峰雪道可一天滑遍", "无夜场，建议白天充分利用", "度假村内温泉推荐"]
+    },
+    "星野 TOMAMU 度假村": {
+      "summary": "网红冰城/雾凇平台出片，亲子设施拉满",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "-20°C极寒保粉，Ungroomed区域体验好"},
+        "crowd": {"score": 3, "comment": "旺季房间难订，雪场人流适中"},
+        "terrain": {"score": 3, "comment": "29条雪道，450-1239m落差，规模中等"},
+        "dining": {"score": 4, "comment": "度假村餐饮选择多，但价格偏贵"},
+        "value": {"score": 3, "comment": "票价¥7,500，餐饮住宿偏贵"},
+        "transport": {"score": 5, "comment": "新千岁机场1.5h直达，住客免费接驳"}
+      },
+      "tips": ["冰城/雾凇平台必打卡", "建议提前2个月订房", "亲子设施拉满，适合带娃", "住客享免费机场接驳"]
+    },
+    "喜乐乐雪世界": {
+      "summary": "北海道性价比之王，年降雪21m，札幌1h可达",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "年降雪21m北海道第二，粉雪优质"},
+        "crowd": {"score": 4, "comment": "人少不挤，体验舒适"},
+        "terrain": {"score": 3, "comment": "23条雪道，570-1180m落差，数量一般"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择有限"},
+        "value": {"score": 5, "comment": "票价¥7,000，性价比高"},
+        "transport": {"score": 5, "comment": "札幌站直达巴士1h，交通便利"}
+      },
+      "tips": ["札幌当日往返首选", "夜场16:30-20:00性价比高", "雪道宽缓新手友好", "可与小樽组合游玩"]
+    },
+    "志贺高原": {
+      "summary": "84雪道日本最大，18雪场互通，冬奥会赛场",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "雪质好，雪季至5月初"},
+        "crowd": {"score": 4, "comment": "区域大分散人流，体验舒适"},
+        "terrain": {"score": 5, "comment": "84条雪道日本最大，1300-2307m落差"},
+        "dining": {"score": 4, "comment": "各区域餐厅选择多，温泉配套全"},
+        "value": {"score": 4, "comment": "票价¥7,800，18雪场通票物有所值"},
+        "transport": {"score": 3, "comment": "长野站1h巴士，无机场直达"}
+      },
+      "tips": ["建议买3天通票充分探索", "熊之汤区域有夜场", "区域大需时间探索，建议多日游", "可买巴士+18雪场通票套餐"]
+    },
+    "野泽温泉": {
+      "summary": "滑雪+温泉双核心，小镇氛围浓，粉雪优质",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "年降雪12m，粉雪优质"},
+        "crowd": {"score": 4, "comment": "小镇氛围浓，人流适中"},
+        "terrain": {"score": 4, "comment": "44条雪道，565-1650m落差，地形丰富"},
+        "dining": {"score": 4, "comment": "温泉小镇美食多，居酒屋氛围好"},
+        "value": {"score": 5, "comment": "票价¥7,300，性价比高"},
+        "transport": {"score": 3, "comment": "长野站1.5h巴士，小镇住宿需提前订"}
+      },
+      "tips": ["温泉小镇必体验", "夜场18:00-21:00", "建议住在小镇内，步行可达雪场", "适合多日深度游"]
+    },
+    "苗场": {
+      "summary": "与神乐互通缆车，日本最长缆车，雪道多",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "粉雪好，雪量稳定"},
+        "crowd": {"score": 2, "comment": "周末人多，需要早起"},
+        "terrain": {"score": 4, "comment": "28条雪道，450-1947m落差，与神乐互通"},
+        "dining": {"score": 4, "comment": "王子酒店配套全，餐饮选择多"},
+        "value": {"score": 3, "comment": "票价¥7,800，可买苗场+神乐通票"},
+        "transport": {"score": 4, "comment": "越后汤泽站25min巴士"}
+      },
+      "tips": ["与神乐5.5km缆车互通", "建议买苗场+神乐通票", "周末避开，工作日体验更好", "夜场16:30-21:00"]
+    },
+    "GALA 汤泽": {
+      "summary": "东京打工人单日往返天花板，新干线站直连",
+      "dimensions": {
+        "snow_quality": {"score": 3, "comment": "人工雪比例高，雪质一般"},
+        "crowd": {"score": 2, "comment": "周末人多，缆车排队"},
+        "terrain": {"score": 3, "comment": "21条雪道，275-1045m落差，雪道偏短"},
+        "dining": {"score": 3, "comment": "站内餐厅选择有限"},
+        "value": {"score": 4, "comment": "新干线+雪票联票¥5,800性价比高"},
+        "transport": {"score": 5, "comment": "东京77分钟新干线直达，站内步行2min"}
+      },
+      "tips": ["东京当日往返首选", "买新干线+一日券联票省¥1,000", "工作日体验更好", "夜场17:00-21:00"]
+    },
+    "神乐": {
+      "summary": "降雪量超14米，树道体验绝，粉雪不输北海道",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "年降雪14m+，粉雪不输北海道"},
+        "crowd": {"score": 4, "comment": "人少，体验舒适"},
+        "terrain": {"score": 4, "comment": "31条雪道，650-2000m落差，树道体验绝"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择有限"},
+        "value": {"score": 4, "comment": "票价¥7,800，可买苗场+神乐通票"},
+        "transport": {"score": 3, "comment": "越后汤泽站40min巴士，班次少"}
+      },
+      "tips": ["进阶玩家首选", "与苗场有互通缆车", "巴士班次少，错过需等1.5h", "树林野雪体验绝"]
+    },
+    "妙高高原": {
+      "summary": "新潟性价比之王，5大区域互通，人少雪好",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "年降雪13m，粉雪优质"},
+        "crowd": {"score": 4, "comment": "人少雪好，体验舒适"},
+        "terrain": {"score": 4, "comment": "48条雪道，350-1645m落差，5区互通"},
+        "dining": {"score": 4, "comment": "温泉配套全，餐饮选择多"},
+        "value": {"score": 5, "comment": "票价¥7,200，性价比高"},
+        "transport": {"score": 3, "comment": "妙高高原站20min巴士，区域间需接驳"}
+      },
+      "tips": ["新手/进阶都适配", "可买妙高全域交通卡", "5区域建议多日探索", "温泉配套全"]
+    },
+    "草津温泉滑雪场": {
+      "summary": "温泉封神，雪季至5月，滑雪+泡汤一站式",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "基础海拔1200m，干粉雪质"},
+        "crowd": {"score": 4, "comment": "人流适中，体验舒适"},
+        "terrain": {"score": 3, "comment": "18条雪道，1200-2174m落差，雪道缓"},
+        "dining": {"score": 4, "comment": "温泉街美食多，泡汤选择丰富"},
+        "value": {"score": 4, "comment": "票价¥7,400，可买滑雪+温泉联票"},
+        "transport": {"score": 2, "comment": "长野原草津口站40min巴士，交通稍远"}
+      },
+      "tips": ["温泉必体验", "雪季至5月", "亲子友好，雪道缓", "买巴士+滑雪+温泉联票省¥800"]
+    },
+    "藏王温泉": {
+      "summary": "树冰网红打卡天花板，滑雪+树冰+温泉",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "年降雪10m，雪质好"},
+        "crowd": {"score": 2, "comment": "旺季树冰区人挤"},
+        "terrain": {"score": 4, "comment": "28条雪道，450-1666m落差，树冰穿越独特"},
+        "dining": {"score": 4, "comment": "温泉街美食多，出片率高"},
+        "value": {"score": 4, "comment": "票价¥7,600，物有所值"},
+        "transport": {"score": 3, "comment": "山形站1h巴士，山路易积雪"}
+      },
+      "tips": ["树冰穿越滑行必体验", "旺季树冰区人挤，建议早去", "夜场17:00-21:00", "山路易积雪，巴士可能晚点"]
+    },
+    "白马八方尾根": {
+      "summary": "白马地区顶流，37雪道，8km最长滑行",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "雪质好，雪季至5月"},
+        "crowd": {"score": 2, "comment": "旺季人多，缆车排队"},
+        "terrain": {"score": 5, "comment": "37条雪道，750-2050m落差，8km最长滑行"},
+        "dining": {"score": 4, "comment": "山顶餐厅选择多，白马村配套全"},
+        "value": {"score": 3, "comment": "票价¥7,500，旺季住宿贵"},
+        "transport": {"score": 4, "comment": "长野站1h15min巴士，名古屋有直达"}
+      },
+      "tips": ["进阶友好，雪道多", "雪季至5月", "旺季建议提前订房", "可与白马47互通"]
+    },
+    "白马五竜": {
+      "summary": "白马地区新手友好天花板，雪道宽缓，人少",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "雪质好，雪量稳定"},
+        "crowd": {"score": 4, "comment": "人少，体验舒适"},
+        "terrain": {"score": 3, "comment": "21条雪道，650-1830m落差，中高级雪道偏少"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择有限"},
+        "value": {"score": 5, "comment": "票价¥7,300，性价比高"},
+        "transport": {"score": 4, "comment": "白马站15min巴士，名古屋有直达"}
+      },
+      "tips": ["新手入门首选", "与白马47互通", "雪道宽缓适合练习", "性价比高"]
+    },
+    "轻井泽王子滑雪场": {
+      "summary": "东京周边亲子天花板，配套全，有游乐园",
+      "dimensions": {
+        "snow_quality": {"score": 2, "comment": "人工造雪为主，雪质一般"},
+        "crowd": {"score": 2, "comment": "周末人多，缆车排队"},
+        "terrain": {"score": 3, "comment": "21条雪道，600-1000m落差，雪道缓"},
+        "dining": {"score": 5, "comment": "王子酒店配套全，有游乐园/奥特莱斯"},
+        "value": {"score": 3, "comment": "票价¥6,800，住宿偏贵"},
+        "transport": {"score": 5, "comment": "东京1h新干线直达，站内接驳"}
+      },
+      "tips": ["亲子友好，有游乐园", "可顺便逛奥特莱斯", "人工雪为主，雪质一般", "夜场17:00-20:30"]
+    },
+    "札幌手稀滑雪场": {
+      "summary": "札幌市区30min可达，冬奥会赛场",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "粉雪好，雪量稳定"},
+        "crowd": {"score": 2, "comment": "旺季本地人多"},
+        "terrain": {"score": 3, "comment": "21条雪道，340-1023m落差，雪道偏短"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择有限"},
+        "value": {"score": 5, "comment": "票价¥6,500，性价比高"},
+        "transport": {"score": 5, "comment": "札幌站28min巴士，交通便利"}
+      },
+      "tips": ["札幌市区最近雪场之一", "冬奥会赛场", "无夜场", "旺季本地人多，建议工作日"]
+    },
+    "盘溪滑雪场": {
+      "summary": "札幌市区最近雪场，夜场天花板",
+      "dimensions": {
+        "snow_quality": {"score": 3, "comment": "雪质一般，雪道短"},
+        "crowd": {"score": 2, "comment": "本地人多，周末拥挤"},
+        "terrain": {"score": 2, "comment": "8条雪道，320-440m落差，雪道短"},
+        "dining": {"score": 2, "comment": "餐厅选择有限"},
+        "value": {"score": 4, "comment": "票价¥6,000，夜场¥1,800性价比高"},
+        "transport": {"score": 5, "comment": "札幌站20min巴士，交通无敌"}
+      },
+      "tips": ["札幌市区最近", "夜场17:00-21:00", "适合下班后滑", "雪道短，适合新手"]
+    },
+    "石打丸山滑雪场": {
+      "summary": "汤泽片区中高级友好，雪道陡，粉雪好",
+      "dimensions": {
+        "snow_quality": {"score": 4, "comment": "粉雪好，雪量稳定"},
+        "crowd": {"score": 2, "comment": "周末人多"},
+        "terrain": {"score": 4, "comment": "25条雪道，700-1600m落差，中高级坡度好"},
+        "dining": {"score": 3, "comment": "山顶餐厅选择有限"},
+        "value": {"score": 4, "comment": "票价¥7,300，可买夜场联票"},
+        "transport": {"score": 4, "comment": "越后汤泽站30min巴士"}
+      },
+      "tips": ["进阶首选", "夜场17:00-21:00", "周末避开，工作日体验更好", "可买夜场票+巴士联票"]
+    },
+    "旭岳滑雪场": {
+      "summary": "北海道雪季最长（至6月），火山雪景震撼",
+      "dimensions": {
+        "snow_quality": {"score": 5, "comment": "粉雪优质，雪季至6月"},
+        "crowd": {"score": 5, "comment": "人少，小众"},
+        "terrain": {"score": 3, "comment": "12条雪道，1100-1600m落差，非压雪道为主"},
+        "dining": {"score": 2, "comment": "餐厅选择有限"},
+        "value": {"score": 4, "comment": "票价¥7,000，物有所值"},
+        "transport": {"score": 2, "comment": "上川站1h巴士，交通稍远"}
+      },
+      "tips": ["雪季至6月日本最长", "火山雪景震撼", "需导滑，非压雪道为主", "海拔高，注意保暖"]
+    }
+  }
+}
