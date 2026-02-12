@@ -1,0 +1,177 @@
+{
+  "niseko-united": {
+    "spotid": "31603",
+    "name": "ニセコアンヌプリ国際スキー場",
+    "depth": "280",
+    "lat": "42.847918",
+    "lon": "140.647742"
+  },
+  "furano-ski-resort": {
+    "spotid": "31602",
+    "name": "富良野スキー場",
+    "depth": "220",
+    "lat": "43.326630",
+    "lon": "142.353955"
+  },
+  "rusutsu-resort": {
+    "spotid": "31601",
+    "name": "ルスツリゾート",
+    "depth": "280",
+    "lat": "42.751474",
+    "lon": "140.898374"
+  },
+  "hoshino-resorts-tomamu": {
+    "spotid": "31201",
+    "name": "星野リゾート　トマム スキー場",
+    "depth": "170",
+    "lat": "43.070337",
+    "lon": "142.615105"
+  },
+  "kiroro-ski-resort": {
+    "spotid": "31609",
+    "name": "キロロスノーワールド",
+    "depth": "340",
+    "lat": "43.067888",
+    "lon": "140.989352"
+  },
+  "shiga-kogen-ski-resort": {
+    "spotid": "34803",
+    "name": "志賀高原焼額山",
+    "depth": "140",
+    "lat": "36.753414",
+    "lon": "138.517342"
+  },
+  "nozawa-onsen-ski-resort": {
+    "spotid": "34801",
+    "name": "野沢温泉スキー場",
+    "depth": "275",
+    "lat": "36.920812",
+    "lon": "138.452611"
+  },
+  "naeba-ski-resort": {
+    "spotid": "35405",
+    "name": "苗場スキー場",
+    "depth": "250",
+    "lat": "36.793643",
+    "lon": "138.784518"
+  },
+  "gala-yuzawa-ski-resort": {
+    "spotid": "35430",
+    "name": "GALA湯沢スキー場",
+    "depth": "290",
+    "lat": "36.950685",
+    "lon": "138.799656"
+  },
+  "kagura-ski-resort": {
+    "spotid": "35473",
+    "name": "かぐらスキー場",
+    "depth": "310",
+    "lat": "36.860495",
+    "lon": "138.726529"
+  },
+  "myoko-kogen-ski-resort": {
+    "spotid": "35423",
+    "name": "妙高杉ノ原スキー場",
+    "depth": "190",
+    "lat": "36.857035",
+    "lon": "138.155438"
+  },
+  "zao-onsen-ski-resort": {
+    "spotid": "33404",
+    "name": "みやぎ蔵王えぼしリゾート",
+    "depth": "100",
+    "lat": "38.127024",
+    "lon": "140.528800"
+  },
+  "hakuba-happo-one-ski-resort": {
+    "spotid": "34810",
+    "name": "白馬八方尾根",
+    "depth": "315",
+    "lat": "36.702200",
+    "lon": "137.833300"
+  },
+  "hakuba-goryu-ski-resort": {
+    "spotid": "34811",
+    "name": "エイブル白馬五竜",
+    "depth": "310",
+    "lat": "36.663152",
+    "lon": "137.836596"
+  },
+  "hakuba-47-ski-resort": {
+    "spotid": "34859",
+    "name": "Hakuba47ウインタースポーツパーク",
+    "depth": "315",
+    "lat": "36.685068",
+    "lon": "137.828224"
+  },
+  "sapporo-teine-ski-resort": {
+    "spotid": "31401",
+    "name": "サッポロテイネ",
+    "depth": "330",
+    "lat": "43.077160",
+    "lon": "141.198970"
+  },
+  "kamui-ski-links": {
+    "spotid": "31203",
+    "name": "カムイスキーリンクス",
+    "depth": "155",
+    "lat": "43.704923",
+    "lon": "142.186851"
+  },
+  "madarao-kogen-ski-resort": {
+    "spotid": "34805",
+    "name": "斑尾高原スキー場",
+    "depth": "230",
+    "lat": "36.852488",
+    "lon": "138.290869"
+  },
+  "karuizawa-prince-ski-resort": {
+    "spotid": "34220",
+    "name": "軽井沢スノーパーク",
+    "depth": "90",
+    "lat": "36.423094",
+    "lon": "138.626796"
+  },
+  "sugadaira-kogen-ski-resort": {
+    "spotid": "34816",
+    "name": "菅平高原スノーリゾート",
+    "depth": "150",
+    "lat": "36.536631",
+    "lon": "138.345950"
+  },
+  "ishiuchi-maruyama-ski-resort": {
+    "spotid": "35403",
+    "name": "石打丸山",
+    "depth": "250",
+    "lat": "36.978991",
+    "lon": "138.799885"
+  },
+  "iwappara-ski-resort": {
+    "spotid": "35453",
+    "name": "岩原スキー場",
+    "depth": "175",
+    "lat": "36.938360",
+    "lon": "138.840578"
+  },
+  "hakkaisan-ski-resort": {
+    "spotid": "35401",
+    "name": "六日町八海山",
+    "depth": "340",
+    "lat": "37.107985",
+    "lon": "138.977296"
+  },
+  "hakkoda-ski-resort": {
+    "spotid": "33105",
+    "name": "八甲田",
+    "depth": "405",
+    "lat": "40.679173",
+    "lon": "140.830607"
+  },
+  "appi-kogen-ski-resort": {
+    "spotid": "33301",
+    "name": "安比高原",
+    "depth": "285",
+    "lat": "40.002299",
+    "lon": "140.969937"
+  }
+}

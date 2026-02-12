@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <title>改进版天气展示 - 旭岳滑雪场</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .weather-section {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        /* 当前天气大卡片 */
+        .current-weather {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .current-left {
+            flex: 1;
+        }
+
+        .current-temp {
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .current-desc {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .current-right {
+            text-align: right;
+        }
+
+        .snow-depth {
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .snow-label {
+            font-size: 0.8em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* 详细指标 */
+        .weather-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .detail-label {
+            font-size: 0.75em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* 7天预报 - 表格式 */
+        .forecast-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        .forecast-table th {
+            background: #f8f9fa;
+            padding: 10px 8px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #666;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .forecast-table td {
+            padding: 12px 8px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.85em;
+        }
+
+        .forecast-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .forecast-date {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .forecast-temp {
+            color: #e53935;
+            font-weight: 600;
+        }
+
+        .forecast-snow {
+            color: #1976d2;
+            font-weight: 600;
+        }
+
+        .forecast-wind {
+            color: #666;
+            font-size: 0.8em;
+        }
+
+        /* 积雪历史图表 */
+        .snow-history {
+            margin-top: 20px;
+        }
+
+        .history-title {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .history-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 120px;
+            padding: 10px 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .history-bar {
+            flex: 1;
+            margin: 0 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .bar-fill {
+            width: 100%;
+            background: linear-gradient(180deg, #42a5f5 0%, #1976d2 100%);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #1976d2;
+            white-space: nowrap;
+        }
+
+        .bar-date {
+            font-size: 0.65em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .windy-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 12px;
+            background: #f0f4ff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-section">
+        <div class="section-title">🌤️ 天气预报</div>
+
+        <!-- 当前天气 -->
+        <div class="current-weather">
+            <div class="current-left">
+                <div class="current-temp">-15°C</div>
+                <div class="current-desc">❄️ 大雪 · 体感-20°C</div>
+            </div>
+            <div class="current-right">
+                <div class="snow-depth">420cm</div>
+                <div class="snow-label">当前积雪</div>
+            </div>
+        </div>
+
+        <!-- 详细指标 -->
+        <div class="weather-details">
+            <div class="detail-item">
+                <div class="detail-label">今日降雪</div>
+                <div class="detail-value">15cm</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">风速</div>
+                <div class="detail-value">2m/s</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">湿度</div>
+                <div class="detail-value">75%</div>
+            </div>
+        </div>
+
+        <!-- 7天预报表格 -->
+        <table class="forecast-table">
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>天气</th>
+                    <th>气温</th>
+                    <th>降雪</th>
+                    <th>风速</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="forecast-date">今天</td>
+                    <td>❄️</td>
+                    <td class="forecast-temp">-15°C</td>
+                    <td class="forecast-snow">15cm</td>
+                    <td class="forecast-wind">2m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">明天</td>
+                    <td>❄️</td>
+                    <td class="forecast-temp">-14°C</td>
+                    <td class="forecast-snow">10cm</td>
+                    <td class="forecast-wind">3m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">后天</td>
+                    <td>☁️</td>
+                    <td class="forecast-temp">-13°C</td>
+                    <td class="forecast-snow">5cm</td>
+                    <td class="forecast-wind">2m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">第4天</td>
+                    <td>❄️</td>
+                    <td class="forecast-temp">-14°C</td>
+                    <td class="forecast-snow">8cm</td>
+                    <td class="forecast-wind">4m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">第5天</td>
+                    <td>❄️</td>
+                    <td class="forecast-temp">-15°C</td>
+                    <td class="forecast-snow">12cm</td>
+                    <td class="forecast-wind">3m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">第6天</td>
+                    <td>☁️</td>
+                    <td class="forecast-temp">-14°C</td>
+                    <td class="forecast-snow">6cm</td>
+                    <td class="forecast-wind">2m/s</td>
+                </tr>
+                <tr>
+                    <td class="forecast-date">第7天</td>
+                    <td>☀️</td>
+                    <td class="forecast-temp">-13°C</td>
+                    <td class="forecast-snow">4cm</td>
+                    <td class="forecast-wind">1m/s</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 积雪历史图表 -->
+        <div class="snow-history">
+            <div class="history-title">📊 过去7天积雪变化</div>
+            <div class="history-chart">
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 70%;">
+                        <span class="bar-value">380cm</span>
+                    </div>
+                    <div class="bar-date">2/6</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 75%;">
+                        <span class="bar-value">390cm</span>
+                    </div>
+                    <div class="bar-date">2/7</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 80%;">
+                        <span class="bar-value">395cm</span>
+                    </div>
+                    <div class="bar-date">2/8</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 85%;">
+                        <span class="bar-value">405cm</span>
+                    </div>
+                    <div class="bar-date">2/9</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 90%;">
+                        <span class="bar-value">410cm</span>
+                    </div>
+                    <div class="bar-date">2/10</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 95%;">
+                        <span class="bar-value">415cm</span>
+                    </div>
+                    <div class="bar-date">2/11</div>
+                </div>
+                <div class="history-bar">
+                    <div class="bar-fill" style="height: 100%;">
+                        <span class="bar-value">420cm</span>
+                    </div>
+                    <div class="bar-date">今天</div>
+                </div>
+            </div>
+        </div>
+
+        <a class="windy-link" href="https://www.windy.com/43.833/142.783?43.833,142.783,11" target="_blank">📊 查看 Windy 详细预报</a>
+    </div>
+</body>
+</html>

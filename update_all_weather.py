@@ -2,47 +2,20 @@
 # -*- coding: utf-8 -*-
 """
 同时更新index.html和详情页的天气数据
+使用 resorts_unified.json 作为唯一数据源，确保信息一致
 """
 import json
 import subprocess
 import re
 from pathlib import Path
 
-# 读取ID映射
-with open('resort_id_mapping_complete.json', 'r') as f:
-    id_mapping = json.load(f)
+# 读取统一的雪场数据
+with open('resorts_unified.json', 'r') as f:
+    unified_data = json.load(f)
 
-# 雪场英文名到中文名的映射
-resort_names = {
-    'niseko-united': '二世谷联合雪场',
-    'furano-ski-resort': '富良野滑雪场',
-    'rusutsu-resort': '留寿都度假村',
-    'hoshino-resorts-tomamu': '星野 TOMAMU 度假村',
-    'kiroro-ski-resort': '喜乐乐雪世界',
-    'shiga-kogen-ski-resort': '志贺高原',
-    'nozawa-onsen-ski-resort': '野泽温泉',
-    'naeba-ski-resort': '苗场',
-    'gala-yuzawa-ski-resort': 'GALA 汤泽',
-    'kagura-ski-resort': '神乐',
-    'myoko-kogen-ski-resort': '妙高高原',
-    'zao-onsen-ski-resort': '藏王温泉',
-    'hakuba-happo-one-ski-resort': '白马八方尾根',
-    'hakuba-goryu-ski-resort': '白马五竜',
-    'hakuba-47-ski-resort': '白马 47 滑雪场',
-    'hakuba-tsugaike-ski-resort': '白马栂池高原',
-    'sapporo-teine-ski-resort': '札幌手稻滑雪场',
-    'kamui-ski-links': '神居滑雪场',
-    'asahidake-ski-resort': '旭岳滑雪场',
-    'madarao-kogen-ski-resort': '斑尾高原滑雪场',
-    'karuizawa-prince-ski-resort': '轻井泽王子滑雪场',
-    'sugadaira-kogen-ski-resort': '菅平高原滑雪场',
-    'ishiuchi-maruyama-ski-resort': '石打丸山滑雪场',
-    'iwappara-ski-resort': '岩原滑雪场',
-    'lotte-arai-resort': 'LOTTE乐天新井度假村',
-    'hakkaisan-ski-resort': '八海山滑雪场',
-    'hakkoda-ski-resort': '八甲田滑雪场',
-    'appi-kogen-ski-resort': '安比高原滑雪场',
-}
+# 创建映射
+resorts_map = {r['resort_key']: r for r in unified_data['resorts']}
+resorts_by_name = {r['resort_name']: r for r in unified_data['resorts']}
 
 print(f"开始更新首页和详情页的天气数据...\n")
 
@@ -50,7 +23,11 @@ print(f"开始更新首页和详情页的天气数据...\n")
 weather_data = {}
 
 # 1. 获取所有雪场的天气数据
-for resort_key, spot_id in id_mapping.items():
+for resort_key, resort_info in resorts_map.items():
+    spot_id = resort_info.get('weathernews_id')
+    if not spot_id:
+        continue
+
     try:
         # 获取积雪数据
         result = subprocess.run(
@@ -86,7 +63,7 @@ for resort_key, spot_id in id_mapping.items():
                 'forecasts': forecasts
             }
 
-            print(f"✅ {resort_names.get(resort_key, resort_key)}: {snow_depth}cm, {forecasts[0]['temp']}°C")
+            print(f"✅ {resort_info['resort_name']}: {snow_depth}cm, {forecasts[0]['temp']}°C")
 
     except Exception as e:
         print(f"❌ {resort_key}: {e}")
@@ -129,9 +106,8 @@ with open('index.html', 'r', encoding='utf-8') as f:
     index_content = f.read()
 
 for resort_key, data in weather_data.items():
-    resort_name = resort_names.get(resort_key, '')
-    if not resort_name:
-        continue
+    resort_info = resorts_map[resort_key]
+    resort_name = resort_info['resort_name']
 
     # 更新snow-badge（当前天气）
     pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<a[^>]*class="snow-badge"[^>]*>)🌤️ [^<]+(</a>)'
@@ -143,18 +119,21 @@ for resort_key, data in weather_data.items():
     replacement = rf'\g<1>🔮 7天{data["total_7day_snow"]}cm\g<2>'
     index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
 
-    # 添加或更新积雪深度标签
-    # 先检查是否已存在积雪深度标签
-    depth_pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag forecast-tag">🔮 7天[^<]+</span>)(\s*<span class="info-tag depth-tag">📏 积雪[^<]+</span>)?'
-    if re.search(depth_pattern, index_content, flags=re.DOTALL):
-        # 如果存在，更新它
-        depth_replacement = rf'\g<1> <span class="info-tag depth-tag">📏 积雪{data["snow_depth"]}cm</span>'
-        index_content = re.sub(depth_pattern, depth_replacement, index_content, flags=re.DOTALL)
-    else:
-        # 如果不存在，在7天预报后添加
-        add_pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag forecast-tag">🔮 7天[^<]+</span>)'
-        add_replacement = rf'\g<1> <span class="info-tag depth-tag">📏 积雪{data["snow_depth"]}cm</span>'
-        index_content = re.sub(add_pattern, add_replacement, index_content, flags=re.DOTALL)
+    # 更新积雪深度标签
+    pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag depth-tag">)❄️ 积雪[^<]+(</span>)'
+    replacement = rf'\g<1>❄️ 积雪{data["snow_depth"]}cm\g<2>'
+    index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
+
+    # 更新雪道数量和价格（从统一数据源）
+    if 'trails' in resort_info:
+        pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag">)\d+条雪道(</span>)'
+        replacement = rf'\g<1>{resort_info["trails"]}条雪道\g<2>'
+        index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
+
+    if 'ticket_price' in resort_info:
+        pattern = rf'(<span class="resort-name">{re.escape(resort_name)}</span>.*?<span class="info-tag">)[¥￥][0-9,]+(</span>)'
+        replacement = rf'\g<1>{resort_info["ticket_price"]}\g<2>'
+        index_content = re.sub(pattern, replacement, index_content, flags=re.DOTALL)
 
     # 更新data-snow、data-forecast和data-depth属性
     pattern = rf'(<div class="resort-card" data-region="[^"]*" data-snow=")[^"]*(" data-forecast=")[^"]*"( onclick="window\.location\.href=\'resorts/{re.escape(resort_key)}-new\.html\'">)'
@@ -167,3 +146,4 @@ with open('index.html', 'w', encoding='utf-8') as f:
 print(f"\n{'='*60}")
 print(f"✅ 成功更新: {len(weather_data)}/28 个雪场")
 print(f"✅ 首页和详情页数据已同步")
+print(f"✅ 所有信息来自统一数据源 resorts_unified.json")
